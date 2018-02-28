@@ -1,0 +1,37 @@
+body.error404 {
+	.content {
+		padding: 135px 0 100px;
+
+		h1 {
+			font-size: 110px;
+			line-height: 110px;
+			color: $color-blue-a;
+			text-align: center;
+			margin-bottom: 20px;
+			font-weight: 700;
+		}
+
+		h2 {
+			color: $color-dark-a;
+			font-size: 18px;
+			line-height: 28px;
+			text-align: center;
+			font-weight: 600;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 28px;
+			text-align: center;
+		}
+
+		.button {
+			margin: 50px auto 0;
+			width: 260px;
+			height: 60px;
+			line-height: 60px;
+			display: block;
+			font-size: 16px;
+		}
+	}
+}

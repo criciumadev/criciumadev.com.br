@@ -1,0 +1,32 @@
+.box {
+	padding: 110px 0;
+
+	.box-title {
+		h2 {
+			color: $color-dark-a;
+			font-weight: 500;
+			font-size: 40px;
+			line-height: 48px;
+			position: relative;
+			margin-bottom: 32px;
+
+			&:after {
+				display: block;
+				content: '';
+				width: 37px;
+				height: 3px;
+				background: $color-blue-a;
+				margin: 20px 0;
+			}
+		}
+	}
+
+	&.box-center {
+		.box-title {
+			h2, p {
+				text-align: center;
+			}
+			h2:after { margin: 20px auto; }
+		}
+	}
+}

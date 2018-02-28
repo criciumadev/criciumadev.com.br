@@ -1,0 +1,97 @@
+body.page-vagas {
+
+	.content {
+		padding: 0 0 100px;
+		background: $color-light-a;
+
+
+		.box-1 {
+			background: $color-gray-a;
+			padding: 40px 0;
+
+			.container { max-width: 1170px; }
+
+			h1 {
+				font-size: 40px;
+				line-height: 50px;
+				font-weight: 700;
+				color: $color-dark-a;
+				text-align: left;
+			}
+
+			p {
+				display: block;
+				text-align: left;
+			}
+
+			.button {
+				height: 50px;
+				line-height: 50px;
+				font-size: 17px;
+				max-width: 300px;
+				display: block;
+				float: right;
+				margin: 25px 0;
+			}
+		}
+
+		.box-2 {
+			background: $color-blue-a;
+			padding: 50px 0;
+
+			.container {
+				max-width: 600px;
+			}
+		}
+
+		.box-3 {
+			padding: 50px 0;
+
+			.container {
+				max-width: 600px;
+			}
+		}
+
+		ul.list-jobs {
+			li {
+				margin-bottom: 25px;
+
+				&:last-child { margin-bottom: 0; }
+
+				a {
+					display: block;
+					max-width: 100%;
+					@include rounder(6px);
+					background-color: $color-light-a;
+					@include box-shadow(0, 36px, 64px, rgba(0,0,0,.2));
+					height: 110px;
+					padding: 20px;
+
+					img {
+						display: block;
+						float: left;
+						margin-right: 20px;
+						height: 70px;
+						width: 70px;
+					}
+
+					.job-description {
+						p {
+							.company-name {}
+							.job-title {}
+						}
+					}
+
+					.job-details {
+						.location {}
+						.publish-date {}
+					}
+
+				}
+			}
+		}
+
+	}
+
+	.footer .footer-top { margin-top: 0; }
+}

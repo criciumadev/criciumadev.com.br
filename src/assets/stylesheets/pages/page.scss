@@ -1,0 +1,84 @@
+body.page {
+	.content {
+		padding: 95px 0 60px;
+
+		.container {
+			max-width: 830px;
+
+			.box-title {
+				margin-bottom: 50px;
+
+				h1 {
+					font-size: 40px;
+					line-height: 50px;
+					font-weight: 700;
+					color: $color-dark-a;
+					text-align: center;
+
+					&:after {
+						display: block;
+						content: '';
+						width: 37px;
+						height: 3px;
+						background: #54a9ff;
+						margin: 20px auto 0;
+					}
+				}
+			}
+
+			.content-page {
+				* {
+					font-size: 16px;
+					line-height: 28px;
+				}
+
+				p {
+					margin-bottom: 25px;
+
+					&:last-child { margin-bottom: 0; }
+				}
+
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					font-size: 18px;
+					font-weight: 500;
+					color: $color-dark-a;
+					margin-bottom: 25px;
+				}
+
+				ul,
+				ol {
+					margin-top: 10px;
+					padding-left: 18px;
+					text-indent: -3px;
+				}
+
+				img {
+					max-width: 100%;
+					height: auto;
+					@include rounder(3px);
+					display: inline-block;
+				}
+
+				a {
+					color: $color-blue-a;
+					@include transiction;
+
+					* {
+						color: $color-blue-a;
+						@include transiction;
+
+						&:hover { color: darken($color-blue-a, 15%); }
+					}
+
+					&:hover { color: darken($color-blue-a, 15%); }
+				}
+			}
+
+		}
+	}
+}

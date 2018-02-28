@@ -1,0 +1,19 @@
+.box-sponsors {
+
+	p {
+		display: block;
+		margin-bottom: 50px;
+	}
+
+	.list-brandings {
+		text-align: center;
+
+		li {
+			vertical-align: middle;
+			display: inline-block;
+			margin: 0 25px;
+
+			a { display: inline-block; }
+		}
+	}
+}

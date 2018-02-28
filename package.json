@@ -1,0 +1,43 @@
+{
+  "name": "criciuma-dev",
+  "version": "1.0.0",
+  "description": "Site da comunidade Criciúma Dev",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-watch": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "del": "^3.0.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1",
+    "jshint": "^2.9.5",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/criciumadev/criciumadev.com.br.git"
+  },
+  "keywords": [
+    "criciuma",
+    "dev"
+  ],
+  "author": "Mateus Vicente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/criciumadev/criciumadev.com.br/issues"
+  },
+  "homepage": "https://github.com/criciumadev/criciumadev.com.br#readme"
+}

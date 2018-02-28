@@ -1,0 +1,69 @@
+.list-cards {
+	.card {
+		float: left;
+		margin-right: 30px;
+		// max-width: 310px;
+
+		background: $color-light-a;
+		@include rounder(6px);
+		@include box-shadow(0, 6px, 34px, rgba(0,0,0,.03));
+		// max-width: 100%;
+
+		a {
+			display: block;
+			outline: none;
+			outline: 0;
+
+			.card-image {
+				height: 220px;
+				background-color: $color-blue-a;
+				@include background-cover;
+				@include round-top(6px);
+				background-position: center;
+			}
+
+			.card-content {
+				padding: 30px 25px;
+
+				.card-title {
+					font-weight: 600;
+					font-size: 19px;
+					line-height: 19px;
+					color: $color-dark-a;
+					margin-bottom: 20px;
+				}
+
+				.card-detail {
+					display: block;
+					font-size: 14px;
+					line-height: 20px;
+					margin-bottom: 15px;
+					height: 40px;
+				}
+
+				.card-link {
+					color: $color-blue-a;
+					font-size: 14px;
+					line-height: 20px;
+					display: inline-block;
+					border-bottom: 2px solid rgba(84, 169, 255, 0.5);
+					position: relative;
+					font-weight: 600;
+
+					i {
+						color: $color-blue-a;
+						font-size: 13px;
+						position: absolute;
+						right: -23px;
+						top: 2px;
+
+						&:before {
+							display: block;
+							line-height: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
