@@ -1,0 +1,75 @@
+[
+
+  {
+    "title": "Analista de Testes (QA)",
+    "company_name": "Conta Azul",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/contaazul.png",
+    "link": "https://www.meetup.com/pt-BR/Meetup-Wordpress-Floripa/events/247344194/",
+    "location": {
+      "city": "Florianópolis",
+      "state": "SC",
+    },
+    "type": "Freelancer",
+    "date": {
+      "day": "03",
+      "month": "Março",
+      "year": 2018
+    },
+  },
+
+  {
+    "title": "Desenvolvedor PHP Sênior",
+    "company_name": "Portabilis",
+    "featured": false,
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC",
+    },
+    "type": "Freelancer",
+    "date": {
+      "day": "03",
+      "month": "Março",
+      "year": 2018
+    },
+  }
+
+  {
+    "title": "Analista de Testes (QA)",
+    "company_name": "Conta Azul",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/contaazul.png",
+    "link": "https://www.meetup.com/pt-BR/Meetup-Wordpress-Floripa/events/247344194/",
+    "location": {
+      "city": "Florianópolis",
+      "state": "SC",
+    },
+    "type": "Freelancer",
+    "date": {
+      "day": "03",
+      "month": "Março",
+      "year": 2018
+    },
+  },
+
+  {
+    "title": "Desenvolvedor PHP Sênior",
+    "company_name": "Portabilis",
+    "featured": false,
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC",
+    },
+    "type": "Freelancer",
+    "date": {
+      "day": "03",
+      "month": "Março",
+      "year": 2018
+    },
+  }
+
+]

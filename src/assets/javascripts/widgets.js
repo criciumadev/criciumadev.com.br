@@ -254,3 +254,7 @@ Widgets.videosFeed = {
         </div>';
     }
 };
+
+Widgets.jobs = {
+    
+}

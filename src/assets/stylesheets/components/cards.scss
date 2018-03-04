@@ -16,7 +16,7 @@
 
 			.card-image {
 				height: 220px;
-				background-color: $color-blue-a;
+				background-color: $color-blue-c;
 				@include background-cover;
 				@include round-top(6px);
 				background-position: center;
@@ -42,7 +42,7 @@
 				}
 
 				.card-link {
-					color: $color-blue-a;
+					color: $color-blue-c;
 					font-size: 14px;
 					line-height: 20px;
 					display: inline-block;
@@ -51,7 +51,7 @@
 					font-weight: 600;
 
 					i {
-						color: $color-blue-a;
+						color: $color-blue-c;
 						font-size: 13px;
 						position: absolute;
 						right: -23px;

@@ -2,93 +2,142 @@ body.page-vagas {
 
 	.content {
 		padding: 0 0 100px;
-		background: $color-light-a;
-
+		background: #FAFAFA;
 
 		.box-1 {
-			background: $color-gray-a;
-			padding: 40px 0;
-
-			.container { max-width: 1170px; }
+			background: $color-blue-c url('./images/bg-bar-vagas.png') no-repeat center;
+			padding: 47px 0;
 
 			h1 {
-				font-size: 40px;
-				line-height: 50px;
-				font-weight: 700;
-				color: $color-dark-a;
-				text-align: left;
-			}
-
-			p {
-				display: block;
-				text-align: left;
+				font-weight: 600;
+				font-size: 28px;
+				color: $color-light-a;
+				letter-spacing: 0.19px;
+				line-height: 38px;
 			}
 
 			.button {
+				color: $color-blue-c;
+				background: $color-light-a;
+				padding: 0;
+				width: 255px;
 				height: 50px;
 				line-height: 50px;
-				font-size: 17px;
-				max-width: 300px;
-				display: block;
 				float: right;
-				margin: 25px 0;
+				margin: 13px 0;
 			}
 		}
 
-		.box-2 {
-			background: $color-blue-a;
-			padding: 50px 0;
+		.box-jobs {
+			background: #F3F3F3;
+			padding: 45px 0;
 
-			.container {
-				max-width: 600px;
-			}
+			.container { max-width: 800px; }
 		}
 
-		.box-3 {
-			padding: 50px 0;
+		.box-light {
+			background: #FAFAFA;
+		}
 
-			.container {
-				max-width: 600px;
-			}
+		.subtitle {
+			font-weight: 500;
+			font-size: 22px;
+			color: $color-dark-a;
+			margin-bottom: 30px;
 		}
 
 		ul.list-jobs {
-			li {
-				margin-bottom: 25px;
 
-				&:last-child { margin-bottom: 0; }
+			.job {
+				@include box-shadow(0, 1px, 0, rgba(205,204,204,0.50));
+				background: $color-light-a;
+				@include rounder(4px);
+				margin-bottom: 10px;
 
 				a {
 					display: block;
-					max-width: 100%;
-					@include rounder(6px);
-					background-color: $color-light-a;
-					@include box-shadow(0, 36px, 64px, rgba(0,0,0,.2));
-					height: 110px;
-					padding: 20px;
+					padding: 20px 25px;
+				}
 
-					img {
+				&:last-child { margin-bottom: 0; }
+
+				.image {
+					width: 50px;
+					height: 50px;
+					@include rounder(100%);
+
+					span {
 						display: block;
-						float: left;
-						margin-right: 20px;
-						height: 70px;
-						width: 70px;
+						width: 100%;
+						height: 100%;
+						line-height: 50px;
+						font-weight: 500;
+						font-size: 22px;
+						color: $color-light-a;
+						text-align: center;
+						background: $color-blue-c;
+						@include rounder(100%);
 					}
 
-					.job-description {
-						p {
-							.company-name {}
-							.job-title {}
+					figure {
+						width: 100%;
+						height: 100%;
+
+						img {
+							width: 100%;
+							height: 100%;
+							display: block;
+							@include rounder(100%);
 						}
 					}
+				}
 
-					.job-details {
-						.location {}
-						.publish-date {}
+				.description {
+					margin-left: 10px;
+					padding: 1px 0 2px;
+
+					h2 {
+						font-weight: 500;
+						font-size: 22px;
+						line-height: 28px;
+						color: $color-dark-a;
+						margin-bottom: 3px;
 					}
+					h4 {
+						font-size: 16px;
+						line-height: 16px;
+						color: #4A4A4A;
+					}
+				}
 
+				.details {
+					padding: 5px 0 0;
+
+					span {
+						@include clearfix;
+						font-size: 16px;
+						line-height: 17px;
+						color: #4A4A4A;
+						margin: 0 0 7px;
+
+						&:last-child { margin: 0; }
+
+						i {
+							color: $color-blue-c;
+							float: left;
+							height: 17px;
+							line-height: 17px;
+							margin-right: 10px;
+						}
+					}
+				}
+
+				.date {
+					float: right;
+					padding: 10px 0;
 				}
 			}
+
 		}
 
 	}

@@ -10,12 +10,19 @@
 			position: relative;
 			margin-bottom: 32px;
 
+			span {
+				color: $color-dark-a;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 48px;
+			}
+
 			&:after {
 				display: block;
 				content: '';
 				width: 37px;
 				height: 3px;
-				background: $color-blue-a;
+				background: $color-blue-c;
 				margin: 20px 0;
 			}
 		}

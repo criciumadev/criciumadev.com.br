@@ -17,9 +17,6 @@
     }
 
     &.button-secondary {
-        // background: $color-blue-a;
-        // background: $color-blue-a;
-        /* Rectangle: */
         @include background-gradient(-33deg, #272DFF, #03FAF1);
         @include box-shadow(0, 20px, 30px, rgba(0,0,0,.2));
 

@@ -74,12 +74,12 @@ hr {
 .white-space { white-space: nowrap !important; }
 
 *::selection {
-    background: $color-blue-a;
+    background: $color-blue-c;
     color: $color-light-a;
 }
 
 *::-moz-selection {
-    background: $color-blue-a;
+    background: $color-blue-c;
     color: $color-light-a;
 }
 

@@ -65,17 +65,17 @@ body.page {
 				}
 
 				a {
-					color: $color-blue-a;
+					color: $color-blue-c;
 					@include transiction;
 
 					* {
-						color: $color-blue-a;
+						color: $color-blue-c;
 						@include transiction;
 
-						&:hover { color: darken($color-blue-a, 15%); }
+						&:hover { color: darken($color-blue-c, 15%); }
 					}
 
-					&:hover { color: darken($color-blue-a, 15%); }
+					&:hover { color: darken($color-blue-c, 15%); }
 				}
 			}
 

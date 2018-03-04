@@ -39,14 +39,14 @@
 				@include transiction;
 
 				&:hover,
-				&.active { border-color: $color-blue-a; }
+				&.active { border-color: $color-blue-c; }
 
 				&.button {
-					border: 2px solid $color-blue-a;
-					color: $color-blue-a;
+					border: 2px solid $color-blue-c;
+					color: $color-blue-c;
 
 					&:hover {
-						background: $color-blue-a;
+						background: $color-blue-c;
 						color: $color-light-a;
 					}
 				}

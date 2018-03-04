@@ -11,7 +11,7 @@
 		max-width: 800px;
 		height: 215px;
 		padding: 52px 34px 52px 45px;
-		background: $color-blue-a;
+		background: $color-blue-c;
 		@include rounder(10px);
 		@include box-shadow(0, 20px, 30px, rgba(0,0,0,.2));
 
@@ -64,7 +64,7 @@
 				line-height: 50px;
 				padding: 0;
 				text-align: center;
-				color: $color-blue-a;
+				color: $color-blue-c;
 			}
 
 			.message {
@@ -119,7 +119,7 @@
 	}
 
 	.footer-bottom {
-		background: $color-blue-a;
+		background: $color-blue-c;
 		padding: 15px 0;
 		overflow: hidden;
 

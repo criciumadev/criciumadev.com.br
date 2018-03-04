@@ -1,19 +1,37 @@
 .box-sponsors {
 
-	p {
-		display: block;
-		margin-bottom: 50px;
-	}
+	.group-sponsors {
+		margin-bottom: 100px;
 
-	.list-brandings {
-		text-align: center;
+		&:last-child { margin-bottom: 0; }
 
-		li {
-			vertical-align: middle;
-			display: inline-block;
-			margin: 0 25px;
+		.box-title {
+			h2 {
+				font-size: 25px !important;
 
-			a { display: inline-block; }
+				span { font-size: 25px !important; }
+
+				&:after { margin: 10px auto 0 !important; }
+			}
+		}
+
+		p {
+			display: block;
+			margin-bottom: 50px;
+		}
+
+		.list-brandings {
+			text-align: center;
+
+			&:last-child { margin-bottom: 0; }
+
+			li {
+				vertical-align: middle;
+				display: inline-block;
+				margin: 0 25px 30px;
+
+				a { display: inline-block; }
+			}
 		}
 	}
 }
