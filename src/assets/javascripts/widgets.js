@@ -256,5 +256,9 @@ Widgets.videosFeed = {
 };
 
 Widgets.jobs = {
-    
+
+    fetch: function() {
+        console.log('JOBS');
+    }
+
 }

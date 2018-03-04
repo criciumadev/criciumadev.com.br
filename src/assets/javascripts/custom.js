@@ -42,8 +42,8 @@ SITE.goToTop = function() {
 }
 
 SITE.menuActive = function() {
-	var $scope = $('*[data-scope=header]:first');
-	$('a[href^="/' + location.pathname[1] + '"]', $scope).addClass('active');
+	// var $scope = $('*[data-scope=header]:first');
+	// $('a[href^="' + location.pathname + '"]', $scope).addClass('active');
 }
 
 SITE.newsletter = function() {
