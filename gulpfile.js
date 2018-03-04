@@ -34,13 +34,10 @@ gulp.task('sass-minify', function () {
 
 gulp.task('js-minify', function () {
   return gulp.src([
-    PATH.js + '/respond.min.js',
-    PATH.js + '/lazy-loading.js',
+    PATH.js + '/slick.js',
     PATH.js + '/jquery.validate.js',
-    PATH.js + '/sharer.js',
     PATH.js + '/moment.min.js',
     PATH.js + '/widgets.js',
-    PATH.js + '/slick.js',
     PATH.js + '/custom.js'
   ])
   .pipe(concat('all.min.js'))

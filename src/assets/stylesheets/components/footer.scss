@@ -67,17 +67,16 @@
 				color: $color-blue-c;
 			}
 
-			.message {
+			label.error,
+			.subscribe-result {
 				position: absolute;
+				padding-top: 10px;
 				width: 100%;
-
-				p {
-					display: block;
-					margin-top: 10px;
-					font-size: 13px;
-					color: $color-light-a;
-					text-align: center;
-				}
+				display: block;
+				font-size: 13px;
+				line-height: 13px;
+				color: $color-light-a;
+				text-align: center;
 			}
 		}
 	}
