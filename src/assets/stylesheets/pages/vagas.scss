@@ -77,6 +77,8 @@ body.page-vagas {
 						text-align: center;
 						background: $color-blue-c;
 						@include rounder(100%);
+                        background-size: contain;
+                        background-position: center center;
 					}
 
 					figure {

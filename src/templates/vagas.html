@@ -22,154 +22,102 @@
     </div>
 </div>
 
+<script id="template-job" type="text/x-handlebars-template">
+    <ul class="list-jobs">
+        {{#each jobs}}
+            <li class="job">
+                <a href="" title="{{company_name}}">
+                    <div class="row">
+
+                        <div class="col-md-1 col-sm-1 col-xs-12">
+                            <div class="image">
+                                {{paseLogo}}
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="description">
+                                <h2>{{title}}</h2>
+                                <h4>{{company_name}}</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="details">
+                                <span><i class="icon-location"></i> {{location.city}}, {{location.state}}</span>
+                                <span><i class="icon-rain"></i> {{type}}</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <span class="date">{{friendlyDate date}}</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</script>
+
 <div class="box box-jobs">
-    <div class="container">
+    <div class="container" id="jobs-template">
         <h3 class="subtitle">Vagas em destaque</h3>
-        <ul class="list-jobs">
-
-            <li class="job">
-                <a href="" title="ContaAzul">
-                    <div class="row">
-
-                        <div class="col-md-1 col-sm-1 col-xs-12">
-                            <div class="image">
-                                <span style="background: orange">CA</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="description">
-                                <h2>Analista de Testes (QA)</h2>
-                                <h4>Conta Azul</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="details">
-                                <span><i class="icon-location"></i> Criciúma, SC</span>
-                                <span><i class="icon-rain"></i> Freelancer</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <span class="date">Hoje</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="job">
-                <a href="" title="ContaAzul">
-                    <div class="row">
-
-                        <div class="col-md-1 col-sm-1 col-xs-12">
-                            <div class="image">
-                                <figure>
-                                    <img src="./assets/images/logos-vagas/contaazul.png" alt="ContaAzul" alt="ContaAzul" />
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="description">
-                                <h2>Analista de Testes (QA)</h2>
-                                <h4>Conta Azul</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="details">
-                                <span><i class="icon-location"></i> Criciúma, SC</span>
-                                <span><i class="icon-rain"></i> Freelancer</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <span class="date">Hoje</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-        </ul>
+        <div id="jobs-featured"></div>
     </div>
 </div>
 
 <div class="box box-jobs box-light">
     <div class="container">
-        <ul class="list-jobs">
-
-            <li class="job">
-                <a href="" title="ContaAzul">
-                    <div class="row">
-
-                        <div class="col-md-1 col-sm-1 col-xs-12">
-                            <div class="image">
-                                <span style="background: lime;">CA</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="description">
-                                <h2>Analista de Testes (QA)</h2>
-                                <h4>Conta Azul</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="details">
-                                <span><i class="icon-location"></i> Criciúma, SC</span>
-                                <span><i class="icon-rain"></i> Freelancer</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <span class="date">Hoje</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="job">
-                <a href="" title="ContaAzul">
-                    <div class="row">
-
-                        <div class="col-md-1 col-sm-1 col-xs-12">
-                            <div class="image">
-                                <figure>
-                                    <img src="./assets/images/logos-vagas/contaazul.png" alt="ContaAzul" alt="ContaAzul" />
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="description">
-                                <h2>Analista de Testes (QA)</h2>
-                                <h4>Conta Azul</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="details">
-                                <span><i class="icon-location"></i> Criciúma, SC</span>
-                                <span><i class="icon-rain"></i> Freelancer</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <span class="date">Hoje</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-        </ul>
+        <div id="jobs-rest"></div>
     </div>
 </div>
 
 <script type="text/javascript">
     $(document).ready(function() {
-        Widgets.jobs.fetch();
+        const source = document.getElementById("template-job").innerHTML;
+        const jobsTemplate = Handlebars.compile(source);
+
+        Widgets.jobs.fetch().success(function(jobs) {
+            render(jobs);
+        });
+
+        Handlebars.registerHelper('friendlyDate', function(date) {
+            const _date = moment(date);
+            const currentDate = moment();
+            const isSameYear = _date.year() == currentDate.year();
+            const isSameMonth = _date.month() == currentDate.month();
+
+            if (currentDate.day() == _date.day() && isSameYear && isSameMonth) {
+                return 'Hoje';
+            }
+
+            if (currentDate.day() - 1 == _date.day()) {
+                return 'Ontem'
+            }
+
+            return _date.format('DD/MM/YYYY');
+        });
+
+        Handlebars.registerHelper('paseLogo', function() {
+            const nameSplited = Handlebars.escapeExpression(this.company_name).split(' ');
+            const firstLetter = nameSplited[0][0];
+            const lastLetter = nameSplited[1] || nameSplited[0][nameSplited[0].length - 1];
+            const alias = (firstLetter + lastLetter).toUpperCase();
+
+            return new Handlebars.SafeString(
+                this.company_logo ?
+                '<span style="background: url('+ this.company_logo + ') center center; background-size: contain;"></span>' : 
+                '<span style="background: '+ this.color + '">'+  alias  +'</span>'
+            );
+        }); 
+
+        function render(jobs) {
+            const featureds = jobs.filter(function (job) { return job.featured });
+            const rest = jobs.filter(function (job) { return !job.featured });
+
+            $('#jobs-featured').after(jobsTemplate({ jobs: featureds }));
+            $('#jobs-rest').after(jobsTemplate({ jobs: rest }));
+        }
     })
 </script>
 

@@ -256,9 +256,25 @@ Widgets.videosFeed = {
 };
 
 Widgets.jobs = {
+    errorMessage: 'Ocorreu um erro ao carregar o conteúdo.',
 
-    fetch: function() {
-        console.log('JOBS');
+    jobsUrl: function() {
+      return '/assets/data/jobs.json';
+    },
+
+    fetch: function(success) {
+        return $.ajax({
+            url: Widgets.jobs.jobsUrl(),
+            type: 'GET',
+            dataType: 'json',
+            beforeSend: function() {
+                //start loading
+            },
+            error: function(error) {
+                //end loading
+                // console.log(error);
+                return Widgets.jobs.errorMessage;
+            }
+        });
     }
-
 }

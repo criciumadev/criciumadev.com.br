@@ -6,7 +6,8 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
-    "gulp-watch": "^5.0.0"
+    "gulp-watch": "^5.0.0",
+    "handlebars": "^4.0.11"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

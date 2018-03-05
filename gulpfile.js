@@ -16,9 +16,11 @@ var gulp        = require('gulp'),
 var PATH = {
   dest:      './www',
   src:       './src',
+  data:      '/src/assets/data',
   css:       './src/assets/stylesheets',
   js:        './src/assets/javascripts',
-  templates: './src/templates'
+  templates: './src/templates',
+  node_modules: './node_modules'
 }
 
 gulp.task('sass-minify', function () {
@@ -34,11 +36,12 @@ gulp.task('sass-minify', function () {
 
 gulp.task('js-minify', function () {
   return gulp.src([
+    PATH.node_modules + '/handlebars/dist/handlebars.min.js',
     PATH.js + '/slick.js',
     PATH.js + '/jquery.validate.js',
     PATH.js + '/moment.min.js',
     PATH.js + '/widgets.js',
-    PATH.js + '/custom.js'
+    PATH.js + '/custom.js',
   ])
   .pipe(concat('all.min.js'))
   .pipe(uglify())
@@ -48,6 +51,11 @@ gulp.task('js-minify', function () {
 gulp.task('clean-html', function() {
   del(PATH.dest + '/*.html');
 });
+
+gulp.task('copy-data', function() {
+  gulp.src(PATH.src + '/assets/data/*').pipe(gulp.dest(PATH.dest + '/assets/data'));
+});
+
 
 gulp.task('copy-images', function() {
   gulp.src(PATH.src + '/assets/icons/*').pipe(gulp.dest(PATH.dest + '/assets/icons'));
@@ -81,6 +89,7 @@ gulp.task('watchs', function () {
   gulp.watch(PATH.js + '/**/*.js', ['js-minify']);
   gulp.watch([PATH.templates + '/*.html', PATH.templates + '/**/*.html'], ['generate-html']);
   gulp.watch([PATH.templates + '/assets/icons/*', PATH.templates + '/assets/images/*'], ['copy-images']);
+  gulp.watch([PATH.data + '/assets/data/*', PATH.templates + '/assets/data/*'], ['copy-data']);
 });
 
 gulp.task('default', function () {
@@ -89,6 +98,7 @@ gulp.task('default', function () {
     ['copy-images'],
     ['js-minify'],
     ['generate-html'],
+    ['copy-data'],
     ['watchs'],
     ['webserver']
   );
