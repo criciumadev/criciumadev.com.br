@@ -122,7 +122,7 @@
 
         function generateRandomColors(jobs) {
             jobs.reduce(function (colors, job) {
-                if (job.color) return job;
+                if (job.color) return colors;
 
                 if (colors[job.company_name]) {
                     job.color = colors[job.company_name];
