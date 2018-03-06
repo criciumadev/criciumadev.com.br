@@ -259,7 +259,7 @@ Widgets.jobs = {
     errorMessage: 'Ocorreu um erro ao carregar o conteúdo.',
 
     jobsUrl: function() {
-      return '/assets/data/jobs.json';
+      return './assets/data/jobs.json';
     },
 
     fetch: function(success) {

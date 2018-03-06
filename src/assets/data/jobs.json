@@ -1,39 +1,27 @@
 [
   {
-    "title": "Analista de Testes (QA)",
-    "company_name": "Conta Azul",
+    "title": "Product Manager (PM/PO)",
+    "company_name": "Portabilis",
     "featured": true,
-    "company_logo": "./assets/images/logos-vagas/contaazul.png",
-    "link": "https://www.meetup.com/pt-BR/Meetup-Wordpress-Floripa/events/247344194/",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "link": "https://www.portabilis.com.br/site-novo/oportunidades/product-manager",
     "type": "Freelancer",
-    "date": "2018-03-03T22:55:06.311Z",
+    "date": "2018-03-06T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    },
+  },
+  {
+    "title": "Programador(a) de Sistemas",
+    "company_name": "Betha Sistemas",
+    "featured": false,
+    "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1491#.Wp4Za5Pwa7M",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-06T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
-  },
-  {
-    "title": "Desenvolvedor PHP Sênior",
-    "company_name": "Portabilis",
-    "featured": false,
-    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    },
-    "type": "Freelancer",
-    "date": "2018-03-05T22:55:06.311Z"
-  },
-  {
-    "title": "Desenvolvedor PHP Sênior",
-    "company_name": "Portabilis",
-    "featured": false,
-    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    },
-    "type": "Freelancer",
-    "date": "2018-03-04T22:55:06.311Z"
   }
 ]
