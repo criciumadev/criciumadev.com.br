@@ -28,11 +28,39 @@
   },
 
   {
+    "title": "Programador - Web",
+    "company_name": "Useall Software",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/useall.png",
+    "link": "https://br.linkedin.com/jobs/view/programador-web-at-useall-software-613856392",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-06T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
     "title": "Programador(a) de Sistemas",
     "company_name": "Betha Sistemas",
     "featured": false,
     "color": "#233b75",
     "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1491#.Wp4Za5Pwa7M",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-06T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Programador Front-end",
+    "company_name": "TW Sistemas",
+    "featured": false,
+    "color": "#2C93FF",
+    "link": "http://twsistemas.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
     "date": "2018-03-06T22:55:06.311Z",
     "location": {
