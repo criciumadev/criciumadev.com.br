@@ -66,38 +66,7 @@ body.home-page {
 			font-size: 19px;
 			line-height: 19px;
 			display: block;
-			margin-bottom: 45px;
 			text-align: center;
-		}
-
-		a {
-			height: 46px;
-			line-height: 46px;
-			padding: 0 65px 0 44px;
-			position: relative;
-			display: inline-block;
-
-			i {
-				width: 34px;
-				height: 34px;
-				display: block;
-				position: absolute;
-				right: 7px;
-				top: 6px;
-				color: $color-light-a;
-				background: rgba(0, 0, 0, 0.2);
-				text-align: center;
-				@include rounder(100%);
-				font-size: 13px;
-
-				&:before {
-					display: block;
-					line-height: 34px;
-					position: relative;
-					left: 1px;
-					top: 1px;
-				}
-			}
 		}
 	}
 
