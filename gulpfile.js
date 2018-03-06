@@ -16,7 +16,7 @@ var gulp        = require('gulp'),
 var PATH = {
   dest:      './www',
   src:       './src',
-  data:      '/src/assets/data',
+  data:      './src/assets/data',
   css:       './src/assets/stylesheets',
   js:        './src/assets/javascripts',
   templates: './src/templates',
@@ -53,7 +53,7 @@ gulp.task('clean-html', function() {
 });
 
 gulp.task('copy-data', function() {
-  gulp.src(PATH.src + '/assets/data/*').pipe(gulp.dest(PATH.dest + '/assets/data'));
+  gulp.src(PATH.data + '/*').pipe(gulp.dest(PATH.dest + '/assets/data'));
 });
 
 
@@ -89,7 +89,7 @@ gulp.task('watchs', function () {
   gulp.watch(PATH.js + '/**/*.js', ['js-minify']);
   gulp.watch([PATH.templates + '/*.html', PATH.templates + '/**/*.html'], ['generate-html']);
   gulp.watch([PATH.templates + '/assets/icons/*', PATH.templates + '/assets/images/*'], ['copy-images']);
-  gulp.watch([PATH.data + '/assets/data/*', PATH.templates + '/assets/data/*'], ['copy-data']);
+  gulp.watch(PATH.data + '/*', ['copy-data']);
 });
 
 gulp.task('default', function () {
