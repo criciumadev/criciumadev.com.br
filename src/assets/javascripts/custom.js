@@ -29,7 +29,21 @@ SITE.sliderEvents = function() {
 		centerMode: true,
 		slidesToScroll: 1,
 		prevArrow: $('*[data-arrow="slider-events-prev"]:first', $scopeArrows),
-		nextArrow: $('*[data-arrow="slider-events-next"]:first', $scopeArrows)
+		nextArrow: $('*[data-arrow="slider-events-next"]:first', $scopeArrows),
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1
+			}
+		},
+		]
 	});
 
 };

@@ -157,7 +157,7 @@ Widgets.postsFeed = {
     },
 
     buildEntryHTML: function(post) {
-        var gridClass = (i == 0 ? 'col-md-8 col-sm-8 col-xs-12' : 'col-md-4 col-sm-4 col-xs-12'),
+        var gridClass = (i == 0 ? 'col-md-8 col-sm-12 col-xs-12' : 'col-md-4 col-sm-12 col-xs-12'),
             postArticle = (i == 0 ? 'recent-article' : ''),
             imageSize = (i == 0 ? 'max/800' : 'fit/t/700/394'),
             html;
