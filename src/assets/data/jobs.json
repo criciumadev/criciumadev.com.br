@@ -1,5 +1,19 @@
 [
   {
+    "title": "Desenvolvedor de Software",
+    "company_name": "Thomson Reuters",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
+    "link": "https://jobs.thomsonreuters.com/ShowJob/Id/98865/Desenvolvedor-de-Software/",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-06T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
     "title": "Product Manager (PM/PO)",
     "company_name": "Portabilis",
     "featured": true,
@@ -12,10 +26,12 @@
       "state": "SC"
     }
   },
+
   {
     "title": "Programador(a) de Sistemas",
     "company_name": "Betha Sistemas",
     "featured": false,
+    "color": "#233b75",
     "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1491#.Wp4Za5Pwa7M",
     "type": "Full-Time - CLT",
     "date": "2018-03-06T22:55:06.311Z",
