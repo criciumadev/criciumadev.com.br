@@ -110,7 +110,7 @@
         Handlebars.registerHelper('paseLogo', function() {
             const nameSplited = Handlebars.escapeExpression(this.company_name).split(' ');
             const firstLetter = nameSplited[0][0];
-            const lastLetter = nameSplited[1] || nameSplited[0][1];
+            const lastLetter = nameSplited[1] ?  nameSplited[1][0] : nameSplited[0][1];
             const alias = (firstLetter + lastLetter).toUpperCase();
 
             return new Handlebars.SafeString(
