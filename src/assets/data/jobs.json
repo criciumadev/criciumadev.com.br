@@ -1,5 +1,19 @@
 [
   {
+    "title": "Mobile Developer (Android)",
+    "company_name": "Organizze",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/organizze.png",
+    "link": "https://webfy.recruiterbox.com/jobs/fk0f8xc/",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-07T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
     "title": "Desenvolvedor de Software",
     "company_name": "Thomson Reuters",
     "featured": true,
