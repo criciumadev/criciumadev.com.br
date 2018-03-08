@@ -1,0 +1,35 @@
+<li class="job">
+    <a href="@@link" title="Vaga em @@company_name clique e saiba mais" target="_blank">
+        <div class="row">
+
+            <div class="col-md-1 col-sm-1 col-xs-12">
+                <div class="image">
+                    @@if(!!context.company_logo) {
+                        <span data-logo="@@company_logo" style="background: url(@@company_logo) center center; background-size: contain;"></span>
+                    }
+                    @@if(!context.company_logo) {
+                        <span style="background: @@color">@@alias</span>
+                    }
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="description">
+                    <h2>@@title</h2>
+                    <h4>@@company_name</h4>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="details">
+                    <span><i class="icon-location"></i> @@location.city, @@location.state</span>
+                    <span><i class="icon-rain"></i> @@type</span>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <span class="date" data-date="@@date">@@date</span>
+            </div>
+        </div>
+    </a>
+</li>

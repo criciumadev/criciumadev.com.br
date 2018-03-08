@@ -1,7 +1,8 @@
 @@include('./_partials/header.html', {
     "pageClass": "page-vagas",
     "pageTitle": "Vagas - Criciúma Dev",
-    "pageDescription": ""
+    "pageDescription": "Vagas de emprego disponíveis em Criciúma e região para a área de tecnologia",
+    "pageUrl": "/vagas"
 })
 
 <div class="box-1">
@@ -15,140 +16,31 @@
             </div>
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <!-- <a href="/publique-suas-vagas" class="button button-secondary">Publique suas vagas grátis</a> -->
-                <a href="mailto:contato@criciumadev.com.br" class="button button-secondary">Publique suas vagas grátis</a>
+                <a href="mailto:contato@criciumadev.com.br?subject=Solicitação de Publicação de Vaga" class="button button-secondary">Publique suas vagas grátis</a>
             </div>
         </div>
     </div>
 </div>
 
-<script id="template-job" type="text/x-handlebars-template">
-    <ul class="list-jobs">
-        {{#each jobs}}
-            <li class="job">
-                <a href="{{link}}" title="{{company_name}}" target="_blank">
-                    <div class="row">
-
-                        <div class="col-md-1 col-sm-1 col-xs-12">
-                            <div class="image">
-                                {{paseLogo}}
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="description">
-                                <h2>{{title}}</h2>
-                                <h4>{{company_name}}</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="details">
-                                <span><i class="icon-location"></i> {{location.city}}, {{location.state}}</span>
-                                <span><i class="icon-rain"></i> {{type}}</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <span class="date">{{friendlyDate date}}</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        {{/each}}
-    </ul>
-</script>
-
 <div class="box box-jobs">
     <div class="container" id="jobs-template">
         <h3 class="subtitle">Vagas em destaque</h3>
-        <div id="jobs-featured"></div>
+        <div>
+            <ul class="list-jobs">
+                @@loop('./_partials/job.html', @@vagas.featured)
+            </ul>
+        </div>
     </div>
 </div>
 
 <div class="box box-jobs box-light">
     <div class="container">
-        <div id="jobs-rest"></div>
+        <div>
+            <ul class="list-jobs">
+                @@loop('./_partials/job.html', @@vagas.jobs)
+            </ul>
+        </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        const source = document.getElementById("template-job").innerHTML;
-        const jobsTemplate = Handlebars.compile(source);
-
-        function getRandomColor() {
-          const letters = '0123456789ABCDEF';
-          var color = '#';
-
-          for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-          }
-
-          return color;
-        }
-
-        Widgets.jobs.fetch().success(function(jobs) {
-            render(jobs);
-        });
-
-        Handlebars.registerHelper('friendlyDate', function(date) {
-            const _date = moment(date);
-            const currentDate = moment();
-            const isSameYear = _date.year() == currentDate.year();
-            const isSameMonth = _date.month() == currentDate.month();
-
-            if (currentDate.date() == _date.date() && isSameYear && isSameMonth) {
-                return 'HOJE';
-            }
-
-            if (currentDate.date() - 1 == _date.date()) {
-                return 'ONTEM'
-            }
-
-            return 'HÁ '+ _date.date() + ' ' + (_date.date() > 1 ?  'DIAS' : 'DIA'); 
-        });
-
-        Handlebars.registerHelper('paseLogo', function() {
-            const nameSplited = Handlebars.escapeExpression(this.company_name).split(' ');
-            const firstLetter = nameSplited[0][0];
-            const lastLetter = nameSplited[1] ?  nameSplited[1][0] : nameSplited[0][1];
-            const alias = (firstLetter + lastLetter).toUpperCase();
-
-            return new Handlebars.SafeString(
-                this.company_logo ?
-                '<span style="background: url('+ this.company_logo + ') center center; background-size: contain;"></span>' : 
-                '<span style="background: '+ this.color + '">'+  alias  +'</span>'
-            );
-        }); 
-
-        function generateRandomColors(jobs) {
-            jobs.reduce(function (colors, job) {
-                if (job.color) return colors;
-
-                if (colors[job.company_name]) {
-                    job.color = colors[job.company_name];
-                    return colors;
-                }
-
-                job.color = getRandomColor();
-                colors[job.company_name] = job.color;
-
-                return colors;
-            }, {});
-
-            return jobs;
-        }
-
-        function render(jobs) {
-            const featureds = jobs.filter(function (job) { return job.featured });
-            const rest = jobs.filter(function (job) { return !job.featured });
-
-            generateRandomColors(jobs);
-
-            $('#jobs-featured').after(jobsTemplate({ jobs: featureds }));
-            $('#jobs-rest').after(jobsTemplate({ jobs: rest }));
-        }
-    })
-</script>
 
 @@include('./_partials/footer.html')
