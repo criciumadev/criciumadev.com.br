@@ -1,26 +1,34 @@
 var SITE = SITE || {};
+var ONE_HOUR = 1000 * 60 * 60;
+var ONE_DAY = ONE_HOUR * 24;
 
-$(document).ready(function() {
-	SITE.init();
-});
-
-$(window).resize(function() {});
+function dateFmt(date) {
+	return (
+		[date.getDate(), date.getMonth() + 1, date.getFullYear()].join("/") +
+		" " +
+		[date.getHours(), date.getMinutes()].join(":")
+	);
+}
 
 function friendlyDate(date) {
-	var _date = moment(date);
-	var currentDate = moment();
-	var isSameYear = _date.year() == currentDate.year();
-	var isSameMonth = _date.month() == currentDate.month();
+	var currentDate = new Date();
+	var compareDate = new Date(date.split("T")[0] + "T03:00:01.311Z");
+	var dateDiff = currentDate.getTime() - compareDate.getTime();
+	var daysDiff = Math.floor(dateDiff / ONE_DAY);
 
-	if (currentDate.date() == _date.date() && isSameYear && isSameMonth) {
+	if (daysDiff < 0) {
+		return "AGORA";
+	}
+
+	if (daysDiff === 0) {
 		return "HOJE";
 	}
 
-	if (currentDate.date() - 1 == _date.date()) {
+	if (daysDiff === 1) {
 		return "ONTEM";
 	}
 
-	return "HÁ " + _date.date() + " " + (_date.date() > 1 ? "DIAS" : "DIA");
+	return "HÁ " + Math.ceil(daysDiff) + " DIAS";
 }
 
 SITE.init = function() {
@@ -85,8 +93,13 @@ SITE.goToTop = function() {
 };
 
 SITE.menuActive = function() {
-	// var $scope = $('*[data-scope=header]:first');
-	// $('a[href^="' + location.pathname + '"]', $scope).addClass('active');
+	var currentUrl = $(document.body).data("url");
+	var $scope = $("*[data-scope=header]:first");
+	$(".list-menu a[href]", $scope).each(function() {
+		if (currentUrl === $(this).attr("href")) {
+			$(this).addClass("active");
+		}
+	});
 };
 
 SITE.newsletter = function() {
@@ -134,7 +147,9 @@ SITE.newsletter = function() {
 					if (data.result === "success") {
 						$message.text("Cadastrado com sucesso!").show();
 					} else {
-						$message.text("Ocorreu um erro ou o email já está cadastrado.").show();
+						$message
+							.text("Ocorreu um erro ou o email já está cadastrado.")
+							.show();
 					}
 				},
 			});
@@ -143,3 +158,7 @@ SITE.newsletter = function() {
 		}
 	});
 };
+
+$(document).ready(function() {
+	SITE.init();
+});

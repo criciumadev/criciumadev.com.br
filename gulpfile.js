@@ -61,14 +61,7 @@ gulp.task("sass-minify", function() {
 
 gulp.task("js-minify", function() {
   return gulp
-    .src([
-      PATH.node_modules + "/handlebars/dist/handlebars.min.js",
-      PATH.js + "/slick.js",
-      PATH.js + "/jquery.validate.js",
-      PATH.js + "/moment.min.js",
-      PATH.js + "/widgets.js",
-      PATH.js + "/custom.js",
-    ])
+    .src([PATH.js + "/slick.js", PATH.js + "/jquery.validate.js", PATH.js + "/widgets.js", PATH.js + "/custom.js"])
     .pipe(concat("all.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest(PATH.dest + "/assets"));
@@ -160,6 +153,19 @@ gulp.task("watchs", function() {
   gulp.watch(PATH.data + "/*", ["copy-data"]);
 });
 
+gulp.task("webserver", function() {
+  gulp.src(PATH.dest).pipe(
+    webserver({
+      livereload: true,
+      port: 8000,
+    })
+  );
+});
+
+gulp.task("build", function() {
+  return runSequence(["sass-minify"], ["copy-images"], ["js-minify"], ["generate-html"], ["copy-data"]);
+});
+
 gulp.task("default", function() {
   return runSequence(
     ["sass-minify"],
@@ -169,14 +175,5 @@ gulp.task("default", function() {
     ["copy-data"],
     ["watchs"],
     ["webserver"]
-  );
-});
-
-gulp.task("webserver", function() {
-  gulp.src(PATH.dest).pipe(
-    webserver({
-      livereload: true,
-      port: 8000,
-    })
   );
 });
