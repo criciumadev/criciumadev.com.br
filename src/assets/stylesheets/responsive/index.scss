@@ -61,4 +61,12 @@
 	.header {
 		padding: 0 !important;
 	}
+
+	body.home-page .box-3 .box-content:before {
+    max-width: 360px !important;
+	}
+
+	body.home-page .box-content:before {
+		font-size: 90px !important;
+	}
 }
