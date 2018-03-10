@@ -49,4 +49,32 @@
 
 @media only screen and (max-width: 768px) {
     // body { background-color: black !important; }
+
+	.box-1 h1 {
+		font-size: 45px !important;
+	}
+
+	.header .logo {
+    margin: 20px 0 12px 0 !important;
+	}
+
+	.header {
+		padding: 0 !important;
+	}
+
+	body.home-page .box-3 .box-content:before {
+    max-width: 360px !important;
+	}
+
+	body.home-page .box-content:before {
+		font-size: 90px !important;
+	}
+
+	img {
+		max-width: 300px !important;
+	}
+
+  .box-sponsors .group-sponsors {
+    margin-bottom: 30px !important;
+	}
 }
