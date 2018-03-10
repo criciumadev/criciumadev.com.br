@@ -50,7 +50,15 @@
 @media only screen and (max-width: 768px) {
     // body { background-color: black !important; }
 
-	.home-page .box-1 h1 {
+	.box-1 h1 {
 		font-size: 45px !important;
+	}
+
+	.header .logo {
+    margin: 20px 0 12px 0 !important;
+	}
+
+	.header {
+		padding: 0 !important;
 	}
 }
