@@ -42,6 +42,20 @@
   },
 
   {
+    "title": "Programador Web",
+    "company_name": "Ema Software",
+    "featured": false,
+    "color": "#563085",
+    "link": "https://www.facebook.com/EmaSoftware/photos/a.782661238473341.1073741826.357287591010710/1730010063738449",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-14T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
     "title": "Programador - Web",
     "company_name": "Useall Software",
     "featured": true,
