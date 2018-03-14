@@ -1,0 +1,25 @@
+body.page-contato {
+
+	.content {
+		padding: 0 0 100px;
+		background: #FAFAFA;
+
+		.box-1 {
+			background: $color-blue-c url('./images/bg-bar-vagas.png') no-repeat center;
+			background-image: 100% auto;
+			padding: 47px 0;
+
+			h1 {
+				font-weight: 600;
+				font-size: 28px;
+				color: $color-light-a;
+				letter-spacing: 0.19px;
+				line-height: 38px;
+				text-align: center;
+			}
+		}
+
+	}
+
+	.footer .footer-top { margin-top: 0; }
+}
