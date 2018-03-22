@@ -56,13 +56,41 @@
   },
 
   {
-    "title": "Programador - Web",
+    "title": "Programador Web",
     "company_name": "Useall Software",
     "featured": true,
     "company_logo": "./assets/images/logos-vagas/useall.png",
-    "link": "https://br.linkedin.com/jobs/view/programador-web-at-useall-software-613856392",
+    "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
     "date": "2018-03-06T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Programador C#",
+    "company_name": "Useall Software",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/useall.png",
+    "link": "http://useall.com.br/trabalhe",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-06T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor Web",
+    "company_name": "Webmais Sistemas",
+    "featured": false,
+    "color": "#FF8B08",
+    "link": "https://www.facebook.com/webmaissistemas/posts/1826597334057218",
+    "type": "Full-Time - CLT",
+    "date": "2018-03-22T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
