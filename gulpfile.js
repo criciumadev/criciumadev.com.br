@@ -23,6 +23,9 @@ var PATH = {
   node_modules: "./node_modules",
 };
 
+var ONE_HOUR = 1000 * 60 * 60;
+var ONE_DAY = ONE_HOUR * 24;
+
 function requireUncached(module) {
   delete require.cache[require.resolve(module)];
   return require(module);
@@ -39,6 +42,14 @@ function getRandomColor() {
   return color;
 }
 
+function getDaysDiff(date) {
+  var currentDate = new Date();
+  var compareDate = new Date(date.split("T")[0] + "T03:00:01.311Z");
+  var dateDiff = currentDate.getTime() - compareDate.getTime();
+
+  return Math.floor(dateDiff / ONE_DAY);
+}
+
 function appendCompanyAlias(job) {
   var nameSplited = job.company_name.split(" ");
   var firstLetter = nameSplited[0][0];
@@ -47,6 +58,21 @@ function appendCompanyAlias(job) {
   job.alias = (firstLetter + lastLetter).toUpperCase();
 
   return job;
+}
+
+function sortDate(a, b) {
+  var da = new Date(!!a.date ? a.date : null).getTime();
+  var db = new Date(!!b.date ? b.date : null).getTime();
+
+  if (da < db) {
+    return 1;
+  }
+
+  if (da > db) {
+    return -1;
+  }
+
+  return 0;
 }
 
 gulp.task("sass-minify", function() {
@@ -110,14 +136,18 @@ gulp.task("includes-html", function() {
           context: {
             vagas: {
               featured: JSON.stringify(
-                vagas.filter(function(job) {
-                  return !!job.featured;
-                })
+                vagas
+                  .filter(function(job) {
+                    return !!job.date && getDaysDiff(job.date) <= 40 && !!job.featured;
+                  })
+                  .sort(sortDate)
               ),
               jobs: JSON.stringify(
-                vagas.filter(function(job) {
-                  return !job.featured;
-                })
+                vagas
+                  .filter(function(job) {
+                    return !!job.date && getDaysDiff(job.date) <= 20 && !job.featured;
+                  })
+                  .sort(sortDate)
               ),
             },
           },

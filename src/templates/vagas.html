@@ -23,10 +23,10 @@
 </div>
 
 <div class="box box-jobs">
-    <div class="container" id="jobs-template">
+    <div class="container">
         <h3 class="subtitle">Vagas em destaque</h3>
         <div>
-            <ul class="list-jobs">
+            <ul class="list-jobs list-jobs-featured">
                 @@loop('./_partials/job.html', @@vagas.featured)
             </ul>
         </div>
@@ -36,7 +36,7 @@
 <div class="box box-jobs box-light">
     <div class="container">
         <div>
-            <ul class="list-jobs">
+            <ul class="list-jobs list-jobs-other">
                 @@loop('./_partials/job.html', @@vagas.jobs)
             </ul>
         </div>

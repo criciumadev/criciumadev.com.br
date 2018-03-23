@@ -10,12 +10,16 @@ function dateFmt(date) {
 	);
 }
 
-function friendlyDate(date) {
+function getDaysDiff(date) {
 	var currentDate = new Date();
 	var compareDate = new Date(date.split("T")[0] + "T03:00:01.311Z");
 	var dateDiff = currentDate.getTime() - compareDate.getTime();
-	var daysDiff = Math.floor(dateDiff / ONE_DAY);
 
+	return Math.floor(dateDiff / ONE_DAY);
+}
+
+function friendlyDate(date) {
+	var daysDiff = getDaysDiff(date);
 	if (daysDiff < 0) {
 		return "AGORA";
 	}
@@ -28,7 +32,7 @@ function friendlyDate(date) {
 		return "ONTEM";
 	}
 
-	return "HÁ " + Math.ceil(daysDiff) + " DIAS";
+	return "HÁ " + daysDiff + " DIAS";
 }
 
 SITE.init = function() {
@@ -49,6 +53,22 @@ SITE.init = function() {
 		$(".page-vagas .list-jobs li").each(function(i) {
 			var spanDate = $("span[data-date]", this);
 			spanDate.text(friendlyDate(spanDate.data("date")));
+		});
+
+		$(".page-vagas .list-jobs-featured li").each(function(i) {
+			var spanDate = $("span[data-date]", this);
+			var daysDiff = getDaysDiff(spanDate.data("date"));
+			if (daysDiff > 40) {
+				spanDate.parents("li").hide();
+			}
+		});
+
+		$(".page-vagas .list-jobs-other li").each(function(i) {
+			var spanDate = $("span[data-date]", this);
+			var daysDiff = getDaysDiff(spanDate.data("date"));
+			if (daysDiff > 20) {
+				spanDate.parents("li").hide();
+			}
 		});
 	}
 };
