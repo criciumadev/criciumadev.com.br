@@ -2,7 +2,7 @@ body.page-contato {
 
 	.content {
 		padding: 0 0 100px;
-		background: #FAFAFA;
+		background: #FAFAFA url(./images/bg-contato.png) repeat-y top center;
 
 		.box-1 {
 			background: $color-blue-c url('./images/bg-bar-vagas.png') no-repeat center;
@@ -22,9 +22,84 @@ body.page-contato {
 		.box-2 {
 			position: relative;
 			padding: 98px 0;
-			background: url(images/contato/bg-contato.png) repeat-y top center;
-		}
 
+			h2 {
+				font-weight: 500;
+				font-size: 22px;
+				color: $color-dark-a;
+				margin-bottom: 40px;
+			}
+
+			.list-contact {
+				margin-top: 30px;
+
+				li {
+					margin-bottom: 25px;
+
+					i {
+						background: $color-blue-c;
+						float: left;
+						width: 40px;
+						display: block;
+						font-size: 20px;
+						color: $color-light-a;
+						margin-right: 20px;
+						@include rounder(100%);
+
+						&:before {
+							display: block;
+							text-align: center;
+							line-height: 40px;
+						}
+					}
+
+					span {
+						font-weight: 500;
+						font-size: 12px;
+						line-height: 12px;
+						color: #B3B3B3;
+						display: block;
+						text-transform: uppercase;
+						padding: 4px 0 3px;
+					}
+					strong {
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 16px;
+						color: $color-gray-b;
+						display: block;
+					}
+				}
+			}
+
+			form {
+				.input-row {
+					margin-bottom: 25px;
+
+					.input-text {
+						border-bottom: 1px solid #D4D4D4;
+						padding: 17px 0;
+						width: 100%;
+						display: block;
+					}
+				}
+				.button-bar {
+					.button {
+						margin: 50px 0 0;
+						width: 260px;
+						height: 60px;
+						line-height: 60px;
+						display: block;
+						font-size: 16px;
+					}
+				}
+			}
+
+			.box-right {
+				width: 85%;
+				float: right;
+			}
+		}
 	}
 
 	.footer .footer-top { margin-top: 0; }

@@ -1,5 +1,5 @@
 @@include('./_partials/header.html', {
-    "pageClass": "page-publique-suas-vagas",
+    "pageClass": "page-contato",
     "pageTitle": "Contato - Criciúma Dev",
     "pageDescription": "Entre em contato com a equipe do Criciúma DEV",
     "pageUrl": "/contato"
@@ -7,7 +7,64 @@
 
 <div class="box-1">
     <div class="container">
-        Contato
+        <h1>
+            Entre em contato com a gente. Tire dúvidas<br>
+            ou apoie nossa comunidade.
+        </h1>
+    </div>
+</div>
+
+<div class="box-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class="box-left">
+                    <div class="group-contact">
+                        <h2>Fale conosco</h2>
+                        <p>
+                            Curta nossa página para acompanhar<br/>
+                            as novidades. Mande uma msg =)
+                        </p>
+                        <ul class="list-contact">
+                            <li>
+                                <i class="icon-phone"></i>
+                                <span>Telefone</span>
+                                <strong>(48) 9 9600-2988</strong>
+                            </li>
+
+                            <li>
+                                <i class="icon-mail"></i>
+                                <span>E-mail</span>
+                                <strong>contato@criciumadev.com.br</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7 col-sm-7 col-xs-12">
+                <div class="box-right">
+                    <h2>Envie uma mensagem</h2>
+                    <form action="" data-scope="contact-form">
+                        <div class="input-row">
+                            <input placeholder="Nome" type="text" id="contato-nome" name="nome" class="input-text" required>
+                        </div>
+                        <div class="input-row">
+                            <input placeholder="E-mail" type="email" id="contato-email" name="email" class="input-text" required="">
+                        </div>
+                        <div class="input-row">
+                            <input placeholder="Assunto" type="text" id="contato-assunto" name="assunto" class="input-text">
+                        </div>
+                        <div class="input-row">
+                            <textarea placeholder="Mensagem" id="contato-mensagem" name="mensagem" class="input-text" required=""></textarea>
+                        </div>
+                        <div class="button-bar">
+                            <button type="submit" class="button button-secondary">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

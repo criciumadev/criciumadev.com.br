@@ -40,6 +40,7 @@ SITE.init = function() {
 	this.goToTop();
 	this.menuActive();
 	this.newsletter();
+	this.sendMail();
 
 	/* HOME */
 	if ($(document.body).hasClass("page-home")) {
@@ -177,6 +178,17 @@ SITE.newsletter = function() {
 			return;
 		}
 	});
+};
+
+SITE.sendMail = function() {
+	// Email.send(
+	// 	"contato@criciumadev.com.br",
+	// 	"contato@criciumadev.com.br",
+	// 	"This is a subject",
+	// 	"this is the body",
+	// 	{token: "c8d0e9bb-7406-4176-82f1-cfe5562282ee"},
+	//  function done(message) { alert("sent") }
+	// );
 };
 
 $(document).ready(function() {

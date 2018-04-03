@@ -87,7 +87,7 @@ gulp.task("sass-minify", function() {
 
 gulp.task("js-minify", function() {
   return gulp
-    .src([PATH.js + "/slick.js", PATH.js + "/jquery.validate.js", PATH.js + "/widgets.js", PATH.js + "/custom.js"])
+    .src([PATH.js + "/slick.js", PATH.js + "/jquery.validate.js", PATH.js + "/widgets.js", PATH.js + "/smtp.js", PATH.js + "/custom.js"])
     .pipe(concat("all.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest(PATH.dest + "/assets"));
