@@ -43,7 +43,7 @@ SITE.init = function() {
 
 	/* HOME */
 	if ($(document.body).hasClass("page-home")) {
-		Widgets.eventsFeed.fetch();
+		// Widgets.eventsFeed.fetch();
 		Widgets.postsFeed.fetch();
 		Widgets.videosFeed.fetch();
 	}
@@ -167,9 +167,7 @@ SITE.newsletter = function() {
 					if (data.result === "success") {
 						$message.text("Cadastrado com sucesso!").show();
 					} else {
-						$message
-							.text("Ocorreu um erro ou o email já está cadastrado.")
-							.show();
+						$message.text("Ocorreu um erro ou o email já está cadastrado.").show();
 					}
 				},
 			});
