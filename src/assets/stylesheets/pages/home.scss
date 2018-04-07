@@ -5,8 +5,12 @@ body.home-page {
 		background: transparent;
 
 		.logo {
-			.light { display: block; }
-			.dark { display: none; }
+			.light {
+				display: block;
+			}
+			.dark {
+				display: none;
+			}
 		}
 
 		.list-menu {
@@ -30,7 +34,7 @@ body.home-page {
 	.loading-content {
 		min-height: 300px;
 		margin-top: 100px;
-		background: url('./images/loading.gif') no-repeat center;
+		background: url("./images/loading.gif") no-repeat center;
 		background-size: 60px;
 		position: relative;
 		z-index: 2;
@@ -43,12 +47,14 @@ body.home-page {
 	}
 
 	.box-1 {
-		background: #000 url('./images/bg-comunidade.jpg') no-repeat top center;
+		background: #000 url("./images/bg-comunidade.jpg") no-repeat top center;
 		@include background-cover;
 		margin-top: -100px;
 		padding: 265px 0 200px;
 
-		.container { text-align: center; }
+		.container {
+			text-align: center;
+		}
 
 		h1 {
 			color: $color-light-a;
@@ -75,8 +81,8 @@ body.home-page {
 		overflow: hidden;
 
 		&:before {
-			font-family: 'criciuma-dev';
-			content: '\67';
+			font-family: "criciuma-dev";
+			content: "\67";
 			display: block;
 			font-size: 360px;
 			height: 318px;
@@ -105,9 +111,10 @@ body.home-page {
 	}
 
 	.box-3 {
-
 		.box-content {
-			&:before { content: 'Nossos eventos'; }
+			&:before {
+				content: "Nossos eventos";
+			}
 		}
 
 		.events-feed {
@@ -125,10 +132,12 @@ body.home-page {
 
 				a {
 					@include transiction;
-					@include opacity(.3);
+					@include opacity(0.3);
 				}
 
-				&.slick-current a { @include opacity(1); }
+				&.slick-current a {
+					@include opacity(1);
+				}
 
 				&.future-event {
 					&:after {
@@ -136,8 +145,8 @@ body.home-page {
 						position: absolute;
 						left: 20px;
 						top: 20px;
-					    font-weight: 600;
-    					font-size: 12px;
+						font-weight: 600;
+						font-size: 12px;
 						padding: 0 20px;
 						height: 30px;
 						line-height: 32px;
@@ -145,15 +154,14 @@ body.home-page {
 						z-index: 3;
 						text-transform: uppercase;
 						@include rounder(30px);
-						@include box-shadow(0, 20px, 30px, rgba(0,0,0,.2));
+						@include box-shadow(0, 20px, 30px, rgba(0,0,0,0.2));
 					}
 				}
 
 				&.future-event:after {
-					content: 'Evento futuro';
-					background: #00D75D;
+					content: "Evento futuro";
+					background: #00d75d;
 				}
-
 			}
 		}
 
@@ -192,17 +200,19 @@ body.home-page {
 
 	.box-4 {
 		.box-content {
-
-			&:before { content: 'Últimos artigos'; }
+			&:before {
+				content: "Últimos artigos";
+			}
 
 			.col-md-4 {
 				margin-bottom: 30px;
 
-				&:last-child { margin-bottom: 0; }
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 
 			> div {
-
 			}
 
 			.button {
@@ -218,7 +228,9 @@ body.home-page {
 
 	.box-5 {
 		.box-content {
-			&:before { content: 'Vídeos'; }
+			&:before {
+				content: "Vídeos";
+			}
 
 			.video {
 				display: block;
@@ -229,14 +241,14 @@ body.home-page {
 					@include rounder(6px);
 					background-color: $color-light-a;
 					@include background-cover;
-					@include box-shadow(0, 36px, 64px, rgba(0,0,0,.2));
+					@include box-shadow(0, 36px, 64px, rgba(0,0,0,0.2));
 					height: 200px;
 					background-position: center;
 					margin-bottom: 25px;
 					position: relative;
 
 					&:before {
-						font-family: 'criciuma-dev';
+						font-family: "criciuma-dev";
 						content: "\66";
 						display: block;
 						width: 70px;
@@ -244,7 +256,7 @@ body.home-page {
 						line-height: 70px;
 						font-size: 70px;
 						color: $color-light-a;
-						@include opacity(.8);
+						@include opacity(0.8);
 						position: absolute;
 						left: 50%;
 						top: 50%;
@@ -254,11 +266,11 @@ body.home-page {
 
 					&:after {
 						z-index: 0;
-						content: '';
+						content: "";
 						display: block;
 						width: 100%;
 						height: 100%;
-						background: rgba(0, 0, 0, .4);
+						background: rgba(0, 0, 0, 0.4);
 					}
 				}
 
@@ -283,6 +295,7 @@ body.home-page {
 		}
 	}
 
-	.box-sponsors .box-content { margin-top: 0; }
-
+	.box-sponsors .box-content {
+		margin-top: 0;
+	}
 }

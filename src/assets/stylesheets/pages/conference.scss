@@ -1,44 +1,94 @@
 body.page.page-conference {
-	.content {
-		padding: 95px 0 60px;
-
-		h1 {
-			img {
+	background: $color-light-a;
+	.header {
+		background: transparent;
+		.logo {
+			.light {
 				display: block;
-				margin: 0 auto 40px;
+			}
+			.dark {
+				display: none;
 			}
 		}
-
-		h2 {
-			font-weight: 600;
-			line-height: 36px;
-			text-align: center;
-			margin-bottom: 20px;
-			color: #353535;
-
-			span {
-				font-size: 40px;
-				color: #353535;
-				margin: 0 10px;
+		.list-menu {
+			li {
+				a {
+					color: $color-light-a;
+					&.button {
+						border: 2px solid rgba(255, 255, 255, 0.7);
+						&:hover {
+							background: $color-blue-c;
+							border-color: $color-blue-c;
+						}
+					}
+				}
 			}
 		}
-
-		.button {
-			display: block;
-			max-width: 320px;
-			margin: 40px auto 50px;
-			height: 50px;
-			line-height: 50px;
-			font-size: 16px;
+	}
+	.content {
+		padding: 0 0 60px;
+		.container {
+			max-width: inherit;
 		}
-
-		.sponsorship {
+	}
+	.box-content {
+		margin-top: 100px;
+		position: relative;
+		@include after-shadow-text;
+	}
+	.box-1 {
+		background: #000 url("./images/bg-comunidade.jpg") no-repeat top center;
+		@include background-cover;
+		margin-top: -100px;
+		padding: 265px 0 200px;
+		.container {
+			text-align: center;
+		}
+		h1 {
+			color: $color-light-a;
+			font-weight: 700;
+			font-size: 68px;
+			line-height: 72px;
+			position: relative;
+			margin-bottom: 15px;
+			display: inline-block;
+			text-align: center;
+		}
+		p {
+			color: $color-light-a;
+			font-size: 19px;
+			line-height: 19px;
 			display: block;
 			text-align: center;
-			max-width: 130px;
-			margin: 0 auto;
-			border-bottom: 1px solid #CCC;
-			font-weight: 500;
+		}
+	}
+	.box-2 {
+		position: relative;
+		overflow: hidden;
+		&:before {
+			font-family: "criciuma-dev";
+			content: "\67";
+			display: block;
+			font-size: 360px;
+			height: 318px;
+			line-height: 340px;
+			color: $color-gray-c;
+			position: absolute;
+			right: -180px;
+			top: 50%;
+			margin-top: -159px;
+		}
+		.group-images {
+			position: relative;
+			figure {
+				margin: 15px 0;
+				display: block;
+				img {
+					max-width: 100%;
+					display: block;
+					@include rounder(6px);
+				}
+			}
 		}
 	}
 }
