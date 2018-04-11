@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1200px) {
   body.page.page-conference .box-1 {
-    padding: 205px 0 140px;
+    padding: 245px 0 140px;
     h1 {
       font-size: 55px;
     }
@@ -27,6 +27,9 @@
 @media only screen and (max-width: 767px) {
   body.page.page-conference {
     .box-1 {
+      .container {
+        padding-top: 84px;
+      }
       h1 {
         font-size: 39px !important;
         line-height: 47px;

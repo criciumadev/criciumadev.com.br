@@ -50,7 +50,34 @@ body.page.page-conference {
 		min-height: 850px;
 		.container {
 			text-align: center;
-			padding-top: 64px;
+		}
+		.countdown {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-bottom: 28px;
+		}
+		.countdown-item {
+			margin: 0 30px;
+			width: 60px;
+			cursor: default;
+			&--tag {
+				padding: 16px 0;
+				text-align: center;
+				background-color: #fff;
+				width: 100%;
+				border-radius: 3px;
+				font-size: 29px;
+				font-weight: bold;
+				color: #000;
+				margin-bottom: 3px;
+			}
+			&--label {
+				color: #fff;
+				font-size: 16px;
+				font-weight: 600;
+				text-align: center;
+			}
 		}
 		h1,
 		h2 {

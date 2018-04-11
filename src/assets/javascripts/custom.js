@@ -1,6 +1,10 @@
 var SITE = SITE || {};
-var ONE_HOUR = 1000 * 60 * 60;
+
+var ONE_MINUTE = 1000 * 60;
+var ONE_HOUR = ONE_MINUTE * 60;
 var ONE_DAY = ONE_HOUR * 24;
+
+var CDC_DATE = "2018-05-19 08:00:00";
 
 function dateFmt(date) {
 	return (
