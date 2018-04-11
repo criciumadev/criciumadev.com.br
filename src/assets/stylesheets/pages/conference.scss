@@ -83,6 +83,10 @@ body.page.page-conference {
 			padding: 0 38px;
 			font-size: 16px;
 			line-height: 54px;
+			transition: all 0.5s ease;
+			&:hover {
+				@include background-gradient(-52deg, #272dff, #03faf1);
+			}
 		}
 	}
 	.box-2 {
@@ -158,6 +162,52 @@ body.page.page-conference {
 	.box-5 {
 		position: relative;
 		overflow: hidden;
+		.box-content {
+			margin: -20px auto 0;
+			max-width: 760px;
+		}
+	}
+	.box-prog-hour {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 54px;
+		&--time {
+			font-size: 29px;
+			font-weight: bold;
+			line-height: 36px;
+			text-align: right;
+			color: #515151;
+			width: 94px;
+		}
+		&--sep {
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 36px;
+			text-align: center;
+			cursor: default;
+			color: #999;
+			width: 74px;
+		}
+		&--items {
+			flex: 1;
+		}
+		.box-prog-item {
+			h4 {
+				font-size: 29px;
+				font-weight: bold;
+				line-height: 36px;
+				color: #000;
+				&.box-prog-item-title-blue {
+					color: #1065ee;
+				}
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		.box-prog-item + .box-prog-item {
+			margin-top: 36px;
+		}
 	}
 	.box-6 {
 		background: $color-blue-c url("./images/bg-bar-ibis.jpg") no-repeat center;
@@ -166,7 +216,7 @@ body.page.page-conference {
 		.box-content {
 			width: 100%;
 			max-width: 542px;
-			margin-top: 20px;
+			margin-top: 24px;
 		}
 		h3 {
 			font-weight: 900;
@@ -201,21 +251,23 @@ body.page.page-conference {
 			margin: 13px 0;
 		}
 		.box-hotel-about {
-			margin-bottom: 48px;
+			margin-bottom: 62px;
 		}
 		.box-hotel-coupom {
+			vertical-align: middle;
 			.box-hotel-coupom-code {
 				display: inline-block;
 				border: 1px dashed #fff;
 				font-size: 14px;
 				font-weight: 600;
+				line-height: 28px;
 				color: #fff;
 				padding: 0 28px;
 				margin-right: 18px;
 			}
 			.button {
 				font-size: 13px;
-				line-height: 38px;
+				line-height: 36px;
 				width: 202px;
 				height: 34px;
 			}
