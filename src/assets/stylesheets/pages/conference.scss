@@ -107,6 +107,7 @@ body.page.page-conference {
 		}
 		.group-images {
 			position: relative;
+			margin-bottom: 30px;
 			figure {
 				margin: 15px 0;
 				display: block;
@@ -157,7 +158,84 @@ body.page.page-conference {
 	}
 	.box-4 {
 		position: relative;
+		.box-palestrantes {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: -17px auto 0;
+		}
+	}
+	.box-palestrantes-person {
+		position: relative;
+		text-align: center;
+		background-color: #fff;
+		@include box-shadow(0, 5px, 30px, rgba(0, 0, 0, 0.2));
+		@include transiction;
+		border-radius: 6px;
+		width: 266px;
+		height: 352px;
+		margin: 17px 0;
 		overflow: hidden;
+		cursor: default;
+		&--thumb {
+			position: absolute;
+			z-index: 1;
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+		&--about {
+			position: absolute;
+			background-color: #fff;
+			text-align: center;
+			padding: 23px 14px;
+			@include transiction;
+			top: 264px;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			h5 {
+				font-size: 17px;
+				line-height: 21px;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 4px;
+				color: #000;
+			}
+			p {
+				font-size: 16px;
+				line-height: 21px;
+				font-weight: 500;
+				text-align: center;
+				margin-bottom: 7px;
+			}
+			.social-links {
+				text-align: center;
+				padding: 14px 0 16px;
+				a > img {
+					display: inline-block;
+					margin: 0 3px;
+				}
+				a:hover > img {
+					@include opacity(0.8);
+				}
+			}
+		}
+		.button {
+			margin: 0 auto;
+			@include no-shadow;
+			&:hover {
+				@include no-shadow;
+			}
+		}
+		&:hover {
+			@include box-shadow(0, 10px, 40px, rgba(0, 0, 0, 0.3));
+			.box-palestrantes-person--about {
+				transform: translate3d(0, -124px, 0);
+			}
+		}
 	}
 	.box-5 {
 		position: relative;

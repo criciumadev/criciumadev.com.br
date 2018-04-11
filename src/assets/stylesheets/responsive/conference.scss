@@ -32,6 +32,16 @@
         line-height: 47px;
       }
     }
+    .box-4 {
+      .box-palestrantes {
+        justify-content: center;
+        .box-palestrantes-person:hover {
+          .box-palestrantes-person--about {
+            transform: translate3d(0, -64px, 0);
+          }
+        }
+      }
+    }
     .box-6 {
       h3 {
         font-size: 42px;
