@@ -44,7 +44,7 @@ function getRandomColor() {
 
 function getDaysDiff(date) {
   var currentDate = new Date();
-  var compareDate = new Date(date.split("T")[0] + "T03:00:01.311Z");
+  var compareDate = new Date(date.split("T")[0] + "T03:00:01");
   var dateDiff = currentDate.getTime() - compareDate.getTime();
 
   return Math.floor(dateDiff / ONE_DAY);

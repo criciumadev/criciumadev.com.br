@@ -1,6 +1,7 @@
 var SITE = SITE || {};
 
-var ONE_MINUTE = 1000 * 60;
+var ONE_SECOND = 1000;
+var ONE_MINUTE = ONE_SECOND * 60;
 var ONE_HOUR = ONE_MINUTE * 60;
 var ONE_DAY = ONE_HOUR * 24;
 
@@ -14,29 +15,54 @@ function dateFmt(date) {
 	);
 }
 
-function getDaysDiff(date) {
+function complexDateDiff(date) {
+	var compareDate = new Date(date);
 	var currentDate = new Date();
-	var compareDate = new Date(date.split("T")[0] + "T03:00:01.311Z");
+
+	var dateDiff = compareDate.getTime() - currentDate.getTime();
+
+	var days = Math.floor(dateDiff / ONE_DAY);
+	var daysDiff = dateDiff - days * ONE_DAY;
+
+	var hours = Math.floor(daysDiff / ONE_HOUR);
+	var hoursDiff = daysDiff - hours * ONE_HOUR;
+
+	var minutes = Math.floor(hoursDiff / ONE_MINUTE);
+	var minutesDiff = hoursDiff - minutes * ONE_MINUTE;
+
+	var seconds = Math.floor(minutesDiff / ONE_SECOND);
+
+	return {
+		days: Math.max(days, 0),
+		hours: Math.max(hours, 0),
+		minutes: Math.max(minutes, 0),
+		seconds: Math.max(seconds, 0),
+	};
+}
+
+function daysDiff(date) {
+	var currentDate = new Date();
+	var compareDate = new Date(date.split("T")[0] + "T03:00:01");
 	var dateDiff = currentDate.getTime() - compareDate.getTime();
 
 	return Math.floor(dateDiff / ONE_DAY);
 }
 
 function friendlyDate(date) {
-	var daysDiff = getDaysDiff(date);
-	if (daysDiff < 0) {
+	var diff = daysDiff(date);
+	if (diff < 0) {
 		return "AGORA";
 	}
 
-	if (daysDiff === 0) {
+	if (diff === 0) {
 		return "HOJE";
 	}
 
-	if (daysDiff === 1) {
+	if (diff === 1) {
 		return "ONTEM";
 	}
 
-	return "HÁ " + daysDiff + " DIAS";
+	return "HÁ " + diff + " DIAS";
 }
 
 SITE.init = function() {
@@ -54,27 +80,51 @@ SITE.init = function() {
 
 	/* VAGAS */
 	if ($(document.body).hasClass("page-vagas")) {
-		$(".page-vagas .list-jobs li").each(function(i) {
-			var spanDate = $("span[data-date]", this);
-			spanDate.text(friendlyDate(spanDate.data("date")));
-		});
-
-		$(".page-vagas .list-jobs-featured li").each(function(i) {
-			var spanDate = $("span[data-date]", this);
-			var daysDiff = getDaysDiff(spanDate.data("date"));
-			if (daysDiff > 40) {
-				spanDate.parents("li").hide();
-			}
-		});
-
-		$(".page-vagas .list-jobs-other li").each(function(i) {
-			var spanDate = $("span[data-date]", this);
-			var daysDiff = getDaysDiff(spanDate.data("date"));
-			if (daysDiff > 20) {
-				spanDate.parents("li").hide();
-			}
-		});
+		this.vagas();
 	}
+
+	/* CONFERENCE */
+	if ($(document.body).hasClass("page-conference")) {
+		this.conferenceCountdown();
+	}
+};
+
+SITE.conferenceCountdown = function() {
+	var countdown = $(".box-1 .countdown");
+
+	function tickCounters() {
+		var diff = complexDateDiff(CDC_DATE);
+		countdown.find(".countdown-item__days > .countdown-item--tag").text(diff.days);
+		countdown.find(".countdown-item__hours > .countdown-item--tag").text(diff.hours);
+		countdown.find(".countdown-item__minutes > .countdown-item--tag").text(diff.minutes);
+
+		setTimeout(tickCounters.bind(this), 1000);
+	}
+
+	tickCounters();
+};
+
+SITE.vagas = function() {
+	$(".page-vagas .list-jobs li").each(function(i) {
+		var spanDate = $("span[data-date]", this);
+		spanDate.text(friendlyDate(spanDate.data("date")));
+	});
+
+	$(".page-vagas .list-jobs-featured li").each(function(i) {
+		var spanDate = $("span[data-date]", this);
+		var diff = daysDiff(spanDate.data("date"));
+		if (diff > 40) {
+			spanDate.parents("li").hide();
+		}
+	});
+
+	$(".page-vagas .list-jobs-other li").each(function(i) {
+		var spanDate = $("span[data-date]", this);
+		var diff = daysDiff(spanDate.data("date"));
+		if (diff > 20) {
+			spanDate.parents("li").hide();
+		}
+	});
 };
 
 SITE.sliderEvents = function() {
