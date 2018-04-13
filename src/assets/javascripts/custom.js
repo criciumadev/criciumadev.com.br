@@ -5,7 +5,7 @@ var ONE_MINUTE = ONE_SECOND * 60;
 var ONE_HOUR = ONE_MINUTE * 60;
 var ONE_DAY = ONE_HOUR * 24;
 
-var CDC_DATE = "2018-05-19 08:00:00";
+var CDC_DATE = "2018-05-19T08:00:00.180Z";
 
 function dateFmt(date) {
 	return (
