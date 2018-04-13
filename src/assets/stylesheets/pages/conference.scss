@@ -119,6 +119,7 @@ body.page.page-conference {
 	.box-2 {
 		position: relative;
 		overflow: hidden;
+
 		&:before {
 			font-family: "criciuma-dev";
 			content: "\67";
@@ -205,14 +206,17 @@ body.page.page-conference {
 		margin: 17px 0;
 		overflow: hidden;
 		cursor: default;
+
 		&--thumb {
-			position: absolute;
+			// position: absolute;
 			z-index: 1;
+
 			img {
 				display: block;
 				width: 100%;
 			}
 		}
+
 		&--about {
 			position: absolute;
 			background-color: #fff;
@@ -240,11 +244,13 @@ body.page.page-conference {
 			}
 			.social-links {
 				text-align: center;
-				padding: 14px 0 16px;
+				padding: 14px 0 0;
+
 				a > img {
 					display: inline-block;
 					margin: 0 3px;
 				}
+
 				a:hover > img {
 					@include opacity(0.8);
 				}
@@ -258,9 +264,8 @@ body.page.page-conference {
 			}
 		}
 		&:hover {
-			@include box-shadow(0, 10px, 40px, rgba(0, 0, 0, 0.3));
 			.box-palestrantes-person--about {
-				transform: translate3d(0, -124px, 0);
+				transform: translate3d(0, -55px, 0);
 			}
 		}
 	}
