@@ -7,13 +7,12 @@
     "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
     "link": "https://jobs.thomsonreuters.com/ShowJob/Id/98865/Desenvolvedor-de-Software/",
     "type": "Full-Time - CLT",
-    "date": "2018-03-06T22:55:06.311Z",
+    "date": "2018-04-16T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   },
-
   {
     "title": "Desenvolvedor PHP Sênior",
     "company_name": "Portabilis",
@@ -27,7 +26,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Desenvolvedor Web Rails",
     "company_name": "Portabilis",
@@ -41,7 +39,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Product Manager (PM/PO)",
     "company_name": "Portabilis",
@@ -55,7 +52,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Programador Web",
     "company_name": "Ema Software",
@@ -69,7 +65,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Programador Web",
     "company_name": "Useall Software",
@@ -77,13 +72,12 @@
     "company_logo": "./assets/images/logos-vagas/useall.png",
     "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2018-03-06T22:55:06.311Z",
+    "date": "2018-04-16T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   },
-
   {
     "title": "Programador C#",
     "company_name": "Useall Software",
@@ -91,13 +85,12 @@
     "company_logo": "./assets/images/logos-vagas/useall.png",
     "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2018-03-06T22:55:06.311Z",
+    "date": "2018-04-16T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   },
-
   {
     "title": "Desenvolvedor Web",
     "company_name": "Webmais Sistemas",
@@ -111,7 +104,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Programador(a) de Sistemas",
     "company_name": "Betha Sistemas",
@@ -125,7 +117,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Programador Front-end",
     "company_name": "TW Sistemas",
@@ -139,5 +130,4 @@
       "state": "SC"
     }
   }
-
 ]
