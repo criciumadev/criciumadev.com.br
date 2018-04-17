@@ -15,9 +15,37 @@
   },
 
   {
-    "title": "Product Manager (PM/PO)",
+    "title": "Desenvolvedor PHP Sênior",
     "company_name": "Portabilis",
     "featured": true,
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
+    "type": "Full-Time - CLT",
+    "date": "2018-04-17T08:55:06.311Z",
+    "location": {
+      "city": "Remoto/Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor Web Rails",
+    "company_name": "Portabilis",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-web-rails",
+    "type": "Full-Time - CLT",
+    "date": "2018-04-17T08:54:06.311Z",
+    "location": {
+      "city": "Remoto/Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Product Manager (PM/PO)",
+    "company_name": "Portabilis",
+    "featured": false,
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "link": "https://www.portabilis.com.br/site-novo/oportunidades/product-manager",
     "type": "Full-Time - CLT",
