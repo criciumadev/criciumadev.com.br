@@ -1,5 +1,18 @@
 [
   {
+    "title": "Desenvolvedor Web",
+    "company_name": "Thomson Reuters",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
+    "link": "https://goo.gl/YXaY2a",
+    "type": "Full-Time - CLT",
+    "date": "2018-05-07T15:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
     "title": "Web Designer",
     "company_name": "Burn web.studio",
     "featured": false,
@@ -7,19 +20,6 @@
     "link": "http://www.burnweb.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
     "date": "2018-04-30T15:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Desenvolvedor de Software",
-    "company_name": "Thomson Reuters",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
-    "link": "https://jobs.thomsonreuters.com/ShowJob/Id/98865/Desenvolvedor-de-Software/",
-    "type": "Full-Time - CLT",
-    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
