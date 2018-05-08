@@ -1,13 +1,25 @@
 [
-
   {
-    "title": "Desenvolvedor de Software",
+    "title": "Desenvolvedor Web",
     "company_name": "Thomson Reuters",
     "featured": true,
     "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
-    "link": "https://jobs.thomsonreuters.com/ShowJob/Id/98865/Desenvolvedor-de-Software/",
+    "link": "https://goo.gl/YXaY2a",
     "type": "Full-Time - CLT",
-    "date": "2018-04-16T22:55:06.311Z",
+    "date": "2018-05-07T15:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Web Designer",
+    "company_name": "Burn web.studio",
+    "featured": false,
+    "color": "#AD0803",
+    "link": "http://www.burnweb.com.br/trabalhe-conosco",
+    "type": "Full-Time - CLT",
+    "date": "2018-04-30T15:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -20,7 +32,7 @@
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
     "type": "Full-Time - CLT",
-    "date": "2018-04-17T08:55:06.311Z",
+    "date": "2018-04-27T08:55:06.311Z",
     "location": {
       "city": "Remoto/Içara",
       "state": "SC"
@@ -33,7 +45,7 @@
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-web-rails",
     "type": "Full-Time - CLT",
-    "date": "2018-04-17T08:54:06.311Z",
+    "date": "2018-04-27T08:54:06.311Z",
     "location": {
       "city": "Remoto/Içara",
       "state": "SC"
@@ -46,7 +58,7 @@
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "link": "https://www.portabilis.com.br/site-novo/oportunidades/product-manager",
     "type": "Full-Time - CLT",
-    "date": "2018-04-16T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -59,7 +71,7 @@
     "color": "#563085",
     "link": "https://www.facebook.com/EmaSoftware/photos/a.782661238473341.1073741826.357287591010710/1730010063738449",
     "type": "Full-Time - CLT",
-    "date": "2018-04-16T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -72,7 +84,7 @@
     "company_logo": "./assets/images/logos-vagas/useall.png",
     "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2018-04-16T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -85,7 +97,7 @@
     "company_logo": "./assets/images/logos-vagas/useall.png",
     "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2018-04-16T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -124,7 +136,7 @@
     "color": "#2C93FF",
     "link": "http://twsistemas.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
-    "date": "2018-04-16T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"

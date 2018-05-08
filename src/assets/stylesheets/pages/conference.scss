@@ -119,7 +119,6 @@ body.page.page-conference {
 	.box-2 {
 		position: relative;
 		overflow: hidden;
-
 		&:before {
 			font-family: "criciuma-dev";
 			content: "\67";
@@ -206,17 +205,14 @@ body.page.page-conference {
 		margin: 17px 0;
 		overflow: hidden;
 		cursor: default;
-
 		&--thumb {
 			// position: absolute;
 			z-index: 1;
-
 			img {
 				display: block;
 				width: 100%;
 			}
 		}
-
 		&--about {
 			position: absolute;
 			background-color: #fff;
@@ -245,12 +241,10 @@ body.page.page-conference {
 			.social-links {
 				text-align: center;
 				padding: 14px 0 0;
-
 				a > img {
 					display: inline-block;
 					margin: 0 3px;
 				}
-
 				a:hover > img {
 					@include opacity(0.8);
 				}
@@ -361,7 +355,25 @@ body.page.page-conference {
 			margin: 13px 0;
 		}
 		.box-hotel-about {
-			margin-bottom: 62px;
+			margin-bottom: 52px;
+		}
+		.box-hotel-discount {
+			a {
+				color: #fff;
+				text-decoration: underline;
+				font-weight: 600;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			b {
+				color: #fff;
+				font-weight: 900;
+			}
+			em {
+				color: #fff;
+				font-style: italic;
+			}
 		}
 		.box-hotel-coupom {
 			vertical-align: middle;
