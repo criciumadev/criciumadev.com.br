@@ -26,19 +26,6 @@
     }
   },
   {
-    "title": "Web Designer",
-    "company_name": "Burn web.studio",
-    "featured": false,
-    "color": "#AD0803",
-    "link": "http://www.burnweb.com.br/trabalhe-conosco",
-    "type": "Full-Time - CLT",
-    "date": "2018-04-30T15:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
     "title": "Desenvolvedor PHP Sênior",
     "company_name": "Portabilis",
     "featured": true,
@@ -91,13 +78,13 @@
     }
   },
   {
-    "title": "Programador Web",
+    "title": "Programador Web (3 vagas)",
     "company_name": "Useall Software",
     "featured": true,
     "company_logo": "./assets/images/logos-vagas/useall.png",
     "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2018-04-26T22:55:06.311Z",
+    "date": "2018-06-19T10:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
