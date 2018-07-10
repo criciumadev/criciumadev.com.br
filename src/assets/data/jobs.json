@@ -1,18 +1,6 @@
 [
   {
     "title": "Desenvolvedor Web",
-    "company_name": "Bruno Sartori",
-    "featured": false,
-    "link": "https://www.facebook.com/photo.php?fbid=1830538413678490&set=a.135581383174210.25845.100001670488779&type=1&theater",
-    "type": "Full-Time",
-    "date": "2018-06-21T14:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Desenvolvedor Web",
     "company_name": "Thomson Reuters",
     "featured": true,
     "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
