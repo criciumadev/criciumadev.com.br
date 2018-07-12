@@ -141,5 +141,18 @@
       "city": "Criciúma",
       "state": "SC"
     }
+  },
+  {
+    "title": "UX Designer",
+    "company_name": "Simples Dental",
+    "featured": false,
+    "color": "#2C93FF",
+    "link": "https://www.facebook.com/simplesdental/posts/1399226003578384",
+    "type": "Full-Time - CLT",
+    "date": "2018-07-12T12:00:00.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
   }
 ]
