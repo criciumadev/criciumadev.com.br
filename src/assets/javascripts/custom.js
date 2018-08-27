@@ -209,9 +209,15 @@ SITE.newsletter = function() {
 				type: $form.attr("method"),
 				url: $form.attr("action"),
 				data: $form.serialize(),
-				cache: false,
-				dataType: "json",
-				contentType: "application/json; charset=utf-8",
+				headers: {
+					'Accept' : "text/plain; charset=utf-8",
+        			"Content-Type": "text/plain; charset=utf-8",
+					'Access-Control-Allow-Origin': '*'
+				},
+				dataType: 'json',
+				// cache: false,
+				// dataType: "json",
+				// contentType: "application/json; charset=utf-8",
 				error: function(err) {
 					$button.val("Assinar");
 					$message.text("Ocorreu um erro. Tente novamente.").show();
