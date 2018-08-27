@@ -1,22 +1,21 @@
 body.home-page {
 	background: $color-light-a;
-
 	.header {
 		background: transparent;
-
 		.logo {
-			.light { display: block; }
-			.dark { display: none; }
+			.light {
+				display: block;
+			}
+			.dark {
+				display: none;
+			}
 		}
-
 		.list-menu {
 			li {
 				a {
 					color: $color-light-a;
-
 					&.button {
 						border: 2px solid rgba(255, 255, 255, 0.7);
-
 						&:hover {
 							background: $color-blue-c;
 							border-color: $color-blue-c;
@@ -26,30 +25,27 @@ body.home-page {
 			}
 		}
 	}
-
 	.loading-content {
 		min-height: 300px;
 		margin-top: 100px;
-		background: url('./images/loading.gif') no-repeat center;
+		background: url("./images/loading.gif") no-repeat center;
 		background-size: 60px;
 		position: relative;
 		z-index: 2;
 	}
-
 	.box-content {
 		margin-top: 100px;
 		position: relative;
 		@include after-shadow-text;
 	}
-
 	.box-1 {
-		background: #000 url('./images/bg-comunidade.jpg') no-repeat top center;
+		background: #000 url("./images/bg-comunidade.jpg") no-repeat top center;
 		@include background-cover;
 		margin-top: -100px;
 		padding: 265px 0 200px;
-
-		.container { text-align: center; }
-
+		.container {
+			text-align: center;
+		}
 		h1 {
 			color: $color-light-a;
 			font-weight: 700;
@@ -60,7 +56,6 @@ body.home-page {
 			display: inline-block;
 			text-align: center;
 		}
-
 		p {
 			color: $color-light-a;
 			font-size: 19px;
@@ -69,15 +64,14 @@ body.home-page {
 			text-align: center;
 		}
 	}
-
 	.box-2 {
 		position: relative;
 		overflow: hidden;
 		border-bottom: 1px solid $color-gray-c;
 
 		&:before {
-			font-family: 'criciuma-dev';
-			content: '\67';
+			font-family: "criciuma-dev";
+			content: "\67";
 			display: block;
 			font-size: 360px;
 			height: 318px;
@@ -88,14 +82,12 @@ body.home-page {
 			top: 50%;
 			margin-top: -159px;
 		}
-
 		.group-images {
 			position: relative;
-
+			margin-bottom: 30px;
 			figure {
 				margin: 15px 0;
 				display: block;
-
 				img {
 					max-width: 100%;
 					display: block;
@@ -104,41 +96,37 @@ body.home-page {
 			}
 		}
 	}
-
 	.box-3 {
-
 		.box-content {
-			&:before { content: 'Nossos eventos'; }
+			&:before {
+				content: "Nossos eventos";
+			}
 		}
-
 		.events-feed {
 			position: relative;
 			z-index: 2;
 		}
-
 		.list-cards {
 			margin-top: 100px;
 			padding: 0 15px;
-
 			.card {
 				margin-bottom: 20px;
 				position: relative;
-
 				a {
 					@include transiction;
-					@include opacity(.3);
+					@include opacity(0.3);
 				}
-
-				&.slick-current a { @include opacity(1); }
-
+				&.slick-current a {
+					@include opacity(1);
+				}
 				&.future-event {
 					&:after {
 						display: block;
 						position: absolute;
 						left: 20px;
 						top: 20px;
-					    font-weight: 600;
-    					font-size: 12px;
+						font-weight: 600;
+						font-size: 12px;
 						padding: 0 20px;
 						height: 30px;
 						line-height: 32px;
@@ -146,42 +134,35 @@ body.home-page {
 						z-index: 3;
 						text-transform: uppercase;
 						@include rounder(30px);
-						@include box-shadow(0, 20px, 30px, rgba(0,0,0,.2));
+						@include box-shadow(0, 20px, 30px, rgba(0, 0, 0, 0.2));
 					}
 				}
-
 				&.future-event:after {
-					content: 'Evento futuro';
-					background: #00D75D;
+					content: "Evento futuro";
+					background: #00d75d;
 				}
-
 			}
 		}
-
 		.group-arrows {
 			width: 80px;
 			@include clearfix;
 			margin: 40px auto 0;
-
 			a {
 				display: block;
 				height: 25px;
 				width: 25px;
-
 				&.arrow-prev {
 					float: left;
 				}
 				&.arrow-next {
 					float: right;
 				}
-
 				i {
 					display: block;
 					font-size: 25px;
 					height: 100%;
 					width: 100%;
 					color: $color-blue-c;
-
 					&:before {
 						display: block;
 						line-height: 25px;
@@ -190,22 +171,19 @@ body.home-page {
 			}
 		}
 	}
-
 	.box-4 {
 		.box-content {
-
-			&:before { content: 'Últimos artigos'; }
-
+			&:before {
+				content: "Últimos artigos";
+			}
 			.col-md-4 {
 				margin-bottom: 30px;
-
-				&:last-child { margin-bottom: 0; }
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
-
 			> div {
-
 			}
-
 			.button {
 				margin: 50px auto 0;
 				width: 260px;
@@ -216,28 +194,26 @@ body.home-page {
 			}
 		}
 	}
-
 	.box-5 {
 		.box-content {
-			&:before { content: 'Vídeos'; }
-
+			&:before {
+				content: "Vídeos";
+			}
 			.video {
 				display: block;
-
 				.video-image {
 					display: block;
 					max-width: 100%;
 					@include rounder(6px);
 					background-color: $color-light-a;
 					@include background-cover;
-					@include box-shadow(0, 36px, 64px, rgba(0,0,0,.2));
+					@include box-shadow(0, 36px, 64px, rgba(0, 0, 0, 0.2));
 					height: 200px;
 					background-position: center;
 					margin-bottom: 25px;
 					position: relative;
-
 					&:before {
-						font-family: 'criciuma-dev';
+						font-family: "criciuma-dev";
 						content: "\66";
 						display: block;
 						width: 70px;
@@ -245,24 +221,22 @@ body.home-page {
 						line-height: 70px;
 						font-size: 70px;
 						color: $color-light-a;
-						@include opacity(.8);
+						@include opacity(0.8);
 						position: absolute;
 						left: 50%;
 						top: 50%;
 						margin: -35px 0 0 -35px;
 						z-index: 1;
 					}
-
 					&:after {
 						z-index: 0;
-						content: '';
+						content: "";
 						display: block;
 						width: 100%;
 						height: 100%;
-						background: rgba(0, 0, 0, .4);
+						background: rgba(0, 0, 0, 0.4);
 					}
 				}
-
 				h6 {
 					@include transiction;
 					font-size: 18px;
@@ -272,7 +246,6 @@ body.home-page {
 					color: $color-dark-a;
 				}
 			}
-
 			.button {
 				margin: 50px auto 0;
 				width: 260px;
@@ -283,7 +256,7 @@ body.home-page {
 			}
 		}
 	}
-
-	.box-sponsors .box-content { margin-top: 0; }
-
+	.box-sponsors .box-content {
+		margin-top: 0;
+	}
 }

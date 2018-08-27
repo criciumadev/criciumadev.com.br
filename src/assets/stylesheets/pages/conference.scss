@@ -1,44 +1,398 @@
 body.page.page-conference {
+	background: $color-light-a;
+	.header {
+		background: transparent;
+		.logo {
+			.light {
+				display: block;
+			}
+			.dark {
+				display: none;
+			}
+		}
+		.list-menu {
+			li {
+				a {
+					color: $color-light-a;
+					&.button {
+						border: 2px solid rgba(255, 255, 255, 0.7);
+						&:hover {
+							background: $color-blue-c;
+							border-color: $color-blue-c;
+						}
+					}
+				}
+			}
+		}
+	}
 	.content {
-		padding: 95px 0 60px;
-
-		h1 {
+		padding: 0 0 60px;
+		.container {
+			max-width: inherit;
+		}
+	}
+	.box-feat-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		h2 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.box-1 {
+		background: #000 url("./images/bg-conference.jpg") no-repeat top center;
+		@include background-cover;
+		margin-top: -100px;
+		padding: 265px 0 200px;
+		min-height: 850px;
+		.container {
+			text-align: center;
+		}
+		.countdown {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-bottom: 28px;
+		}
+		.countdown-item {
+			margin: 0 30px;
+			width: 60px;
+			cursor: default;
+			&--tag {
+				padding: 16px 0;
+				text-align: center;
+				background-color: #fff;
+				width: 100%;
+				border-radius: 3px;
+				font-size: 29px;
+				font-weight: bold;
+				color: #000;
+				margin-bottom: 3px;
+			}
+			&--label {
+				color: #fff;
+				font-size: 16px;
+				font-weight: 600;
+				text-align: center;
+			}
+		}
+		h1,
+		h2 {
+			color: $color-light-a;
+			font-weight: 700;
+			font-size: 68px;
+			line-height: 72px;
+			letter-spacing: -1px;
+			position: relative;
+			margin-bottom: 14px;
+			display: inline-block;
+			text-align: center;
+			cursor: default;
+		}
+		h2 {
+			font-size: 32px;
+			line-height: 46px;
+			margin-bottom: 9px;
+		}
+		p {
+			color: $color-light-a;
+			font-size: 18px;
+			line-height: 21px;
+			display: block;
+			text-align: center;
+			margin-bottom: 32px;
+		}
+		.button {
+			height: 54px;
+			padding: 0 38px;
+			font-size: 16px;
+			line-height: 54px;
+			transition: all 0.5s ease;
+			&:hover {
+				@include background-gradient(-52deg, #272dff, #03faf1);
+			}
+		}
+	}
+	.box-2 {
+		position: relative;
+		overflow: hidden;
+		&:before {
+			font-family: "criciuma-dev";
+			content: "\67";
+			display: block;
+			font-size: 360px;
+			height: 318px;
+			line-height: 340px;
+			color: $color-gray-c;
+			position: absolute;
+			right: -180px;
+			top: 50%;
+			margin-top: -159px;
+		}
+		.group-images {
+			position: relative;
+			margin-bottom: 30px;
+			figure {
+				margin: 15px 0;
+				display: block;
+				img {
+					max-width: 100%;
+					display: block;
+					@include rounder(6px);
+				}
+			}
+		}
+	}
+	.box-3 {
+		position: relative;
+		overflow: hidden;
+		padding: 0 0 60px;
+		margin-top: -65px;
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.box-about-item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		.box-about-item + .box-about-item {
+			padding-left: 40px;
+			margin-left: 40px;
+			border-left: 1px solid #ddd;
+		}
+		.box-about-icon {
+			display: inline-block;
+			width: 64px;
+			margin-right: 27px;
+		}
+		.box-about-entry {
+			font-size: 18px;
+			line-height: 36px;
+			color: #515151;
+			strong {
+				display: block;
+				font-weight: 900;
+				font-size: 35px;
+				color: #000;
+			}
+		}
+	}
+	.box-4 {
+		position: relative;
+		.box-palestrantes {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: -17px auto 0;
+		}
+	}
+	.box-palestrantes-person {
+		position: relative;
+		text-align: center;
+		background-color: #fff;
+		@include box-shadow(0, 5px, 30px, rgba(0, 0, 0, 0.2));
+		@include transiction;
+		border-radius: 6px;
+		width: 266px;
+		height: 352px;
+		margin: 17px 0;
+		overflow: hidden;
+		cursor: default;
+		&--thumb {
+			// position: absolute;
+			z-index: 1;
 			img {
 				display: block;
-				margin: 0 auto 40px;
+				width: 100%;
 			}
 		}
-
-		h2 {
-			font-weight: 600;
+		&--about {
+			position: absolute;
+			background-color: #fff;
+			text-align: center;
+			padding: 23px 14px;
+			@include transiction;
+			top: 264px;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			h5 {
+				font-size: 17px;
+				line-height: 21px;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 4px;
+				color: #000;
+			}
+			p {
+				font-size: 16px;
+				line-height: 21px;
+				font-weight: 500;
+				text-align: center;
+				margin-bottom: 7px;
+			}
+			.social-links {
+				text-align: center;
+				padding: 14px 0 0;
+				a > img {
+					display: inline-block;
+					margin: 0 3px;
+				}
+				a:hover > img {
+					@include opacity(0.8);
+				}
+			}
+		}
+		.button {
+			margin: 0 auto;
+			@include no-shadow;
+			&:hover {
+				@include no-shadow;
+			}
+		}
+		&:hover {
+			.box-palestrantes-person--about {
+				transform: translate3d(0, -55px, 0);
+			}
+		}
+	}
+	.box-5 {
+		position: relative;
+		overflow: hidden;
+		.box-content {
+			margin: -20px auto 0;
+			max-width: 760px;
+		}
+	}
+	.box-prog-hour {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 54px;
+		&--time {
+			font-size: 29px;
+			font-weight: bold;
+			line-height: 36px;
+			text-align: right;
+			color: #515151;
+			width: 94px;
+		}
+		&--sep {
+			font-size: 32px;
+			font-weight: 300;
 			line-height: 36px;
 			text-align: center;
-			margin-bottom: 20px;
-			color: #353535;
-
-			span {
-				font-size: 40px;
-				color: #353535;
-				margin: 0 10px;
+			cursor: default;
+			color: #999;
+			width: 74px;
+		}
+		&--items {
+			flex: 1;
+		}
+		.box-prog-item {
+			h4 {
+				font-size: 29px;
+				font-weight: bold;
+				line-height: 36px;
+				color: #000;
+				&.box-prog-item-title-blue {
+					color: #1065ee;
+				}
+			}
+			p {
+				font-size: 16px;
 			}
 		}
-
+		.box-prog-item + .box-prog-item {
+			margin-top: 36px;
+		}
+	}
+	.box-6 {
+		background: $color-blue-c url("./images/bg-bar-ibis.jpg") no-repeat center;
+		min-height: 600px;
+		padding: 47px 0;
+		.box-content {
+			width: 100%;
+			max-width: 542px;
+			margin-top: 24px;
+		}
+		h3 {
+			font-weight: 900;
+			font-size: 65px;
+			letter-spacing: -0.5px;
+			line-height: 84px;
+			margin-bottom: 21px;
+			color: #fff;
+		}
+		p {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 26px;
+			color: #fff;
+		}
+		p strong {
+			display: inline-block;
+			font-weight: 900;
+			font-size: 32px;
+			letter-spacing: -0.25px;
+			color: #fff;
+			padding-bottom: 10px;
+		}
 		.button {
-			display: block;
-			max-width: 320px;
-			margin: 40px auto 50px;
+			display: inline-block;
+			color: $color-blue-c;
+			background: $color-light-a;
+			padding: 0;
+			width: 255px;
 			height: 50px;
 			line-height: 50px;
-			font-size: 16px;
+			margin: 13px 0;
 		}
-
-		.sponsorship {
-			display: block;
-			text-align: center;
-			max-width: 130px;
-			margin: 0 auto;
-			border-bottom: 1px solid #CCC;
-			font-weight: 500;
+		.box-hotel-about {
+			margin-bottom: 52px;
+		}
+		.box-hotel-discount {
+			a {
+				color: #fff;
+				text-decoration: underline;
+				font-weight: 600;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			b {
+				color: #fff;
+				font-weight: 900;
+			}
+			em {
+				color: #fff;
+				font-style: italic;
+			}
+		}
+		.box-hotel-coupom {
+			vertical-align: middle;
+			.box-hotel-coupom-code {
+				display: inline-block;
+				border: 1px dashed #fff;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 28px;
+				color: #fff;
+				padding: 0 28px;
+				margin-right: 18px;
+			}
+			.button {
+				font-size: 13px;
+				line-height: 36px;
+				width: 202px;
+				height: 34px;
+			}
 		}
 	}
 }

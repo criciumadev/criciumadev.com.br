@@ -24,6 +24,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "surge ./www https://criciumadev.com.br",
     "start": "gulp default",
     "build": "gulp build"
   },
@@ -35,7 +36,7 @@
     "criciuma",
     "dev"
   ],
-  "author": "Mateus Vicente",
+  "author": "Criciúma DEV - https://criciumadev.com.br",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/criciumadev/criciumadev.com.br/issues"

@@ -33,7 +33,7 @@
     background: -moz-linear-gradient($position, $color-a 0%, $color-b 100%);
     background: -webkit-linear-gradient($position, $color-a 0%, $color-b 100%);
     background: linear-gradient($position, $color-a 0%, $color-b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-a, endColorstr=$color-b,GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color-a, endColorstr=$color-b, GradientType=0);
 }
 
 @mixin after-shadow-text {
@@ -75,7 +75,7 @@
     opacity: ($value);
     -moz-opacity: ($value);
     filter: alpha(opacity=($value)0);
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=($value)0)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($value)0)";
 }
 
 @mixin translateX($value) {
@@ -166,13 +166,6 @@
     border-bottom-right-radius: $pixels;
 }
 
-@mixin no-transiction {
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
-    -o-transition: 0s;
-    transition: 0s;
-}
-
 @mixin truncate($width) {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -190,10 +183,18 @@
 }
 
 @mixin placeholder-color($color) {
-    &::-webkit-input-placeholder { color: $color; }
-    &::-moz-placeholder { color: $color; }
-    &:-ms-input-placeholder { color: $color; }
-    &:-moz-placeholder { color: $color; }
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
 }
 
 @mixin black-and-white {
@@ -202,12 +203,12 @@
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: gray; /* IE 6-9 */
+    filter: gray;
+    /* IE 6-9 */
 }
 
 @mixin clearfix {
     display: block;
-
     &:after {
         content: ".";
         display: block;
@@ -215,6 +216,7 @@
         clear: both;
         visibility: hidden;
     }
-
-    * html & { height: 1px }
+    * html & {
+        height: 1px;
+    }
 }

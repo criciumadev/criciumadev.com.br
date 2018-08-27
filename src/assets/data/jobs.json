@@ -1,46 +1,69 @@
 [
   {
-    "title": "Mobile Developer (Android)",
-    "company_name": "Organizze",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/organizze.png",
-    "link": "https://webfy.recruiterbox.com/jobs/fk0f8xc/",
-    "type": "Full-Time - CLT",
-    "date": "2018-03-07T22:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-
-  {
-    "title": "Desenvolvedor de Software",
+    "title": "Desenvolvedor Web",
     "company_name": "Thomson Reuters",
     "featured": true,
     "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
-    "link": "https://jobs.thomsonreuters.com/ShowJob/Id/98865/Desenvolvedor-de-Software/",
+    "link": "https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site/job/BRA-Cricima-Avenida-Centenrio-7405/Desenvolvedor-de-Software-5C_JREQ102312",
     "type": "Full-Time - CLT",
-    "date": "2018-03-06T22:55:06.311Z",
+    "date": "2018-05-07T15:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   },
-
   {
-    "title": "Product Manager (PM/PO)",
+    "title": "Engenheiro de Software",
+    "company_name": "Organizze",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/organizze.png",
+    "link": "https://webfy.recruiterbox.com/jobs/fk0116a",
+    "type": "Full-Time - CLT",
+    "date": "2015-05-05T15:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Desenvolvedor PHP Sênior",
     "company_name": "Portabilis",
     "featured": true,
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
+    "type": "Full-Time - CLT",
+    "date": "2018-04-27T08:55:06.311Z",
+    "location": {
+      "city": "Remoto/Içara",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Desenvolvedor Web Rails",
+    "company_name": "Portabilis",
+    "featured": true,
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-web-rails",
+    "type": "Full-Time - CLT",
+    "date": "2018-04-27T08:54:06.311Z",
+    "location": {
+      "city": "Remoto/Içara",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Product Manager (PM/PO)",
+    "company_name": "Portabilis",
+    "featured": false,
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "link": "https://www.portabilis.com.br/site-novo/oportunidades/product-manager",
     "type": "Full-Time - CLT",
-    "date": "2018-03-06T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Içara",
       "state": "SC"
     }
   },
-
   {
     "title": "Programador Web",
     "company_name": "Ema Software",
@@ -48,27 +71,25 @@
     "color": "#563085",
     "link": "https://www.facebook.com/EmaSoftware/photos/a.782661238473341.1073741826.357287591010710/1730010063738449",
     "type": "Full-Time - CLT",
-    "date": "2018-03-14T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   },
-
   {
-    "title": "Programador Web",
+    "title": "Programador Web (3 vagas)",
     "company_name": "Useall Software",
     "featured": true,
     "company_logo": "./assets/images/logos-vagas/useall.png",
     "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2018-03-06T22:55:06.311Z",
+    "date": "2018-06-19T10:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   },
-
   {
     "title": "Programador C#",
     "company_name": "Useall Software",
@@ -76,13 +97,12 @@
     "company_logo": "./assets/images/logos-vagas/useall.png",
     "link": "http://useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2018-03-06T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   },
-
   {
     "title": "Desenvolvedor Web",
     "company_name": "Webmais Sistemas",
@@ -96,7 +116,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Programador(a) de Sistemas",
     "company_name": "Betha Sistemas",
@@ -110,7 +129,6 @@
       "state": "SC"
     }
   },
-
   {
     "title": "Programador Front-end",
     "company_name": "TW Sistemas",
@@ -118,11 +136,23 @@
     "color": "#2C93FF",
     "link": "http://twsistemas.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
-    "date": "2018-03-05T22:55:06.311Z",
+    "date": "2018-04-26T22:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "UX Designer",
+    "company_name": "Simples Dental",
+    "featured": false,
+    "color": "#2C93FF",
+    "link": "https://www.facebook.com/simplesdental/posts/1399226003578384",
+    "type": "Full-Time - CLT",
+    "date": "2018-07-12T12:00:00.311Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
     }
   }
-
 ]

@@ -1,80 +1,84 @@
 @media only screen and (max-width: 1200px) {
-	// body { background-color: red !important; }
-
 	body.home-page .box-1 {
 		padding: 205px 0 140px;
-
-		h1 { font-size: 55px; }
+		h1 {
+			font-size: 55px;
+		}
 	}
 }
 
 @media only screen and (max-width: 992px) {
-	// body { background-color: lime !important; }
-
-	body.home-page .box-1 { margin-top: -170px; }
-	body.home-page .box-2 .group-images { margin-top: 50px; }
-	body.home-page .header .logo .light { display: inline-block; }
-	body.home-page .box-4 .box-content .col-md-4 { margin-bottom: 0; }
+	body.home-page .box-1 {
+		margin-top: -170px;
+	}
+	body.home-page .box-2 .group-images {
+		margin-top: 50px;
+	}
+	body.home-page .header .logo .light {
+		display: inline-block;
+	}
+	body.home-page .box-4 .box-content .col-md-4 {
+		margin-bottom: 0;
+	}
 	.article,
 	.article.recent-article {
 		margin-bottom: 50px;
-
-		.article-image { height: 140px; }
+		.article-image {
+			height: 140px;
+		}
 	}
-
 	.header {
 		.logo {
 			float: none;
 			text-align: center;
 			margin-bottom: 20px;
-
-			img { display: inline-block; }
+			img {
+				display: inline-block;
+			}
 		}
 		.list-menu {
 			float: none;
 			text-align: center;
-
 			li {
 				float: none;
 				text-align: center;
 				padding: 0;
 				display: inline-block;
-
-				a {}
+				margin: 0 15px !important;
+				a {
+				}
 			}
 		}
 	}
-	.box { padding: 60px 0; }
+	.box {
+		padding: 60px 0;
+	}
 }
 
-@media only screen and (max-width: 768px) {
-    // body { background-color: black !important; }
-
+@media only screen and (max-width: 767px) {
 	.box-1 h1 {
 		font-size: 45px !important;
 	}
-
 	.header .logo {
-    margin: 20px 0 12px 0 !important;
+		margin: 20px 0 12px 0 !important;
 	}
-
 	.header {
 		padding: 0 !important;
 	}
-
 	body.home-page .box-3 .box-content:before {
-    max-width: 360px !important;
+		max-width: 360px !important;
 	}
-
 	body.home-page .box-content:before {
 		font-size: 90px !important;
 	}
-
 	img {
-		max-width: 300px !important;
+		max-width: 100% !important;
 	}
-
-  .box-sponsors .group-sponsors {
-    margin-bottom: 30px !important;
+	.box-sponsors .group-sponsors {
+		margin-bottom: 30px !important;
+	}
+	.footer .footer-top {
+		padding: 30px 0 50px;
+		margin-top: 16px;
 	}
 }
