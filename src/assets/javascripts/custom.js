@@ -206,25 +206,21 @@ SITE.newsletter = function() {
 		if ($form.valid()) {
 			$button.val("Enviando...");
 
+			var params = {
+                email: $("#email").val(),
+                list: $("#list").val(),
+                boolean: "true"
+            };
+
 			$.ajax({
-				type: $form.attr("method"),
+				type: 'POST',
 				url: $form.attr("action"),
-				data: $form.serialize(),
-				cache: false,
-				dataType: "json",
-				contentType: "application/json; charset=utf-8",
-				error: function(err) {
+				data: params,
+				complete: function(data) {
 					$button.val("Assinar");
-					$message.text("Ocorreu um erro. Tente novamente.").show();
-				},
-				success: function(data) {
-					$button.val("Assinar");
-					if (data.result === "success") {
-						$message.text("Cadastrado com sucesso!").show();
-					} else {
-						$message.text("Ocorreu um erro ou o email já está cadastrado.").show();
-					}
-				},
+					$message.text("Cadastrado com sucesso!").show();
+					$form[0].reset();
+				}
 			});
 
 			return;
