@@ -81,6 +81,16 @@ body.page-contato {
 						padding: 17px 0;
 						width: 100%;
 						display: block;
+
+						&.error { border-color: #C92B2B; }
+					}
+
+					label.error {
+						display: block;
+						color: #C92B2B;
+						font-size: 12px;
+						line-height: 12px;
+						margin-top: 5px;
 					}
 				}
 				.button-bar {

@@ -198,7 +198,7 @@ SITE.newsletter = function() {
 		},
 	});
 
-	$form.on("submit", function(e) {
+	$form.on('submit', function(e) {
 		e.preventDefault();
 
 		$message.hide();
@@ -229,14 +229,105 @@ SITE.newsletter = function() {
 };
 
 SITE.sendMail = function() {
-	// Email.send(
-	// 	"contato@criciumadev.com.br",
-	// 	"contato@criciumadev.com.br",
-	// 	"This is a subject",
-	// 	"this is the body",
-	// 	{token: "c8d0e9bb-7406-4176-82f1-cfe5562282ee"},
-	//  function done(message) { alert("sent") }
-	// );
+	var $form  = $('*[data-scope="contact-form"]:first')
+		$button = $('*[data-item="button"]:first', $form);
+
+	$form.validate({
+		rules: {
+			'nome': {
+				required: true
+			},
+			'email': {
+				required: true
+			},
+			'assunto': {
+				required: true
+			},
+			'mensagem': {
+				required: true
+			}
+		},
+		messages: {
+			'nome': {
+				required: "Nome é obrigatório",
+			},
+			'email': {
+				required: "E-mail é obrigatório",
+				email: "Insira um email válido"
+			},
+			'assunto': {
+				required: "Assunto é obrigatório"
+			},
+			'mensagem': {
+				required: "Mensagem é obrigatória"
+			},
+		}
+	});
+
+	$form.on('submit', function(e) {
+		e.preventDefault();
+
+		var $type = $('*[data-item="type"]:first', $form).val();
+
+		if ($type == 'vaga') {
+			var $params = {
+				subject: 'Publicação de vaga',
+				titulo: $('*[data-item="titulo"]:first', $form).val(),
+				empresa: $('*[data-item="empresa"]:first', $form).val(),
+				link: $('*[data-item="link"]:first', $form).val(),
+				tipo: $('*[data-item="tipo"]:first', $form).val(),
+				cidade: $('*[data-item="cidade"]:first', $form).val(),
+			};
+
+			var $message = '\
+				<div style="font: 15px/25px Arial;">\
+					<strong>Título: </strong> '+ $params.titulo +'<br>\
+					<strong>Empresa: </strong> '+ $params.empresa +'<br>\
+					<strong>Link: </strong> '+ $params.link +'<br>\
+					<strong>Tipo: </strong> '+ $params.tipo +'<br>\
+					<strong>Cidade: </strong> '+ $params.cidade +'<br>\
+				</div>\
+			';
+		} else {
+			var $params = {
+				subject: 'Contato vindo do Site',
+				nome: $('*[data-item="nome"]:first', $form).val(),
+				email: $('*[data-item="email"]:first', $form).val(),
+				assunto: $('*[data-item="assunto"]:first', $form).val(),
+				mensagem: $('*[data-item="mensagem"]:first', $form).val(),
+			};
+
+			var $message = '\
+				<div style="font: 15px/25px Arial;">\
+					<strong>Nome: </strong> '+ $params.nome +'<br>\
+					<strong>Email: </strong> '+ $params.email +'<br>\
+					<strong>Assunto: </strong> '+ $params.assunto +'<br>\
+					<strong>Mensagem: </strong> '+ $params.mensagem +'<br>\
+				</div>\
+			';
+		}
+
+
+		if ($form.valid()) {
+			Email.send(
+				"contato@criciumadev.com.br", // From
+				"contato@criciumadev.com.br", // To
+				$params.subject, // Subject
+				$message, // Body
+				{
+					token: "8b79454e-0360-4823-bd29-436a76100893",
+					callback: function done(message) {
+						if (message === 'OK') {
+							alert('Email enviado! Agradecemos seu contato ;)');
+							$form[0].reset();
+						} else {
+							alert('Ocorreu um problema ao enviar o email. Entre em contato por nossa página do Facebook!');
+						}
+					}
+				}
+			);
+		}
+	});
 };
 
 $(document).ready(function() {
