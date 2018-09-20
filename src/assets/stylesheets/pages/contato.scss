@@ -1,14 +1,11 @@
 body.page-contato {
-
 	.content {
 		padding: 0 0 100px;
-		background: #FAFAFA url(./images/bg-contato.png) repeat-y top center;
-
+		background: #fafafa url(./images/bg-contato.png) repeat-y top center;
 		.box-1 {
-			background: $color-blue-c url('./images/bg-bar-vagas.png') no-repeat center;
+			background: $color-blue-c url("./images/bg-bar-vagas.png") no-repeat center;
 			background-image: 100% auto;
 			padding: 47px 0;
-
 			h1 {
 				font-weight: 600;
 				font-size: 28px;
@@ -18,24 +15,19 @@ body.page-contato {
 				text-align: center;
 			}
 		}
-
 		.box-2 {
 			position: relative;
 			padding: 98px 0;
-
 			h2 {
 				font-weight: 500;
 				font-size: 22px;
 				color: $color-dark-a;
 				margin-bottom: 40px;
 			}
-
 			.list-contact {
 				margin-top: 30px;
-
 				li {
 					margin-bottom: 25px;
-
 					i {
 						background: $color-blue-c;
 						float: left;
@@ -45,19 +37,17 @@ body.page-contato {
 						color: $color-light-a;
 						margin-right: 20px;
 						@include rounder(100%);
-
 						&:before {
 							display: block;
 							text-align: center;
 							line-height: 40px;
 						}
 					}
-
 					span {
 						font-weight: 500;
 						font-size: 12px;
 						line-height: 12px;
-						color: #B3B3B3;
+						color: #b3b3b3;
 						display: block;
 						text-transform: uppercase;
 						padding: 4px 0 3px;
@@ -71,23 +61,21 @@ body.page-contato {
 					}
 				}
 			}
-
 			form {
 				.input-row {
 					margin-bottom: 25px;
-
 					.input-text {
-						border-bottom: 1px solid #D4D4D4;
+						border-bottom: 1px solid #d4d4d4;
 						padding: 17px 0;
 						width: 100%;
 						display: block;
-
-						&.error { border-color: #C92B2B; }
+						&.error {
+							border-color: #c92b2b;
+						}
 					}
-
 					label.error {
 						display: block;
-						color: #C92B2B;
+						color: #c92b2b;
 						font-size: 12px;
 						line-height: 12px;
 						margin-top: 5px;
@@ -104,13 +92,52 @@ body.page-contato {
 					}
 				}
 			}
-
 			.box-right {
 				width: 85%;
 				float: right;
 			}
 		}
 	}
+	.footer .footer-top {
+		margin-top: 0;
+	}
+}
 
-	.footer .footer-top { margin-top: 0; }
+@media (max-width: 1023px) {
+	body.page-contato {
+		.content {
+			padding: 0 0 80px;
+			background: #fff;
+		}
+	}
+}
+
+@media (max-width: 599px) {
+	body.page-contato {
+		.content {
+			.box-1 h1 {
+				font-size: 32px !important;
+			}
+			.box-2 {
+				padding: 28px 0;
+				h2 {
+					margin-bottom: 21px;
+				}
+				.box-right {
+					float: none;
+					width: 96%;
+					margin: 0 auto;
+				}
+				form .button-bar {
+					text-align: center;
+					.button {
+						margin: 40px auto 0;
+					}
+				}
+			}
+		}
+		.box-left {
+			margin-bottom: 32px;
+		}
+	}
 }
