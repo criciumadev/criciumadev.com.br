@@ -4,7 +4,7 @@ Widgets.eventsFeed = {
     resultsLoader: '*[data-scope="events-feed"]:first',
 
     eventsUrl: function() {
-        return "https://graph.facebook.com/v2.11/824945717539209?fields=events.limit(10){id,name,place,start_time,cover}&access_token=129540077745238|2Gxb6NU-MpL6iha_lkRBMEsDI9o";
+        return "https://graph.facebook.com/v3.1/824945717539209?fields=events.limit(10){id,name,place,start_time,cover}&access_token=129540077745238|2Gxb6NU-MpL6iha_lkRBMEsDI9o";
     },
 
     fetch: function() {

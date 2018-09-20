@@ -1,5 +1,5 @@
 @@include('./_partials/header.html', {
-    "pageClass": "page-publique-suas-vagas",
+    "pageClass": "page-contato",
     "pageTitle": "Publique suas vagas - Criciúma Dev",
     "pageDescription": "Publique suas vagas de emprego no site de nossa comunidade",
     "pageUrl": "/publique-suas-vagas"
@@ -7,7 +7,58 @@
 
 <div class="box-1">
     <div class="container">
-        Publique suas vagas
+        <h1>
+            Envie sua vaga que divulgaremos grátis&nbsp;<br class="hidden-xs">
+            em nosso site e nossas redes sociais.
+        </h1>
+    </div>
+</div>
+
+<div class="box-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class="box-left">
+                    <div class="group-contact">
+                        <h2>Digulgue sua vaga. É fácil!</h2>
+                        <p>
+                            Preencha o formulário ao lado que<br class="hidden-xs">publicaremos sua vaga em breve.
+                            <br><br class="hidden-xs">
+                            Lembre-se, se você for um patrocinador<br class="hidden-xs"> do Criciúma Dev, sua publicação <br class="hidden-xs">será destacada em nosso site,
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7 col-sm-7 col-xs-12">
+                <div class="box-right">
+                    <h2>Informações da vaga</h2>
+                    <form data-scope="contact-form">
+
+                    	<input type="hidden" name="type" class="input-text" data-item="type" value="vaga">
+
+                        <div class="input-row">
+                            <input placeholder="Título. Ex: Desenvolvedor PHP Sênior" type="text" name="titulo" class="input-text" data-item="titulo" required>
+                        </div>
+                        <div class="input-row">
+                            <input placeholder="Empresa" type="text" name="empresa" class="input-text" data-item="empresa" required>
+                        </div>
+                        <div class="input-row">
+                            <input placeholder="Link de redirecionamento" type="text" name="link" class="input-text" data-item="link" required>
+                        </div>
+                        <div class="input-row">
+                            <input placeholder="Tipo. Ex: Full-Time - CLT" type="text" name="tipo" class="input-text" data-item="tipo" required>
+                        </div>
+                        <div class="input-row">
+                            <input placeholder="Cidade" type="text" name="cidade" class="input-text" data-item="cidade" required>
+                        </div>
+                        <div class="button-bar">
+                            <button data-item="button" type="submit" class="button button-secondary">Enviar vaga</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

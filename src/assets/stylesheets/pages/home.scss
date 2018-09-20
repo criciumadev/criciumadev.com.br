@@ -67,6 +67,8 @@ body.home-page {
 	.box-2 {
 		position: relative;
 		overflow: hidden;
+		border-bottom: 1px solid $color-gray-c;
+
 		&:before {
 			font-family: "criciuma-dev";
 			content: "\67";
