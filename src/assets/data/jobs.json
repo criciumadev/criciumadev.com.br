@@ -1,5 +1,33 @@
 [
   {
+    "title": "Analista Programador PADVPL",
+    "company_name": "Anjo Tintas",
+    "featured": false,
+    "color": "#C92127",
+    "link": "https://www.linkedin.com/feed/update/urn:li:activity:6456248994006867968",
+    "type": "Full-Time - CLT",
+    "date": "2018-10-18T01:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor C#",
+    "company_name": "SATC - Curso da Eng. da Computação",
+    "featured": false,
+    "color": "#196A3D",
+    "link": "mailto:eng.computacao@satc.edu.br",
+    "type": "Contrato Temporário de Trabalho ou Freelancer",
+    "date": "2018-10-11T01:55:06.311Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
     "title": "Back-end Developer",
     "company_name": "ContaAzul",
     "featured": true,
