@@ -24,7 +24,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "surge ./www https://criciumadev.com.br",
+    "deploy": "gulp build && surge ./www https://criciumadev.com.br",
     "start": "gulp default",
     "build": "gulp build"
   },
