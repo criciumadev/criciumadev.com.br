@@ -1,0 +1,76 @@
+body.page-conference-2019 {
+	background: #1D1D2E url('./images/criciumadev-midiakit-2019.jpg') no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 60px;
+	text-align: center;
+
+	img {
+		display: block;
+		max-width: 320px;
+	}
+	h1 {
+		font-size: 70px;
+		font-weight: 800;
+		color: #FFF;
+		text-transform: uppercase;
+		line-height: 71px;
+		display: inline-block;
+		height: 142px;
+		width: 975px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: -71px 0 0 -487px;
+	}
+	a {
+		font-size: 25px;
+		font-weight: 800;
+		color: #FFF;
+		text-transform: uppercase;
+		line-height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+		padding: 25px 50px;
+
+		&:after,
+		&:before {
+			display: block;
+			content: '';
+			background: url('./images/arrow-conf-right.svg') no-repeat top;
+			position: absolute;
+			top: 0;
+			width: 34px;
+			height: 80px;
+		}
+
+		&:after { left: 0; }
+		&:before {
+			right: 0;
+			-moz-transform: scaleX(-1);
+			-o-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		padding: 20px;
+
+		h1 {
+			font-size: 40px;
+			line-height: 50px;
+			height: initial;
+			width: initial;
+			position: relative;
+			left: initial;
+			top: initial;
+			margin: 100px 0 0;
+			text-align: center;
+		}
+	}
+}
