@@ -3,10 +3,10 @@
     "title": "Desenvolvedor WEB",
     "company_name": "Duapi Sistemas",
     "featured": false,
-    "company_logo": "http://twsistemas.com.br/skin/images/duapi_logo.png",
+    "color": "#FCC40A",
     "link": "mailto:rh@duapi.com.br",
     "type": "Full-Time - CLT",
-    "date": "2019-03-30T01:00:00.000Z",
+    "date": "2019-02-06T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -16,10 +16,10 @@
     "title": "Desenvolvedor PHP",
     "company_name": "Engeplus",
     "featured": false,
-    "company_logo": "http://www.engeplus.com.br/arquivos/img/logo-engeplus-flat-branco-208x62.png",
+    "company_logo": false,
     "link": "https://www.linkedin.com/feed/update/urn:li:activity:6495614113425743872",
     "type": "Full-Time - CLT",
-    "date": "2019-03-30T01:00:00.000Z",
+    "date": "2019-02-06T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -29,270 +29,10 @@
     "title": "Desenvolvedor Web",
     "company_name": "Innova Connect",
     "featured": false,
-    "company_logo": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_250,h_38/https://innovaconnect.com.br/wp-content/uploads/2018/11/LOGOINOOVA_NOVA-1-2.png",
+    "company_logo": false,
     "link": "mailto:contato@innovaconnect.com.br",
     "type": "Full-Time - CLT",
-    "date": "2019-03-30T01:00:00.000Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Desenvolvedor Web",
-    "company_name": "Thomson Reuters",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/thomson-reuters.png",
-    "link": "http://jobs.thomsonreuters.com/ShowJob/Id/181925/Desenvolvedor-Web/",
-    "type": "Full-Time - CLT",
-    "date": "2018-11-08T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Analista Programador PADVPL",
-    "company_name": "Anjo Tintas",
-    "featured": false,
-    "color": "#C92127",
-    "link": "https://www.linkedin.com/feed/update/urn:li:activity:6456248994006867968",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-28T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Back-end Developer",
-    "company_name": "ContaAzul",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/contaazul.png",
-    "link": "https://jobs.kenoby.com/contaazul/job/desenvolvedora-backend-backend-developer/5b9fab28f706072b766ba4cb",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Joinville",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Front-end Developer",
-    "company_name": "ContaAzul",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/contaazul.png",
-    "link": "https://jobs.kenoby.com/contaazul/job/desenvolvedora-backend-backend-developer/5b9fab28f706072b766ba4cb",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Joinville",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "UX Designer",
-    "company_name": "ContaAzul",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/contaazul.png",
-    "link": "https://jobs.kenoby.com/contaazul/job/ux-designer/5b9fd811ea23aa6716a725ed",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Joinville",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Backend Specialist",
-    "company_name": "ContaAzul",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/contaazul.png",
-    "link": "https://jobs.kenoby.com/contaazul/job/especialista-backend-backend-specialist/5b9facd4f706072b766bc4be",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Joinville",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Coordenador(a) de UX",
-    "company_name": "ContaAzul",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/contaazul.png",
-    "link": "https://jobs.kenoby.com/contaazul/job/coordenadora-de-ux/5ba2a376b0a9860c27a6b430",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Joinville",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Desenvolvedor Web PHP",
-    "company_name": "Portabilis",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/portabilis.png",
-    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-web-php",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Içara",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Desenvolvedor PHP Sênior",
-    "company_name": "Portabilis",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/portabilis.png",
-    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-php-senior",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Içara",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Desenvolvedor Web Rails",
-    "company_name": "Portabilis",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/portabilis.png",
-    "link": "https://www.portabilis.com.br/site-novo/oportunidades/desenvolvedor-web-rails",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Içara",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Analista de Suporte",
-    "company_name": "Portabilis",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/portabilis.png",
-    "link": "https://www.portabilis.com.br/site-novo/oportunidades/analista-de-suporte",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Içara",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Globo Play - Desenvolvedor(a) Web",
-    "company_name": "Globo.com",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/globo.png",
-    "link": "https://talentos.globo.com/#/oportunidades/globo-play-desenvolvedor-a-web/mp0h4ae",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Porto Alegre",
-      "state": "RS"
-    }
-  },
-  {
-    "title": "Interatividade - Desenvolvedor(a) de Software",
-    "company_name": "Globo.com",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/globo.png",
-    "link": "https://talentos.globo.com/#/oportunidades/interatividade-desenvolvedor-a-de-software/mp0jiks",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Porto Alegre",
-      "state": "RS"
-    }
-  },
-  {
-    "title": "Analista de Testes / Tester",
-    "company_name": "Useall",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/useall.png",
-    "link": "http://www.useall.com.br/trabalhe",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Programador C#",
-    "company_name": "Useall",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/useall.png",
-    "link": "http://www.useall.com.br/trabalhe",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Programador Web",
-    "company_name": "Useall",
-    "featured": true,
-    "company_logo": "./assets/images/logos-vagas/useall.png",
-    "link": "http://www.useall.com.br/trabalhe",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Analista de Testes",
-    "company_name": "Betha Sistemas",
-    "featured": false,
-    "color": "#000C84",
-    "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA&codigo_vaga=k77-1583#.W6-wLRNKjaY",
-    "type": "Full-Time - CLT",
-    "date": "2018-09-29T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Arquiteto(a) de Sistemas",
-    "company_name": "Betha Sistemas",
-    "featured": false,
-    "color": "#000C84",
-    "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA&codigo_vaga=k77-1586#.W6-wJhNKjaY",
-    "type": "Full-Time - CLT",
-    "date": "2018-09-29T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Desenvolvedor Web",
-    "company_name": "Sistema Info",
-    "featured": false,
-    "color": "#DA2337",
-    "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/53",
-    "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
-    "location": {
-      "city": "Criciúma",
-      "state": "SC"
-    }
-  },
-  {
-    "title": "Analista de sistemas",
-    "company_name": "Sistema Info",
-    "featured": false,
-    "color": "#DA2337",
-    "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/55",
-    "type": "Full-Time - CLT",
-    "date": "2018-09-29T01:55:06.311Z",
+    "date": "2019-02-06T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -305,7 +45,7 @@
     "color": "#0BA7A5",
     "link": "http://twsistemas.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
+    "date": "2019-02-06T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -318,7 +58,351 @@
     "color": "#0BA7A5",
     "link": "http://twsistemas.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
-    "date": "2018-10-29T01:55:06.311Z",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Desenvolvedor Web",
+    "company_name": "Sistema Info",
+    "featured": false,
+    "color": "#DA2337",
+    "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/53",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Analista de sistemas",
+    "company_name": "Sistema Info",
+    "featured": false,
+    "color": "#DA2337",
+    "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/55",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Assistente administrativo e financeiro pleno",
+    "company_name": "Sistema Info",
+    "featured": false,
+    "color": "#DA2337",
+    "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/57",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+  {
+    "title": "Service Desk",
+    "company_name": "Sistema Info",
+    "featured": false,
+    "color": "#DA2337",
+    "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/54",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Marketing Analyst",
+    "company_name": "Portabilis",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "featured": true,
+    "link": "https://conteudos.portabilis.com.br/mkt-analyst",
+    
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Senior Marketing Analyst",
+    "company_name": "Portabilis",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "featured": true,
+    "link": "https://conteudos.portabilis.com.br/mkt-analyst-senior",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Channel Analyst",
+    "company_name": "Portabilis",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "featured": true,
+    "link": "https://conteudos.portabilis.com.br/channel-analyst",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Analista de Qualidade (QA)",
+    "company_name": "Portabilis",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "featured": true,
+    "link": "https://conteudos.portabilis.com.br/quality-analyst",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor Web Rails Sênior",
+    "company_name": "Portabilis",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "featured": true,
+    "link": "https://conteudos.portabilis.com.br/dev-rails-senior",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Senior Product Analyst",
+    "company_name": "Portabilis",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "featured": true,
+    "link": "https://conteudos.portabilis.com.br/product-analyst-edu",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Içara",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Dev Backend Java Sênior",
+    "company_name": "Globo.com",
+    "company_logo": "./assets/images/logos-vagas/globo.png",
+    "featured": true,
+    "link": "https://talentos.globo.com/#/oportunidades/desenvolvedor-a-backend-java-senior-com-experiencia-em-infra/mp0jjyb",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Rio de Janeiro",
+      "state": "RJ"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor(a) Android",
+    "company_name": "Globo.com",
+    "company_logo": "./assets/images/logos-vagas/globo.png",
+    "featured": true,
+    "link": "https://talentos.globo.com/#/oportunidades/desenvolvedor-a-android-player-de-videos/mp0mmvc",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Rio de Janeiro",
+      "state": "RJ"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor(a) Android - Esportes",
+    "company_name": "Globo.com",
+    "company_logo": "./assets/images/logos-vagas/globo.png",
+    "featured": true,
+    "link": "https://talentos.globo.com/#/oportunidades/desenvolvedor-a-android-esportes/mp0jooq",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Rio de Janeiro",
+      "state": "RJ"
+    }
+  },
+
+  {
+    "title": "Big Data - Desenvolvedor(a) de Software Sênior RJ",
+    "company_name": "Globo.com",
+    "company_logo": "./assets/images/logos-vagas/globo.png",
+    "featured": true,
+    "link": "https://talentos.globo.com/#/oportunidades/big-data-desenvolvedor-a-de-software-senior-rj/mp01em6",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Rio de Janeiro",
+      "state": "RJ"
+    }
+  },
+
+  {
+    "title": "Coordenador(a) de Engenharia",
+    "company_name": "ContaAzul",
+    "featured": true,
+    "link": "https://jobs.kenoby.com/contaazul/job/coordenadora-de-engenharia/5bfd97edd8f67055fe1f1d9f",
+    "company_logo": "./assets/images/logos-vagas/contaazul.png",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Joinvile",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor(a) Frontend (Frontend Developer)",
+    "company_name": "ContaAzul",
+    "company_logo": "./assets/images/logos-vagas/contaazul.png",
+    "featured": true,
+    "link": "https://jobs.kenoby.com/contaazul/job/desenvolvedora-frontend-frontend-developer/5b9fadd9ea23aa6716a49927",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Joinvile",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Especialista Backend (Backend Specialist)",
+    "company_name": "ContaAzul",
+    "company_logo": "./assets/images/logos-vagas/contaazul.png",
+    "featured": true,
+    "link": "https://jobs.kenoby.com/contaazul/job/especialista-backend-backend-specialist/5b9facd4f706072b766bc4be",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Joinvile",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Especialista Backend (Backend Specialist)",
+    "company_name": "ContaAzul",
+    "company_logo": "./assets/images/logos-vagas/contaazul.png",
+    "featured": true,
+    "link": "https://jobs.kenoby.com/contaazul/job/product-ownermanager/5c58241fd797f775cfac79f1",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Joinvile",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "UX Designer",
+    "company_name": "ContaAzul",
+    "company_logo": "./assets/images/logos-vagas/contaazul.png",
+    "featured": true,
+    "link": "https://jobs.kenoby.com/contaazul/job/ux-designer/5c34881118c96a0346c24d20",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Joinvile",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Suporte Técnico",
+    "company_name": "Useall",
+    "company_logo": "./assets/images/logos-vagas/useall.png",
+    "featured": true,
+    "link": "http://www.useall.com.br/trabalhe",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Programador C#",
+    "company_name": "Useall",
+    "company_logo": "./assets/images/logos-vagas/useall.png",
+    "featured": true,
+    "link": "http://www.useall.com.br/trabalhe",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Programador Web",
+    "company_name": "Useall",
+    "company_logo": "./assets/images/logos-vagas/useall.png",
+    "featured": true,
+    "link": "http://www.useall.com.br/trabalhe",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Arquiteto(a) de Sistemas",
+    "company_name": "Betha Sistemas",
+    "featured": false,
+    "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1629#.XFszHc9KhhE",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Palhoça",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Analista de Testes",
+    "company_name": "Betha Sistemas",
+    "featured": false,
+    "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1632#.XFszHM9KhhE",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
+    "location": {
+      "city": "Criciúma",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Analista de Sistemas",
+    "company_name": "Betha Sistemas",
+    "featured": false,
+    "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1628#.XFszHM9KhhE",
+    "type": "Full-Time - CLT",
+    "date": "2019-02-06T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
