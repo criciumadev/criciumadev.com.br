@@ -1,5 +1,6 @@
 var gulp = require("gulp"),
   jshint = require("gulp-jshint"),
+  surge = require('gulp-surge'),
   babel = require("gulp-babel"),
   watch = require("gulp-watch"),
   uglify = require("gulp-uglify"),
@@ -207,3 +208,10 @@ gulp.task("default", function() {
     ["webserver"]
   );
 });
+
+gulp.task('deploy', [], function () {
+  return surge({
+    project: 'www',         // Path to your static build directory
+    domain: 'criciumadev.com.br'  // Your domain or Surge subdomain
+  })
+})
