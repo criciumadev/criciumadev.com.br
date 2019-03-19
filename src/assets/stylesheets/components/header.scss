@@ -2,32 +2,35 @@
 	padding: 20px 0;
 	position: relative;
 	background: $color-light-a;
-
 	.logo {
 		height: 60px;
 		display: block;
 		float: left;
-
-		.light { display: none; }
-		.dark { display: block; }
-
-		img { height: 60px; }
+		.cd {
+			display: none;
+		}
+		.light {
+			display: none;
+		}
+		.dark {
+			display: block;
+		}
+		img {
+			height: 60px;
+		}
 	}
-
 	.list-menu {
 		float: right;
-
 		li {
 			float: left;
 			margin-left: 30px;
 			padding: 9px 0;
-
-			&:first-child { margin-left: 0; }
-
+			&:first-child {
+				margin-left: 0;
+			}
 			&.apoie {
 				margin-left: 40px;
 			}
-
 			a {
 				font-weight: 600;
 				font-size: 14px;
@@ -37,14 +40,13 @@
 				border-bottom: 3px solid transparent;
 				padding-bottom: 5px;
 				@include transiction;
-
 				&:hover,
-				&.active { border-color: $color-blue-c; }
-
+				&.active {
+					border-color: $color-blue-c;
+				}
 				&.button {
 					border: 2px solid $color-blue-c;
 					color: $color-blue-c;
-
 					&:hover {
 						background: $color-blue-c;
 						color: $color-light-a;

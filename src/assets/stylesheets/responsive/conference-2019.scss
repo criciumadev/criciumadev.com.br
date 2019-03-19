@@ -1,0 +1,77 @@
+@media only screen and (max-width: 992px) {
+  body.page.page-conference-2019 {
+    .box-1 {
+      margin-top: -228px;
+    }
+    .group-images {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body.page.page-conference-2019 {
+    .header {
+      padding: 20px 0 78px !important;
+    }
+    .box-1 {
+      min-height: 650px;
+      .container {
+        padding-top: 84px;
+      }
+      h1 {
+        font-size: 39px !important;
+        line-height: 47px;
+        margin-bottom: 36px;
+      }
+    }
+    .box-4 {
+      .box-palestrantes {
+        justify-content: center;
+        .box-palestrantes-person:hover {
+          .box-palestrantes-person--about {
+            transform: translate3d(0, -64px, 0);
+          }
+        }
+      }
+    }
+    .box-6 {
+      h3 {
+        font-size: 42px;
+        line-height: 56px;
+      }
+    }
+    .box-prog-hour {
+      flex-direction: column;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 36px;
+      margin-bottom: 36px;
+      text-align: center;
+      &--time {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 14px;
+      }
+      &--sep {
+        display: none;
+      }
+      .box-prog-item {
+        h4,
+        p {
+          text-align: center;
+        }
+      }
+      .box-prog-item + .box-prog-item {
+        margin-top: 19px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body.page.page-conference-2019 {
+    .box-1 .button {
+      margin: 0 auto;
+    }
+  }
+}

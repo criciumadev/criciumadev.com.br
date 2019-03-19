@@ -85,7 +85,7 @@ SITE.init = function() {
 	}
 
 	/* CONFERENCE */
-	if ($(document.body).hasClass("page-conference")) {
+	if ($(document.body).hasClass("page-conference-2019")) {
 		this.conferenceCountdown();
 	}
 };
