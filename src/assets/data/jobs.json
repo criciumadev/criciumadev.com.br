@@ -1,12 +1,25 @@
 [
   {
+    "title": "Analista Desenvolvedor Java",
+    "company_name": "Trier Sistemas",
+    "featured": false,
+    "color": "#AECF37",
+    "link": "https://www.triersistemas.com.br/trabalhe-conosco/vagas/analista-desenvolvedor-java",
+    "type": "Full-Time - CLT",
+    "date": "2019-03-21T01:00:00.000Z",
+    "location": {
+      "city": "Tubarão",
+      "state": "SC"
+    }
+  },
+  {
     "title": "Desenvolvedor WEB",
     "company_name": "Duapi Sistemas",
     "featured": false,
-    "color": "#FCC40A",
+    "color": "#AECF37",
     "link": "mailto:rh@duapi.com.br",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -19,7 +32,7 @@
     "company_logo": false,
     "link": "https://www.linkedin.com/feed/update/urn:li:activity:6495614113425743872",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -32,7 +45,7 @@
     "company_logo": false,
     "link": "mailto:contato@innovaconnect.com.br",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -45,7 +58,7 @@
     "color": "#0BA7A5",
     "link": "http://twsistemas.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -58,7 +71,7 @@
     "color": "#0BA7A5",
     "link": "http://twsistemas.com.br/trabalhe-conosco",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -71,7 +84,7 @@
     "color": "#DA2337",
     "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/53",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -84,7 +97,7 @@
     "color": "#DA2337",
     "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/55",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -97,7 +110,7 @@
     "color": "#DA2337",
     "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/57",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -110,7 +123,7 @@
     "color": "#DA2337",
     "link": "http://www.sistemainfo.com.br/cadastre-seu-curriculo/vaga/54",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -125,7 +138,7 @@
     "link": "https://conteudos.portabilis.com.br/mkt-analyst",
     
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -139,7 +152,7 @@
     "featured": true,
     "link": "https://conteudos.portabilis.com.br/mkt-analyst-senior",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -153,7 +166,7 @@
     "featured": true,
     "link": "https://conteudos.portabilis.com.br/channel-analyst",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -167,7 +180,7 @@
     "featured": true,
     "link": "https://conteudos.portabilis.com.br/quality-analyst",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -181,7 +194,7 @@
     "featured": true,
     "link": "https://conteudos.portabilis.com.br/dev-rails-senior",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -195,7 +208,7 @@
     "featured": true,
     "link": "https://conteudos.portabilis.com.br/product-analyst-edu",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -209,7 +222,7 @@
     "featured": true,
     "link": "https://talentos.globo.com/#/oportunidades/desenvolvedor-a-backend-java-senior-com-experiencia-em-infra/mp0jjyb",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Rio de Janeiro",
       "state": "RJ"
@@ -223,7 +236,7 @@
     "featured": true,
     "link": "https://talentos.globo.com/#/oportunidades/desenvolvedor-a-android-player-de-videos/mp0mmvc",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Rio de Janeiro",
       "state": "RJ"
@@ -237,7 +250,7 @@
     "featured": true,
     "link": "https://talentos.globo.com/#/oportunidades/desenvolvedor-a-android-esportes/mp0jooq",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Rio de Janeiro",
       "state": "RJ"
@@ -251,7 +264,7 @@
     "featured": true,
     "link": "https://talentos.globo.com/#/oportunidades/big-data-desenvolvedor-a-de-software-senior-rj/mp01em6",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Rio de Janeiro",
       "state": "RJ"
@@ -265,7 +278,7 @@
     "link": "https://jobs.kenoby.com/contaazul/job/coordenadora-de-engenharia/5bfd97edd8f67055fe1f1d9f",
     "company_logo": "./assets/images/logos-vagas/contaazul.png",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Joinvile",
       "state": "SC"
@@ -279,7 +292,7 @@
     "featured": true,
     "link": "https://jobs.kenoby.com/contaazul/job/desenvolvedora-frontend-frontend-developer/5b9fadd9ea23aa6716a49927",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Joinvile",
       "state": "SC"
@@ -293,7 +306,7 @@
     "featured": true,
     "link": "https://jobs.kenoby.com/contaazul/job/especialista-backend-backend-specialist/5b9facd4f706072b766bc4be",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Joinvile",
       "state": "SC"
@@ -307,7 +320,7 @@
     "featured": true,
     "link": "https://jobs.kenoby.com/contaazul/job/product-ownermanager/5c58241fd797f775cfac79f1",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Joinvile",
       "state": "SC"
@@ -321,7 +334,7 @@
     "featured": true,
     "link": "https://jobs.kenoby.com/contaazul/job/ux-designer/5c34881118c96a0346c24d20",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Joinvile",
       "state": "SC"
@@ -335,7 +348,7 @@
     "featured": true,
     "link": "http://www.useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -349,7 +362,7 @@
     "featured": true,
     "link": "http://www.useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -363,7 +376,7 @@
     "featured": true,
     "link": "http://www.useall.com.br/trabalhe",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -376,7 +389,7 @@
     "featured": false,
     "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1629#.XFszHc9KhhE",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Palhoça",
       "state": "SC"
@@ -389,7 +402,7 @@
     "featured": false,
     "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1632#.XFszHM9KhhE",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"
@@ -402,7 +415,7 @@
     "featured": false,
     "link": "http://www.kombo.com.br/curriculo/visualizar_vaga.php?cid=NzctMA==&codigo_vaga=k77-1628#.XFszHM9KhhE",
     "type": "Full-Time - CLT",
-    "date": "2019-02-06T01:00:00.000Z",
+    "date": "2019-03-21T01:00:00.000Z",
     "location": {
       "city": "Criciúma",
       "state": "SC"

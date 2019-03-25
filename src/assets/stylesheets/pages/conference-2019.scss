@@ -1,34 +1,81 @@
 body.page.page-conference-2019 {
   background: #edf2f5;
+
   .box-sponsors {
     background-color: #edf2f5;
+    padding-bottom: 0;
+
+    .group-sponsors { margin-bottom: 50px; }
+
+    .box-title,
+    .box-title h2 { margin-bottom: 0 !important; }
+
+    .row {
+      li {
+        margin: 0;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 160px;
+          text-align: center;
+
+          img {
+            width: 80%;
+            height: 100%;
+            margin: 0 10%;
+            object-fit: contain;
+            object-position: center center;
+          }
+        }
+      }
+    }
   }
+
   .footer .footer-top {
     background-color: #1d1d2e;
   }
+
   .box .box-title h2:after {
     background-color: #243cfe !important;
   }
+
   .header {
-    background: url("./images/bg-curva-topo.png") no-repeat top left;
-    padding: 70px 0 78px;
+    background: url("./images/cdc-2019/bg-curva-topo.png") no-repeat top center;
+    padding: 40px 0 87px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
     .logo {
+      height: initial;
+
+      img { height: 80px; }
+
       .light {
         display: none;
       }
+
       .dark {
         display: none;
       }
+
       .cd {
         display: block;
       }
     }
+
     .list-menu {
       li {
+        margin-left: 27px;
+        padding: 20px 0;
+
         a {
           color: $color-light-a;
+
           &.button {
             border: 2px solid rgba(255, 255, 255, 0.7);
+
             &:hover {
               background: $color-blue-c;
               border-color: $color-blue-c;
@@ -38,16 +85,20 @@ body.page.page-conference-2019 {
       }
     }
   }
+
   .content {
-    padding: 0 0 60px;
+    padding: 0;
+
     .container {
       max-width: inherit;
     }
   }
+
   .box-feat-title {
     display: flex;
     align-items: center;
     justify-content: center;
+
     h2 {
       display: flex;
       flex-direction: column;
@@ -55,15 +106,16 @@ body.page.page-conference-2019 {
       justify-content: center;
     }
   }
+
   .box-1 {
-    background: #000 url("./images/bg-conference.jpg") no-repeat top center;
+    padding: 210px 0 110px;
+    background: #000 url("./images/cdc-2019/bg-conference.jpg") no-repeat top center;
     @include background-cover;
-    margin-top: -208px;
-    padding: 240px 0 0;
-    min-height: 850px;
+
     .container {
       text-align: center;
     }
+
     .countdown {
       display: flex;
       flex-direction: row;
@@ -71,6 +123,7 @@ body.page.page-conference-2019 {
       margin-top: 40px;
       margin-bottom: 68px;
     }
+
     .countdown-item {
       display: flex;
       justify-content: center;
@@ -81,6 +134,7 @@ body.page.page-conference-2019 {
       cursor: default;
       border: 1px solid #243cfe;
       border-collapse: collapse;
+
       &--tag {
         display: inline-block;
         margin: 0 9px;
@@ -90,6 +144,7 @@ body.page.page-conference-2019 {
         font-weight: bold;
         color: #fff;
       }
+
       &--label {
         display: inline-block;
         color: #fff;
@@ -99,9 +154,11 @@ body.page.page-conference-2019 {
         text-align: center;
       }
     }
+
     .countdown-item + .countdown-item {
       border-left: 0;
     }
+
     h1,
     h2 {
       color: $color-light-a;
@@ -115,12 +172,14 @@ body.page.page-conference-2019 {
       text-transform: uppercase;
       cursor: default;
     }
+
     h2 {
       font-size: 32px;
       line-height: 46px;
       letter-spacing: -1px;
       margin-bottom: 9px;
     }
+
     p {
       display: flex;
       justify-content: flex-start;
@@ -130,15 +189,13 @@ body.page.page-conference-2019 {
       line-height: 16px;
       font-weight: 600;
       text-align: left;
+
       > img {
         margin-top: -1px;
         margin-right: 10px;
       }
     }
-    .sub-header {
-      margin: 0 auto;
-      max-width: 688px;
-    }
+
     .button {
       height: 64px;
       padding: 0 38px;
@@ -149,23 +206,34 @@ body.page.page-conference-2019 {
       border-radius: 0;
       background-color: #2342fe !important;
       background-image: none;
+      font-weight: 500;
+
       &:hover {
-        background-color: #1d1d2e !important;
+        @include opacity(.9);
       }
     }
+
+    .sub-header {
+      margin: 0 auto;
+      max-width: 688px;
+    }
   }
+
   .box-2 {
-    background: #1d1d2e url("./images/bg-curva-sobre.png") no-repeat top right !important;
+    background: #1d1d2e url("./images/cdc-2019/bg-curva-sobre.png") no-repeat top right !important;
     padding: 165px 0 192px;
     position: relative;
     overflow: hidden;
     color: #fff;
+
     .group-images {
       position: relative;
       margin-bottom: 30px;
+
       figure {
         margin: 15px 0;
         display: block;
+
         img {
           max-width: 100%;
           display: block;
@@ -173,14 +241,20 @@ body.page.page-conference-2019 {
         }
       }
     }
+
     h2 {
       font-size: 36px;
       line-height: 42px;
       text-transform: uppercase;
       color: #fff;
     }
+
     p {
       color: #bcbccb;
+      margin-bottom: 20px;
+
+      strong { color: #bcbccb; }
+
       .link {
         display: inline-block;
         background-color: #243cfe;
@@ -191,36 +265,60 @@ body.page.page-conference-2019 {
         padding: 14px 30px;
         color: #fff;
         transition: all 0.5s ease;
+
         &:hover {
           background-color: #1d1d2e !important;
         }
       }
     }
+
+    .button {
+      height: 64px;
+      padding: 0 38px;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 64px;
+      transition: all 0.5s ease;
+      border-radius: 0;
+      background-color: #2342fe !important;
+      background-image: none;
+      font-weight: 500;
+
+      &:hover {
+        @include opacity(.9);
+      }
+    }
   }
+
   .box-3 {
     position: relative;
     overflow: hidden;
     margin-top: -85px;
     padding: 0;
+
     .container {
       display: flex;
       flex-direction: row;
       justify-content: center;
     }
+
     .box-about-item {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
+
     .box-about-item + .box-about-item {
       padding-left: 40px;
       margin-left: 40px;
     }
+
     .box-about-icon {
       display: inline-block;
       width: 64px;
       margin-right: 27px;
     }
+
     .box-about-entry {
       font-size: 18px;
       line-height: 36px;
@@ -232,17 +330,21 @@ body.page.page-conference-2019 {
         color: #fff;
       }
     }
+
   }
+
   .box-4 {
     background-color: #1d1d2e !important;
     position: relative;
     padding-top: 160px;
+
     h2 {
       font-size: 36px;
       line-height: 42px;
       text-transform: uppercase;
       color: #fff;
     }
+
     .box-palestrantes {
       display: flex;
       flex-direction: row;
@@ -251,96 +353,109 @@ body.page.page-conference-2019 {
       margin: -17px auto 0;
     }
   }
+
   .box-palestrantes-person {
     position: relative;
     text-align: center;
     background-color: #243cfe;
     @include box-shadow(0, 5px, 30px, rgba(0, 0, 0, 0.2));
-    @include transiction;
+    @include background-cover;
     border-radius: 6px;
     width: 266px;
-    height: 352px;
-    margin: 17px 0;
-    overflow: hidden;
+    height: 290px;
+    margin: 0 50px 90px 50px;
     cursor: default;
+
     &--thumb {
-      // position: absolute;
       z-index: 1;
+
       img {
         display: block;
         width: 100%;
       }
     }
+
     &--about {
       position: absolute;
-      background-color: #243cfe;
-      text-align: center;
-      padding: 23px 14px;
-      @include transiction;
-      top: 264px;
-      left: 0;
-      right: 0;
       z-index: 2;
+      bottom: -20px;
+      left: -30px;
+
       h5 {
-        font-size: 17px;
-        line-height: 21px;
-        font-weight: bold;
-        text-align: center;
+        font-size: 56px;
+        line-height: 48px;
+        font-weight: 900;
         margin-bottom: 4px;
-        color: #fff;
+        color: #FFFFFF;
+        text-transform: uppercase;
       }
+
       p {
         font-size: 16px;
         line-height: 21px;
-        font-weight: 500;
-        text-align: center;
+        font-weight: 900;
         margin-bottom: 7px;
         color: #bcbccb;
+        padding-right: 50px;
       }
+
+      .company {
+        width: 180px;
+        float: right;
+        position: relative;
+        right: -20px;
+        top: 2px;
+      }
+
       .social-links {
         text-align: center;
         padding: 14px 0 0;
+
         a > img {
           display: inline-block;
           margin: 0 3px;
         }
+
         a:hover > img {
           @include opacity(0.8);
         }
       }
     }
+
     .button {
       margin: 0 auto;
       @include no-shadow;
+
       &:hover {
         @include no-shadow;
       }
     }
-    &:hover {
-      .box-palestrantes-person--about {
-        transform: translate3d(0, -55px, 0);
-      }
-    }
   }
+
   .box-5 {
     background-color: #1d1d2e !important;
     position: relative;
     overflow: hidden;
+    padding-top: 0;
+
     h2 {
       font-size: 36px;
       line-height: 42px;
       text-transform: uppercase;
       color: #fff;
     }
+
     .box-content {
       margin: -20px auto 0;
       max-width: 760px;
     }
   }
+
   .box-prog-hour {
     display: flex;
     flex-direction: row;
     margin-bottom: 54px;
+
     &--time {
       font-size: 29px;
       font-weight: bold;
@@ -350,6 +465,7 @@ body.page.page-conference-2019 {
       text-transform: uppercase;
       width: 94px;
     }
+
     &--sep {
       font-size: 32px;
       font-weight: 300;
@@ -359,15 +475,18 @@ body.page.page-conference-2019 {
       color: #243cfe;
       width: 74px;
     }
+
     &--items {
       flex: 1;
     }
+
     .box-prog-item {
       h4 {
         font-size: 30px;
         font-weight: bold;
         line-height: 36px;
         color: #fff;
+
         &.box-prog-item-title-blue {
           font-size: 21px;
           line-height: 26px;
@@ -381,19 +500,22 @@ body.page.page-conference-2019 {
         color: #bcbccb;
       }
     }
+
     .box-prog-item + .box-prog-item {
       margin-top: 46px;
     }
   }
+
   .box-6 {
-    background: #1d1d2e url("./images/bg-bar-ibis.png") no-repeat top center;
-    min-height: 584px;
-    padding: 47px 0;
+    background: #1d1d2e url("./images/cdc-2019/bg-bar-ibis.png") no-repeat top center;
+    padding: 65px 0;
+
     .box-content {
       width: 100%;
       max-width: 562px;
       margin-top: 24px;
     }
+
     h3 {
       text-transform: uppercase;
       font-weight: 800;
@@ -403,12 +525,14 @@ body.page.page-conference-2019 {
       margin-bottom: 28px;
       color: #fff;
     }
+
     p {
       font-weight: 500;
       font-size: 16px;
       line-height: 26px;
       color: #fff;
     }
+
     p strong {
       display: inline-block;
       font-weight: 900;
@@ -417,6 +541,7 @@ body.page.page-conference-2019 {
       color: #fff;
       padding-bottom: 10px;
     }
+
     .button {
       display: inline-block;
       color: $color-blue-c;
@@ -429,10 +554,13 @@ body.page.page-conference-2019 {
       font-weight: normal;
       margin: 13px 0;
       border-radius: 0;
+      font-weight: 500;
     }
+
     .box-hotel-about {
       margin-bottom: 32px;
     }
+
     .box-hotel-discount {
       a {
         color: #fff;
@@ -451,8 +579,10 @@ body.page.page-conference-2019 {
         font-style: italic;
       }
     }
+
     .box-hotel-coupom {
       vertical-align: middle;
+
       .box-hotel-coupom-code {
         display: inline-block;
         border: 1px dashed #fff;
@@ -463,12 +593,55 @@ body.page.page-conference-2019 {
         padding: 0 28px;
         margin-right: 18px;
       }
+
       .button {
         font-size: 13px;
         line-height: 36px;
         width: 202px;
         height: 34px;
+        font-weight: 500;
       }
+
     }
   }
+
+  .fixed-button {
+    position: fixed;
+    z-index: 100;
+    bottom: -72px;
+    right: 30px;
+    transition: .5s;
+    height: 64px;
+    padding: 0 38px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 64px;
+    transition: all 0.5s ease;
+    border-radius: 0;
+    background-color: #2342fe !important;
+    background-image: none;
+    font-weight: 500;
+
+    &:hover {
+      @include opacity(.9);
+    }
+
+    &.visible{ bottom: 0; }
+
+    .container{
+      max-width: 900px;
+      width: initial
+    }
+
+    p {
+      font-size: 15px;
+      color: #404041;
+      line-height: 23px
+    }
+  }
+
+  .footer .footer-bottom {
+    padding: 15px 0 95px;
+  }
+
 }

@@ -74,7 +74,7 @@ SITE.init = function() {
 
 	/* HOME */
 	if ($(document.body).hasClass("page-home")) {
-		// Widgets.eventsFeed.fetch();
+		Widgets.eventsFeed.fetch();
 		Widgets.postsFeed.fetch();
 		Widgets.videosFeed.fetch();
 	}
