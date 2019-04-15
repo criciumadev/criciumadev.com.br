@@ -1,5 +1,31 @@
 [
   {
+    "title": "Desenvolvedor Front-End",
+    "company_name": "Rede Vistorias",
+    "featured": false,
+    "link": "https://jobs.kenoby.com/oportunidadesrvexterno",
+    "type": "Full-Time - CLT",
+    "date": "2019-03-29T01:00:00.000Z",
+    "location": {
+      "city": "Florianópolis",
+      "state": "SC"
+    }
+  },
+
+  {
+    "title": "Desenvolvedor Back-End",
+    "company_name": "Rede Vistorias",
+    "featured": false,
+    "link": "https://jobs.kenoby.com/oportunidadesrvexterno",
+    "type": "Full-Time - CLT",
+    "date": "2019-03-29T01:00:00.000Z",
+    "location": {
+      "city": "Florianópolis",
+      "state": "SC"
+    }
+  },
+
+  {
     "title": "Analista Desenvolvedor Java",
     "company_name": "Trier Sistemas",
     "featured": false,
