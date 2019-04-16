@@ -1,5 +1,19 @@
 [
   {
+    "title": "Desenvolvedor Web Rails",
+    "company_name": "Portabilis",
+    "company_logo": "./assets/images/logos-vagas/portabilis.png",
+    "featured": true,
+    "link": "https://portabilis.com.br/oportunidades/",
+    "type": "CLT e Home Office",
+    "date": "2019-04-16T01:00:00.000Z",
+    "location": {
+      "city": "Içara",
+      "state": "SC"
+    }
+  },
+
+  {
     "title": "Desenvolvedor Front-End",
     "company_name": "Rede Vistorias",
     "featured": false,
