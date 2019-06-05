@@ -162,7 +162,6 @@
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "featured": true,
     "link": "https://conteudos.portabilis.com.br/mkt-analyst",
-    
     "type": "Full-Time - CLT",
     "date": "2019-03-21T01:00:00.000Z",
     "location": {
@@ -186,27 +185,13 @@
   },
 
   {
-    "title": "Channel Analyst",
+    "title": "Estagiário de Qualidade",
     "company_name": "Portabilis",
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "featured": true,
-    "link": "https://conteudos.portabilis.com.br/channel-analyst",
-    "type": "Full-Time - CLT",
-    "date": "2019-03-21T01:00:00.000Z",
-    "location": {
-      "city": "Içara",
-      "state": "SC"
-    }
-  },
-
-  {
-    "title": "Analista de Qualidade (QA)",
-    "company_name": "Portabilis",
-    "company_logo": "./assets/images/logos-vagas/portabilis.png",
-    "featured": true,
-    "link": "https://conteudos.portabilis.com.br/quality-analyst",
-    "type": "Full-Time - CLT",
-    "date": "2019-03-21T01:00:00.000Z",
+    "link": "https://conteudos.portabilis.com.br/qatreinee",
+    "type": "Estágio Full-Time",
+    "date": "2019-06-05T01:00:00.000Z",
     "location": {
       "city": "Içara",
       "state": "SC"
@@ -219,20 +204,6 @@
     "company_logo": "./assets/images/logos-vagas/portabilis.png",
     "featured": true,
     "link": "https://conteudos.portabilis.com.br/dev-rails-senior",
-    "type": "Full-Time - CLT",
-    "date": "2019-03-21T01:00:00.000Z",
-    "location": {
-      "city": "Içara",
-      "state": "SC"
-    }
-  },
-
-  {
-    "title": "Senior Product Analyst",
-    "company_name": "Portabilis",
-    "company_logo": "./assets/images/logos-vagas/portabilis.png",
-    "featured": true,
-    "link": "https://conteudos.portabilis.com.br/product-analyst-edu",
     "type": "Full-Time - CLT",
     "date": "2019-03-21T01:00:00.000Z",
     "location": {
