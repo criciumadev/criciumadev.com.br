@@ -28,6 +28,7 @@
     "upd": "yarn upgrade-interactive --latest",
     "deploy": "gulp build && surge ./www https://criciumadev.com.br",
     "deploy-www": "gulp build && surge ./www https://www.criciumadev.com.br",
+    "deploy-dev": "gulp build && surge ./www https://criciuma.dev",
     "start": "gulp default",
     "build": "gulp build"
   },
