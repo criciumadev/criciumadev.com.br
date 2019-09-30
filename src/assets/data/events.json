@@ -2,6 +2,30 @@
   "events": {
     "data": [
       {
+        "id": "503504440398397",
+        "name": "11º Meetup Criciúma Dev",
+        "place": {
+          "name": "Plurall Coworking",
+          "location": {
+            "city": "Criciúma",
+            "country": "Brazil",
+            "latitude": -28.692112322941,
+            "longitude": -49.378470182419,
+            "state": "SC",
+            "street": "Avenida Santos Dumont, 1665",
+            "zip": "88804342"
+          },
+          "id": "1164384376946231"
+        },
+        "start_time": "2019-08-24T14:00:00-0300",
+        "cover": {
+          "offset_x": 50,
+          "offset_y": 50,
+          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/67934682_2565659876801109_2281086993813209088_o.jpg?_nc_cat=111&_nc_oc=AQmkuSQdq8M1l6t9Ux2IbtpxReFlN1b5BhoZbwB53gf8oeWvywmT3F6p4y3d1M2TrUs&_nc_ht=scontent.fcwb2-2.fna&oh=6cf9237750b3801a82a84a1cd41568bc&oe=5DCDE15A",
+          "id": "2055606057806496"
+        }
+      },
+      {
         "id": "2220963977971248",
         "name": "Criciúma Dev Conference 2019",
         "place": {
@@ -21,7 +45,7 @@
         "cover": {
           "offset_x": 50,
           "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/53270692_2291737557526677_6641751806084907008_n.jpg?_nc_cat=110&_nc_ht=scontent.xx&oh=e268a2a341de8ce2545b505c836abbd4&oe=5D19408C",
+          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/53270692_2291737557526677_6641751806084907008_n.jpg?_nc_cat=110&_nc_oc=AQkj7PTgFjnnBj52MlPKuhTfA8T0P9RKoq6wM9wM9QMZ89PF8lhZB3qLBORVmDFpygo&_nc_ht=scontent.fcwb2-2.fna&oh=e8f2cbfdceaff0cd675fb6ff8d4157de&oe=5DDF018C",
           "id": "2291737550860011"
         }
       },
@@ -45,7 +69,7 @@
         "cover": {
           "offset_x": 50,
           "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/47101502_2141549189212182_3624306834174640128_o.jpg?_nc_cat=105&_nc_ht=scontent.xx&oh=cba157483ae954104066ec2523df1208&oe=5D0B04A7",
+          "source": "https://scontent.fcwb2-1.fna.fbcdn.net/v/t1.0-9/47101502_2141549189212182_3624306834174640128_o.jpg?_nc_cat=105&_nc_oc=AQkX-r8praEWIfFvm3NytsBuHCcqdGWQjJaZyBxd4ST_QdZRvGdep7LAQCLHAzrPR94&_nc_ht=scontent.fcwb2-1.fna&oh=4a3295893083c502f17cc2b5be98a1d7&oe=5DC93CD9",
           "id": "2141549185878849"
         }
       },
@@ -69,7 +93,7 @@
         "cover": {
           "offset_x": 50,
           "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/42617470_2055606064473162_4214069022884364288_o.jpg?_nc_cat=107&_nc_ht=scontent.xx&oh=6c788ef7f86c04d909ef4ece2aa93774&oe=5D0F087E",
+          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/42617470_2055606064473162_4214069022884364288_o.jpg?_nc_cat=107&_nc_oc=AQniBBAD44bjpXD4lKaCm5mOjWPBZLp6WDXcEUQOsuyJ5iWncbVcKD2jDNP53HUNmlY&_nc_ht=scontent.fcwb2-2.fna&oh=5c2d37c1db1f85d647adbf9975e3b4c3&oe=5DE14D00",
           "id": "2055606057806496"
         }
       },
@@ -93,7 +117,7 @@
         "cover": {
           "offset_x": 50,
           "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/36619541_1929461230420980_7156397357544767488_o.jpg?_nc_cat=108&_nc_ht=scontent.xx&oh=46eca9d0cd8884bbd97273e2a42570ef&oe=5D1F3975",
+          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/36543858_1929461227087647_3137104165231132672_n.jpg?_nc_cat=107&_nc_oc=AQkPjh3xH_KOCqucS3V2cTgWJY_l3FTg5GuSRl3WL0ADlX1VpNqjeo669SOg61FRQkw&_nc_ht=scontent.fcwb2-2.fna&oh=dc0e1826347cf243d41dfd477100725c&oe=5DD90764",
           "id": "1929461220420981"
         }
       },
@@ -117,7 +141,7 @@
         "cover": {
           "offset_x": 50,
           "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/29060884_1818156541551450_6372873989703475669_o.jpg?_nc_cat=101&_nc_ht=scontent.xx&oh=f4aacb25e624c51b0df9bed1b38a4e8f&oe=5D0B0A9B",
+          "source": "https://scontent.fcwb2-1.fna.fbcdn.net/v/t1.0-9/29513222_1818156541551450_6372873989703475669_n.jpg?_nc_cat=101&_nc_oc=AQmulYaxzr4oN9QNdWRwCNz0zrXtCrBUw5WFka57zj9Aq59lUDZnSWtSHEEJ-FaujwE&_nc_ht=scontent.fcwb2-1.fna&oh=99cfd3f0bd1150555906bc70c19f3980&oe=5DD087EB",
           "id": "1818156541551450"
         }
       },
@@ -141,94 +165,8 @@
         "cover": {
           "offset_x": 50,
           "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/28235551_1781674555199649_6231318692531948288_o.jpg?_nc_cat=102&_nc_ht=scontent.xx&oh=c50c63bab8ef2393b4e67be4af2b5e02&oe=5D03FA34",
+          "source": "https://scontent.fcwb2-1.fna.fbcdn.net/v/t31.0-8/28235551_1781674555199649_6231318692531948288_o.jpg?_nc_cat=102&_nc_oc=AQkxnvdvwEeNQAjnllGiyNqiPzXDwmgnYstgb2Z3LcZXmDKIbChzVRT_1WG35ncfF3w&_nc_ht=scontent.fcwb2-1.fna&oh=1044af63c8fb6ff5bb7d4a33246f56df&oe=5DDB3C28",
           "id": "1781674555199649"
-        }
-      },
-      {
-        "id": "880402322110422",
-        "name": "6º Meetup Criciúma Dev",
-        "place": {
-          "name": "Plurall Coworking",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.692112322941,
-            "longitude": -49.378470182419,
-            "state": "SC",
-            "street": "Avenida Santos Dumont, 1665",
-            "zip": "88804342"
-          },
-          "id": "1164384376946231"
-        },
-        "start_time": "2017-10-07T14:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/22095848_1632631196770653_8121136858027954807_o.jpg?_nc_cat=111&_nc_ht=scontent.xx&oh=ef8cbf846de5cedcf1880b53755e17d1&oe=5D0D1B8D",
-          "id": "1632631196770653"
-        }
-      },
-      {
-        "id": "846195875535489",
-        "name": "5º Meetup Criciúma Dev",
-        "place": {
-          "name": "Plurall Coworking",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.692112322941,
-            "longitude": -49.378470182419,
-            "state": "SC",
-            "street": "Avenida Santos Dumont, 1665",
-            "zip": "88804342"
-          },
-          "id": "1164384376946231"
-        },
-        "start_time": "2017-06-24T14:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/19400019_1534885299878577_5528448385962004168_n.jpg?_nc_cat=104&_nc_ht=scontent.xx&oh=3d7590c6effdb25414a6ee785bb35a80&oe=5D0DC9D0",
-          "id": "1534885299878577"
-        }
-      },
-      {
-        "id": "280993079003759",
-        "name": "Vale do Carbono Conference",
-        "place": {
-          "name": "ACIC - Associação Empresarial de Criciúma",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.679631424499,
-            "longitude": -49.355554042952,
-            "state": "SC",
-            "street": "Rua Ernesto Bianchini Góes",
-            "zip": "88815-030"
-          },
-          "id": "392429840778509"
-        },
-        "start_time": "2017-05-20T08:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/17310975_346852612377786_3768933108380269374_o.jpg?_nc_cat=102&_nc_ht=scontent.xx&oh=d0bafb602e29164f48b4c467081f8a21&oe=5D0A4A32",
-          "id": "346852612377786"
-        }
-      },
-      {
-        "id": "763849287089286",
-        "name": "3º Encontro Criciúma Dev",
-        "place": {
-          "name": "https://goo.gl/oszf2x"
-        },
-        "start_time": "2016-10-15T14:00:00-0300",
-        "cover": {
-          "offset_x": 54,
-          "offset_y": 50,
-          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/14362646_1246303848736725_2925177269950230107_o.jpg?_nc_cat=111&_nc_ht=scontent.xx&oh=be69d515d97285f8720ff555415faba1&oe=5D4A5EED",
-          "id": "1246303848736725"
         }
       }
     ],
