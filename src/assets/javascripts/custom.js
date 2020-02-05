@@ -5,7 +5,7 @@ var ONE_MINUTE = ONE_SECOND * 60;
 var ONE_HOUR = ONE_MINUTE * 60;
 var ONE_DAY = ONE_HOUR * 24;
 
-var CDC_DATE = "2019-05-04T08:00:00.180Z";
+var CDC_DATE = "2020-05-09T08:00:00.180Z";
 
 function dateFmt(date) {
 	return (
@@ -85,7 +85,7 @@ SITE.init = function() {
 	}
 
 	/* CONFERENCE */
-	if ($(document.body).hasClass("page-conference-2019")) {
+	if ($(document.body).hasClass("page-conference-2020")) {
 		this.conferenceCountdown();
 	}
 };
