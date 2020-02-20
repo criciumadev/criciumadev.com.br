@@ -96,7 +96,7 @@ gulp.task("js-minify", function() {
       PATH.js + "/custom.js"
     ])
     .pipe(concat("all.min.js"))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest(PATH.dest + "/assets"));
 });
 

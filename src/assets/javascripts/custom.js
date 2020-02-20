@@ -71,6 +71,7 @@ SITE.init = function() {
 	this.menuActive();
 	this.newsletter();
 	this.sendMail();
+	this.toggleCoc();
 
 	/* HOME */
 	if ($(document.body).hasClass("page-home")) {
@@ -95,9 +96,10 @@ SITE.conferenceCountdown = function() {
 
 	function tickCounters() {
 		var diff = complexDateDiff(CDC_DATE);
-		countdown.find(".countdown-item__days > .countdown-item--tag").text(diff.days);
-		countdown.find(".countdown-item__hours > .countdown-item--tag").text(diff.hours);
-		countdown.find(".countdown-item__minutes > .countdown-item--tag").text(diff.minutes);
+		countdown.find(".days .time").text(diff.days);
+		countdown.find(".hours .time").text(diff.hours);
+		countdown.find(".minutes .time").text(diff.minutes);
+		countdown.find(".seconds .time").text(diff.seconds);
 
 		setTimeout(tickCounters.bind(this), 1000);
 	}
@@ -348,6 +350,39 @@ SITE.sendMail = function() {
 		}
 	});
 };
+
+SITE.toggleCoc = function() {
+	$('[data-cdc="open"]').on("click", function(e) {
+		e.preventDefault();
+		$('#coc').addClass('show');
+	});
+
+	$('[data-cdc="close"]').on("click", function(e) {
+		e.preventDefault();
+		$('#coc').addClass('hide');
+
+		setTimeout(function(){
+			$('#coc').removeClass('show hide');
+		}, 1000);
+	});
+
+	if(window.location.hash == '#coc') {
+		$('#coc').addClass('show');
+	}
+
+	$(document).keyup(function(e) { 
+		if (e.which === 27) {
+			$('#coc').addClass('hide');
+
+			setTimeout(function(){
+				$('#coc').removeClass('show hide');
+			}, 1000);
+		}
+
+		e.preventDefault();
+		e.stopPropagation();
+	});
+}
 
 $(document).ready(function() {
 	SITE.init();

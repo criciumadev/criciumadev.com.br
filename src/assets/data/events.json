@@ -2,181 +2,131 @@
   "events": {
     "data": [
       {
-        "id": "503504440398397",
-        "name": "11º Meetup Criciúma Dev",
-        "place": {
-          "name": "Plurall Coworking",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.692112322941,
-            "longitude": -49.378470182419,
-            "state": "SC",
-            "street": "Avenida Santos Dumont, 1665",
-            "zip": "88804342"
-          },
-          "id": "1164384376946231"
-        },
-        "start_time": "2019-08-24T14:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/67934682_2565659876801109_2281086993813209088_o.jpg?_nc_cat=111&_nc_oc=AQmkuSQdq8M1l6t9Ux2IbtpxReFlN1b5BhoZbwB53gf8oeWvywmT3F6p4y3d1M2TrUs&_nc_ht=scontent.fcwb2-2.fna&oh=6cf9237750b3801a82a84a1cd41568bc&oe=5DCDE15A",
-          "id": "2055606057806496"
-        }
+        "name": "Criciúma Dev Conference 2020",
+        "link": "https://eventos.criciumadev.com.br/criciuma-dev-conference-2020",
+        "date": "09/05/2020",
+        "future": "future-event",
+        "place": "Teatro Elias Angeloni",
+        "cover": "./assets/images/eventos/cdc-2020.jpg"
       },
+
       {
-        "id": "2220963977971248",
         "name": "Criciúma Dev Conference 2019",
-        "place": {
-          "name": "ACIC - Associação Empresarial de Criciúma",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.679631424499,
-            "longitude": -49.355554042952,
-            "state": "SC",
-            "street": "Rua Ernesto Bianchini Góes",
-            "zip": "88815-030"
-          },
-          "id": "392429840778509"
-        },
-        "start_time": "2019-05-04T09:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/53270692_2291737557526677_6641751806084907008_n.jpg?_nc_cat=110&_nc_oc=AQkj7PTgFjnnBj52MlPKuhTfA8T0P9RKoq6wM9wM9QMZ89PF8lhZB3qLBORVmDFpygo&_nc_ht=scontent.fcwb2-2.fna&oh=e8f2cbfdceaff0cd675fb6ff8d4157de&oe=5DDF018C",
-          "id": "2291737550860011"
-        }
+        "link": "https://www.sympla.com.br/criciuma-dev-conference-2019__461801",
+        "date": "04/05/2020",
+        "future": "",
+        "place": "ACIC - Criciúma",
+        "cover": "./assets/images/eventos/cdc-2019.jpg"
       },
+
       {
-        "id": "2200167833572949",
+        "name": "Criciúma Dev Conference 2018",
+        "link": "https://www.sympla.com.br/criciuma-dev-conference__213460",
+        "date": "19/05/2020",
+        "future": "",
+        "place": "ACIC - Criciúma",
+        "cover": "./assets/images/eventos/cdc-2018.jpg"
+      },
+
+      {
+        "name": "11º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/11-meetup-criciuma-dev__614584",
+        "date": "24/08/2019",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/11-meetup.jpg"
+      },
+
+      {
         "name": "10º Meetup Criciúma Dev",
-        "place": {
-          "name": "Domínio Sistemas",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -23.5957,
-            "longitude": -46.69104,
-            "state": "SC",
-            "street": "Avenida Centenário, 7405",
-            "zip": "04548-005"
-          },
-          "id": "137346552986477"
-        },
-        "start_time": "2018-12-08T14:00:00-0200",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.fcwb2-1.fna.fbcdn.net/v/t1.0-9/47101502_2141549189212182_3624306834174640128_o.jpg?_nc_cat=105&_nc_oc=AQkX-r8praEWIfFvm3NytsBuHCcqdGWQjJaZyBxd4ST_QdZRvGdep7LAQCLHAzrPR94&_nc_ht=scontent.fcwb2-1.fna&oh=4a3295893083c502f17cc2b5be98a1d7&oe=5DC93CD9",
-          "id": "2141549185878849"
-        }
+        "link": "https://www.sympla.com.br/10-meetup-criciuma-dev__412778",
+        "date": "08/12/2018",
+        "future": "",
+        "place": "Thomson Reuters",
+        "cover": "./assets/images/eventos/10-meetup.jpg"
       },
+
       {
-        "id": "564567330669242",
         "name": "9º Meetup Criciúma Dev",
-        "place": {
-          "name": "Plurall Coworking",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.692112322941,
-            "longitude": -49.378470182419,
-            "state": "SC",
-            "street": "Avenida Santos Dumont, 1665",
-            "zip": "88804342"
-          },
-          "id": "1164384376946231"
-        },
-        "start_time": "2018-10-06T14:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/42617470_2055606064473162_4214069022884364288_o.jpg?_nc_cat=107&_nc_oc=AQniBBAD44bjpXD4lKaCm5mOjWPBZLp6WDXcEUQOsuyJ5iWncbVcKD2jDNP53HUNmlY&_nc_ht=scontent.fcwb2-2.fna&oh=5c2d37c1db1f85d647adbf9975e3b4c3&oe=5DE14D00",
-          "id": "2055606057806496"
-        }
+        "link": "https://www.sympla.com.br/9-meetup-criciuma-dev__367306",
+        "date": "06/10/2018",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/9-meetup.jpg"
       },
+
       {
-        "id": "256303098476043",
         "name": "8º Meetup Criciúma Dev",
-        "place": {
-          "name": "Plurall Coworking",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.692112322941,
-            "longitude": -49.378470182419,
-            "state": "SC",
-            "street": "Avenida Santos Dumont, 1665",
-            "zip": "88804342"
-          },
-          "id": "1164384376946231"
-        },
-        "start_time": "2018-07-07T14:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.fcwb2-2.fna.fbcdn.net/v/t1.0-9/36543858_1929461227087647_3137104165231132672_n.jpg?_nc_cat=107&_nc_oc=AQkPjh3xH_KOCqucS3V2cTgWJY_l3FTg5GuSRl3WL0ADlX1VpNqjeo669SOg61FRQkw&_nc_ht=scontent.fcwb2-2.fna&oh=dc0e1826347cf243d41dfd477100725c&oe=5DD90764",
-          "id": "1929461220420981"
-        }
+        "link": "https://www.sympla.com.br/8-meetup-criciuma-dev__314883",
+        "date": "07/07/2018",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/8-meetup.jpg"
       },
+
       {
-        "id": "1986462368279475",
-        "name": "Criciúma Dev Conference",
-        "place": {
-          "name": "ACIC - Associação Empresarial de Criciúma",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.679631424499,
-            "longitude": -49.355554042952,
-            "state": "SC",
-            "street": "Rua Ernesto Bianchini Góes",
-            "zip": "88815-030"
-          },
-          "id": "392429840778509"
-        },
-        "start_time": "2018-05-19T08:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.fcwb2-1.fna.fbcdn.net/v/t1.0-9/29513222_1818156541551450_6372873989703475669_n.jpg?_nc_cat=101&_nc_oc=AQmulYaxzr4oN9QNdWRwCNz0zrXtCrBUw5WFka57zj9Aq59lUDZnSWtSHEEJ-FaujwE&_nc_ht=scontent.fcwb2-1.fna&oh=99cfd3f0bd1150555906bc70c19f3980&oe=5DD087EB",
-          "id": "1818156541551450"
-        }
-      },
-      {
-        "id": "426369717781093",
         "name": "7º Meetup Criciúma Dev",
-        "place": {
-          "name": "Plurall Coworking",
-          "location": {
-            "city": "Criciúma",
-            "country": "Brazil",
-            "latitude": -28.692112322941,
-            "longitude": -49.378470182419,
-            "state": "SC",
-            "street": "Avenida Santos Dumont, 1665",
-            "zip": "88804342"
-          },
-          "id": "1164384376946231"
-        },
-        "start_time": "2018-03-10T14:00:00-0300",
-        "cover": {
-          "offset_x": 50,
-          "offset_y": 50,
-          "source": "https://scontent.fcwb2-1.fna.fbcdn.net/v/t31.0-8/28235551_1781674555199649_6231318692531948288_o.jpg?_nc_cat=102&_nc_oc=AQkxnvdvwEeNQAjnllGiyNqiPzXDwmgnYstgb2Z3LcZXmDKIbChzVRT_1WG35ncfF3w&_nc_ht=scontent.fcwb2-1.fna&oh=1044af63c8fb6ff5bb7d4a33246f56df&oe=5DDB3C28",
-          "id": "1781674555199649"
-        }
-      }
-    ],
-    "paging": {
-      "cursors": {
-        "before": "QVFIUlpqZAS1MaE5qYjdzTlhRM0VRWktzMVhaa0JYd2ZAqa2VCLUg5TXhVYzd0N0VkV1lNRy1oUkNRdTJZAempwVzM2WTFuS21zcUlHUVVQWjFmR0RKQVROVUVB",
-        "after": "QVFIUjNWeHFhLTJqNUR0UVNQZADZASTm1ZANkt2al96YlFGMEJZAcURISUpZAc1RHbEVNWkVrVnJvNXV4LUZArSkFzMDNJdzNqbHN6RzRPOFhfSkZAJajZAuWjVUdF9B"
+        "link": "https://www.sympla.com.br/7-meetup-criciuma-dev__248124",
+        "date": "10/03/2018",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/7-meetup.jpg"
       },
-      "next": "https://graph.facebook.com/v3.2/824945717539209/events?access_token=EAAB10OZARdFYBAIzKI3ZCZCwy7IC5dIv6IZCfbOw9wVinYoZB1SIZB9BmIpf2DGOwtNemi3dAHKGgbfUDDhg7hJYDn5R9ZCXUORfDs5m96sZAeVEM7xSY7pWccYmBW0UWQWOqfD6dXWM6IsWDRc8PiHuHz03EZCbyXYkAfHoAxb6ouSU5JnZCbFPXQDwZCNuHZAnujIZD&pretty=0&fields=id%2Cname%2Cplace%2Cstart_time%2Ccover&limit=10&after=QVFIUjNWeHFhLTJqNUR0UVNQZADZASTm1ZANkt2al96YlFGMEJZAcURISUpZAc1RHbEVNWkVrVnJvNXV4LUZArSkFzMDNJdzNqbHN6RzRPOFhfSkZAJajZAuWjVUdF9B"
-    }
-  },
-  "id": "824945717539209"
+
+      {
+        "name": "6º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/6-meetup-criciuma-dev__195222",
+        "date": "07/10/2017",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/6-meetup.jpg"
+      },
+
+      {
+        "name": "5º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/5-meetup-criciuma-dev__157121",
+        "date": "24/06/2017",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/5-meetup.jpg"
+      },
+
+      {
+        "name": "4º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/4-meetup-criciuma-dev__110843",
+        "date": "11/02/2017",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/4-meetup.jpg"
+      },
+
+      {
+        "name": "3º Meetup Criciúma Dev",
+        "link": "https://www.facebook.com/events/763849287089286",
+        "date": "15/10/2016",
+        "future": "",
+        "place": "Portabilis Tecnologia",
+        "cover": "./assets/images/eventos/3-meetup.jpg"
+      },
+
+      {
+        "name": "2º Meetup Criciúma Dev",
+        "link": "https://www.facebook.com/events/157533771321866",
+        "date": "13/08/2016",
+        "future": "",
+        "place": "Organizze",
+        "cover": "./assets/images/eventos/2-meetup.jpg"
+      },
+
+      {
+        "name": "1º Meetup Criciúma Dev",
+        "link": "https://www.facebook.com/events/283784125301627",
+        "date": "25/06/2016",
+        "future": "",
+        "place": "Simples Dental",
+        "cover": "./assets/images/eventos/1-meetup.jpg"
+      }
+
+    ]
+  }
 }

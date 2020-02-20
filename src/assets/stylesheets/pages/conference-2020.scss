@@ -1,14 +1,15 @@
 body.page.page-conference-2020 {
   background: #edf2f5;
 
+  @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800&display=swap');
+
+  * { font-family: Muli,sans-serif; }
+
   .box-sponsors {
     background-color: #edf2f5;
     padding-bottom: 0;
 
-    .group-sponsors { margin-bottom: 50px; }
-
-    .box-title,
-    .box-title h2 { margin-bottom: 0 !important; }
+    .group-sponsors { margin-bottom: 70px; }
 
     .row {
       li {
@@ -17,8 +18,12 @@ body.page.page-conference-2020 {
         a {
           display: block;
           width: 100%;
-          height: 160px;
+          height: 140px;
           text-align: center;
+          border: 1px solid #bdc0c12e;
+          border-radius: 10px;
+
+          &:hover { box-shadow: 0 0 10px rgba(0,0,0, .04); }
 
           img {
             width: 80%;
@@ -32,12 +37,10 @@ body.page.page-conference-2020 {
     }
   }
 
-  .footer .footer-top {
-    background-color: #1d1d2e;
-  }
+  .footer .footer-top { background-color: #1d1d2e; }
 
   .box .box-title h2:after {
-    background-color: #243cfe !important;
+    background-color: #F32208 !important;
   }
 
   .header {
@@ -108,91 +111,70 @@ body.page.page-conference-2020 {
   }
 
   .box-1 {
-    padding: 210px 0 110px;
-    background: #000 url("./images/cdc-2020/bg-conference.jpg") no-repeat top center;
     @include background-cover;
+    padding: 210px 0 110px;
+    background: #1226C4 url("./images/cdc-2020/bg-new2.png") top center;
 
-    .container {
-      text-align: center;
-    }
+    .container { text-align: center; }
 
-    .countdown {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 40px;
-      margin-bottom: 68px;
-    }
-
-    .countdown-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 230px;
-      height: 120px;
-      margin: 0;
-      cursor: default;
-      border: 1px solid #243cfe;
-      border-collapse: collapse;
-
-      &--tag {
-        display: inline-block;
-        margin: 0 9px;
-        border-radius: 3px;
-        font-size: 64px;
-        line-height: 64px;
-        font-weight: bold;
-        color: #fff;
+    .banner {
+      h5 {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 300;
+        text-align: center;
       }
 
-      &--label {
-        display: inline-block;
-        color: #fff;
-        font-size: 16px;
-        line-height: 16px;
-        font-weight: 500;
+      h2 {
+        font-weight: 200;
+        line-height: 80px;
+        font-size: 80px;
+        color: #ffffff;
+        margin: 30px 0 0 0;
+        text-align: center;
+      }
+
+      @keyframes slide {
+        0% { background-position: 0 0; }
+        50% { background-position: 0 100%; }
+        100% { background-position: 0 0; }
+      }
+
+      h3 {
+        line-height: 85px;
+        font-weight: 700;
+        font-size: 85px;
+        color: transparent;
+        margin: 0;
+        color: #FFF;
         text-align: center;
       }
     }
 
-    .countdown-item + .countdown-item {
-      border-left: 0;
-    }
-
-    h1,
-    h2 {
-      color: $color-light-a;
-      font-weight: 800;
-      font-size: 80px;
-      line-height: 86px;
-      position: relative;
-      margin-bottom: 14px;
-      display: block;
-      text-align: center;
-      text-transform: uppercase;
-      cursor: default;
-    }
-
-    h2 {
-      font-size: 32px;
-      line-height: 46px;
-      letter-spacing: -1px;
-      margin-bottom: 9px;
-    }
-
-    p {
+    .countdown {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      color: $color-light-a;
-      font-size: 16px;
-      line-height: 16px;
-      font-weight: 600;
-      text-align: left;
+      justify-content: space-between;
+      margin: 40px auto 50px;
+      max-width: 400px;
 
-      > img {
-        margin-top: -1px;
-        margin-right: 10px;
+      .group-time {
+        display: inline-block;
+
+        .time {
+          display: block;
+          line-height: 60px;
+          font-weight: 700;
+          font-size: 50px;
+          color: #ffffff;
+          text-align: center;
+        }
+        .label {
+          display: block;
+          font-size: 20px;
+          color: rgba(255,255,255,0.5);
+          margin: 0;
+          text-align: center;
+        }
       }
     }
 
@@ -200,22 +182,12 @@ body.page.page-conference-2020 {
       height: 64px;
       padding: 0 38px;
       font-size: 16px;
-      font-weight: normal;
       line-height: 64px;
-      transition: all 0.5s ease;
+      transition: all .5s ease;
       border-radius: 0;
-      background-color: #2342fe !important;
-      background-image: none;
-      font-weight: 500;
-
-      &:hover {
-        @include opacity(.9);
-      }
-    }
-
-    .sub-header {
-      margin: 0 auto;
-      max-width: 688px;
+      background: #F32208;
+      color: #FFF;
+      font-weight: 700;
     }
   }
 
@@ -280,7 +252,7 @@ body.page.page-conference-2020 {
       line-height: 64px;
       transition: all 0.5s ease;
       border-radius: 0;
-      background-color: #2342fe !important;
+      background-color: #F32208 !important;
       background-image: none;
       font-weight: 500;
 
@@ -620,7 +592,7 @@ body.page.page-conference-2020 {
     line-height: 64px;
     transition: all 0.5s ease;
     border-radius: 0;
-    background-color: #2342fe !important;
+    background-color: #f32208!important;
     background-image: none;
     font-weight: 500;
 
@@ -644,6 +616,138 @@ body.page.page-conference-2020 {
 
   .footer .footer-bottom {
     padding: 15px 0 95px;
+  }
+
+  .box-red { background: #000; }
+
+  @-moz-keyframes slide-up {
+    to { top: 0; }
+  }
+  @-webkit-keyframes slide-up {
+    to { top: 0; }
+  }
+  @-o-keyframes slide-up {
+    to { top: 0; }
+  }
+  @keyframes slide-up {
+    to { top: 0; }
+  }
+  @-moz-keyframes slide-down {
+    from { top: 0; }
+    to { top: 100%; }
+  }
+  @-webkit-keyframes slide-down {
+    from { top: 0; }
+    to { top: 100%; }
+  }
+  @-o-keyframes slide-down {
+    from { top: 0; }
+    to { top: 100%; }
+  }
+  @keyframes slide-down {
+    from { top: 0; }
+    to { top: 100%; }
+  }
+
+  .coc-link {
+    width: 200px;
+    display: block;
+    text-align: center;
+    color: rgba(255,255,255,.5);
+    text-decoration: underline;
+    margin: 50px auto 0;
+  }
+
+  .coc {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1d1d2e;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 15px;
+
+    &.show {
+      -ms-filter: none;
+      filter: none;
+      opacity: 1;
+      -webkit-animation: slide-up 0.3s ease-out forwards;
+      animation: slide-up 0.3s ease-out forwards;
+      z-index: 100;
+    }
+
+    &.hide {
+      -webkit-animation: slide-down 0.2s ease-in forwards;
+      animation: slide-down 0.2s ease-in forwards;
+    }
+
+    .coc-close {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      font-size: 50px;
+      cursor: pointer;
+      z-index: 10;
+      color: #f32208;
+      width: 40px;
+      height: 40px;
+      line-height: 33px;
+      text-align: center;
+    }
+
+    .coc-content {
+      position: relative;
+      margin: 0 auto;
+      max-height: 100vh;
+      overflow: auto;
+      height: 100%;
+      -webkit-overflow-scrolling: touch;
+      padding-left: -webkit-calc(50% - 350px);
+      padding-left: calc(50% - 350px);
+      padding-right: calc(50% - 350px);
+      padding-top: 4em;
+      padding-bottom: 2em;
+    }
+
+    .coc-content-inner {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 26px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 60px 0 10px;
+      }
+
+      p {
+        margin: 0 0 20px;
+        line-height: 30px;
+        font-size: 20px;
+        color: #bcbccb;
+      }
+    }
+  }
+
+  .simple-link {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    color: #0060f2;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 50px;
   }
 
 }
