@@ -1,6 +1,6 @@
 {
   "name": "criciuma-dev",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Site da comunidade Criciúma Dev",
   "main": "gulpfile.js",
   "dependencies": {
@@ -29,6 +29,7 @@
     "deploy": "gulp build && surge ./www https://criciumadev.com.br",
     "deploy-www": "gulp build && surge ./www https://www.criciumadev.com.br",
     "deploy-dev": "gulp build && surge ./www https://criciuma.dev",
+    "deploy-dev-www": "gulp build && surge ./www https://www.criciuma.dev",
     "start": "gulp default",
     "build": "gulp build"
   },
