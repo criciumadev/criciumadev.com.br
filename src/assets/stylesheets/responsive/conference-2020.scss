@@ -5,6 +5,12 @@
     .box-1 .banner h3 {
       font-size: 60px;
     }
+    .box-2 {
+      padding-top: 100px;
+    }
+    .box-prog-hour--sep {
+      width: 30px;
+    }
   }
 }
 
@@ -15,12 +21,10 @@
   body.page.page-conference-2020 .box-1 .banner h3 {
     font-size: 50px;
   }
-
   .header {
     .logo {
       margin: 0!important;
     }
-
     .list-menu {
       display: none;
 
@@ -35,9 +39,11 @@
       }
     }
   }
-
   .box-2 {
     padding-bottom: 0!important;
+  }
+  .box-prog-hour--sep {
+    width: 30px;
   }
   .box-4 {
     padding-top: 50px!important;
