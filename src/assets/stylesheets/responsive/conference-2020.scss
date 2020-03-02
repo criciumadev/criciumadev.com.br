@@ -1,0 +1,51 @@
+@media only screen and (max-width: 992px) {
+  body.page.page-conference-2020 {
+    .header .logo .cd { margin: 0 auto; }
+    .box-1 { padding: 150px 0 110px; }
+    .box-1 .banner h3 {
+      font-size: 60px;
+    }
+    .box-2 {
+      padding-top: 100px;
+    }
+    .box-prog-hour--sep {
+      width: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body.page.page-conference-2020 .box-1 .banner h2 {
+    font-size: 70px;
+  }
+  body.page.page-conference-2020 .box-1 .banner h3 {
+    font-size: 50px;
+  }
+  .header {
+    .logo {
+      margin: 0!important;
+    }
+    .list-menu {
+      display: none;
+
+      li {
+        width: 100%;
+        padding: 0;
+        margin: 0 !important;
+
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .box-2 {
+    padding-bottom: 0!important;
+  }
+  .box-prog-hour--sep {
+    width: 30px;
+  }
+  .box-4 {
+    padding-top: 50px!important;
+  }
+}
