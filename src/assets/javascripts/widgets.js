@@ -4,7 +4,7 @@ Widgets.eventsFeed = {
     resultsLoader: '*[data-scope="events-feed"]:first',
 
     eventsUrl: function() {
-        return "https://graph.facebook.com/v3.1/824945717539209?fields=events.limit(10){id,name,place,start_time,cover}&access_token=129540077745238|2Gxb6NU-MpL6iha_lkRBMEsDI9o";
+        return "./assets/data/events.json";
     },
 
     fetch: function() {
@@ -69,47 +69,16 @@ Widgets.eventsFeed = {
         return '<div class="empty">Ocorreu um erro ao carregar o conteúdo.</div>';
     },
 
-    dateStatus: function(eventDate) {
-        var currentDate = new Date();
-        var compareDate = new Date(eventDate);
-        var dateDiff = currentDate.getTime() - compareDate.getTime();
-        var daysDiff = Math.floor(dateDiff / ONE_DAY);
-
-        if (daysDiff >= 1) {
-            return "old-event";
-        } else {
-            return "future-event";
-        }
-    },
-
     buildEntryHTML: function(event) {
-        var date = event.start_time,
-            html,
-            dateStatus;
-
-        dateStatus = Widgets.eventsFeed.dateStatus(date);
+        var html;
 
         return (html =
-            '<div class="card ' +
-            dateStatus +
-            '">\
-            <a target="_blank" href="https://www.facebook.com/events/' +
-            event.id +
-            '" title="' +
-            event.name +
-            '">\
-                <div class="card-image" style="background-image: url(' +
-            event.cover.source +
-            ');"></div>\
+            '<div class="card ' + event.future + '">\
+            <a target="_blank" href="' + event.link + '" title="' + event.name + '">\
+                <div class="card-image" style="background-image: url(' + event.cover + ');"></div>\
                 <div class="card-content">\
-                    <h6 class="card-title">' +
-            event.name +
-            '</h6>\
-                    <p class="card-detail">' +
-            dateFmt(new Date(date)) +
-            "hs na " +
-            event.place.name +
-            '</p>\
+                    <h6 class="card-title">' + event.name + '</h6>\
+                    <p class="card-detail">' + event.date + ' na ' + event.place + '</p>\
                     <span class="card-link">Ver mais <i class="icon-arrow-right"></i></span>\
                 </div>\
             </a>\
@@ -121,7 +90,7 @@ Widgets.postsFeed = {
     resultsLoader: '*[data-scope="posts-feed"]:first',
 
     postsUrl: function() {
-        return "https://exec.clay.run/mateusw3c/medium-get-users-posts-fork?username=criciumadev";
+        return "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/criciumadev";
     },
 
     fetch: function() {
@@ -155,8 +124,8 @@ Widgets.postsFeed = {
     proccessResponse: function(resp) {
         var results,
             resultsLoader,
-            div,
-            listPosts = resp.payload.posts;
+            div;
+            listPosts = resp.items;
 
         resultsLoader = $(Widgets.postsFeed.resultsLoader);
         resultsLoader.html("<div class='list-posts row'></div>");
@@ -190,33 +159,15 @@ Widgets.postsFeed = {
                     ? "col-md-8 col-sm-12 col-xs-12"
                     : "col-md-4 col-sm-12 col-xs-12",
             postArticle = i == 0 ? "recent-article" : "",
-            imageSize = i == 0 ? "max/800" : "fit/t/700/394",
             html;
-
-        // console.log(i);
 
         html = '<div class="' + gridClass + '">';
 
-        html +=
-            '<article class="article ' +
-            postArticle +
-            '">\
-            <a target="_blank" href="https://medium.com/criciumadev/' +
-            post.uniqueSlug +
-            '" title="' +
-            post.title +
-            '">\
-                <div class="article-image" style="background-image: url(https://cdn-images-1.medium.com/' +
-            imageSize +
-            "/" +
-            post.virtuals.previewImage.imageId +
-            ');"></div>\
-                <h3>' +
-            post.title +
-            "</h3>\
-                <p>" +
-            post.virtuals.subtitle +
-            "</p>\
+        html += '<article class="article ' + postArticle + '">\
+            <a target="_blank" href="' + post.link + '" title="' + post.title + '">\
+                <div class="article-image" style="background-image: url(' + post.thumbnail + ');"></div>\
+                <h3>' + post.title + "</h3>\
+                <p></p>\
             </a>\
         </article>";
 
@@ -230,7 +181,7 @@ Widgets.videosFeed = {
     resultsLoader: '*[data-scope="videos-feed"]:first',
 
     videosUrl: function() {
-        return "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&maxResults=3&type=video&channelId=UC5rQV1_PbC_hYxaiT78lbhg&order=date&key=AIzaSyCZmY81f-SWAOLFBKv8fjgUVW9gOK0IzJs";
+        return "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&maxResults=3&type=video&channelId=UC5rQV1_PbC_hYxaiT78lbhg&order=date&key=AIzaSyC_TkjxfYtTznq3PLLZlSEOG04vCdAmnoA";
     },
 
     fetch: function() {
@@ -330,8 +281,6 @@ Widgets.jobs = {
                 //start loading
             },
             error: function(error) {
-                //end loading
-                // console.log(error);
                 return Widgets.jobs.errorMessage;
             },
         });

@@ -1,0 +1,132 @@
+{
+  "events": {
+    "data": [
+      {
+        "name": "Criciúma Dev Conference 2020",
+        "link": "https://eventos.criciumadev.com.br/criciuma-dev-conference-2020",
+        "date": "09/05/2020",
+        "future": "future-event",
+        "place": "Teatro Elias Angeloni",
+        "cover": "./assets/images/eventos/cdc-2020.jpg"
+      },
+
+      {
+        "name": "Criciúma Dev Conference 2019",
+        "link": "https://www.sympla.com.br/criciuma-dev-conference-2019__461801",
+        "date": "04/05/2020",
+        "future": "",
+        "place": "ACIC - Criciúma",
+        "cover": "./assets/images/eventos/cdc-2019.jpg"
+      },
+
+      {
+        "name": "Criciúma Dev Conference 2018",
+        "link": "https://www.sympla.com.br/criciuma-dev-conference__213460",
+        "date": "19/05/2020",
+        "future": "",
+        "place": "ACIC - Criciúma",
+        "cover": "./assets/images/eventos/cdc-2018.jpg"
+      },
+
+      {
+        "name": "11º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/11-meetup-criciuma-dev__614584",
+        "date": "24/08/2019",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/11-meetup.jpg"
+      },
+
+      {
+        "name": "10º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/10-meetup-criciuma-dev__412778",
+        "date": "08/12/2018",
+        "future": "",
+        "place": "Thomson Reuters",
+        "cover": "./assets/images/eventos/10-meetup.jpg"
+      },
+
+      {
+        "name": "9º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/9-meetup-criciuma-dev__367306",
+        "date": "06/10/2018",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/9-meetup.jpg"
+      },
+
+      {
+        "name": "8º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/8-meetup-criciuma-dev__314883",
+        "date": "07/07/2018",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/8-meetup.jpg"
+      },
+
+      {
+        "name": "7º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/7-meetup-criciuma-dev__248124",
+        "date": "10/03/2018",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/7-meetup.jpg"
+      },
+
+      {
+        "name": "6º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/6-meetup-criciuma-dev__195222",
+        "date": "07/10/2017",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/6-meetup.jpg"
+      },
+
+      {
+        "name": "5º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/5-meetup-criciuma-dev__157121",
+        "date": "24/06/2017",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/5-meetup.jpg"
+      },
+
+      {
+        "name": "4º Meetup Criciúma Dev",
+        "link": "https://www.sympla.com.br/4-meetup-criciuma-dev__110843",
+        "date": "11/02/2017",
+        "future": "",
+        "place": "Plurall Coworking",
+        "cover": "./assets/images/eventos/4-meetup.jpg"
+      },
+
+      {
+        "name": "3º Meetup Criciúma Dev",
+        "link": "https://www.facebook.com/events/763849287089286",
+        "date": "15/10/2016",
+        "future": "",
+        "place": "Portabilis Tecnologia",
+        "cover": "./assets/images/eventos/3-meetup.jpg"
+      },
+
+      {
+        "name": "2º Meetup Criciúma Dev",
+        "link": "https://www.facebook.com/events/157533771321866",
+        "date": "13/08/2016",
+        "future": "",
+        "place": "Organizze",
+        "cover": "./assets/images/eventos/2-meetup.jpg"
+      },
+
+      {
+        "name": "1º Meetup Criciúma Dev",
+        "link": "https://www.facebook.com/events/283784125301627",
+        "date": "25/06/2016",
+        "future": "",
+        "place": "Simples Dental",
+        "cover": "./assets/images/eventos/1-meetup.jpg"
+      }
+
+    ]
+  }
+}

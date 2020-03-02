@@ -5,7 +5,7 @@ var ONE_MINUTE = ONE_SECOND * 60;
 var ONE_HOUR = ONE_MINUTE * 60;
 var ONE_DAY = ONE_HOUR * 24;
 
-var CDC_DATE = "2018-05-19T08:00:00.180Z";
+var CDC_DATE = "2020-05-09T08:00:00.180Z";
 
 function dateFmt(date) {
 	return (
@@ -36,7 +36,7 @@ function complexDateDiff(date) {
 		days: Math.max(days, 0),
 		hours: Math.max(hours, 0),
 		minutes: Math.max(minutes, 0),
-		seconds: Math.max(seconds, 0),
+		seconds: Math.max(seconds, 0)
 	};
 }
 
@@ -71,10 +71,11 @@ SITE.init = function() {
 	this.menuActive();
 	this.newsletter();
 	this.sendMail();
+	this.toggleCoc();
 
 	/* HOME */
 	if ($(document.body).hasClass("page-home")) {
-		// Widgets.eventsFeed.fetch();
+		Widgets.eventsFeed.fetch();
 		Widgets.postsFeed.fetch();
 		Widgets.videosFeed.fetch();
 	}
@@ -85,7 +86,7 @@ SITE.init = function() {
 	}
 
 	/* CONFERENCE */
-	if ($(document.body).hasClass("page-conference")) {
+	if ($(document.body).hasClass("page-conference-2020")) {
 		this.conferenceCountdown();
 	}
 };
@@ -95,9 +96,10 @@ SITE.conferenceCountdown = function() {
 
 	function tickCounters() {
 		var diff = complexDateDiff(CDC_DATE);
-		countdown.find(".countdown-item__days > .countdown-item--tag").text(diff.days);
-		countdown.find(".countdown-item__hours > .countdown-item--tag").text(diff.hours);
-		countdown.find(".countdown-item__minutes > .countdown-item--tag").text(diff.minutes);
+		countdown.find(".days .time").text(diff.days);
+		countdown.find(".hours .time").text(diff.hours);
+		countdown.find(".minutes .time").text(diff.minutes);
+		countdown.find(".seconds .time").text(diff.seconds);
 
 		setTimeout(tickCounters.bind(this), 1000);
 	}
@@ -147,16 +149,16 @@ SITE.sliderEvents = function() {
 			{
 				breakpoint: 1200,
 				settings: {
-					slidesToShow: 2,
-				},
+					slidesToShow: 2
+				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 1,
-				},
-			},
-		],
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 };
 
@@ -187,18 +189,18 @@ SITE.newsletter = function() {
 		rules: {
 			EMAIL: {
 				required: true,
-				email: true,
-			},
+				email: true
+			}
 		},
 		messages: {
 			EMAIL: {
 				required: "Email é obrigatório",
-				email: "Insira um email válido",
-			},
-		},
+				email: "Insira um email válido"
+			}
+		}
 	});
 
-	$form.on('submit', function(e) {
+	$form.on("submit", function(e) {
 		e.preventDefault();
 
 		$message.hide();
@@ -207,13 +209,13 @@ SITE.newsletter = function() {
 			$button.val("Enviando...");
 
 			var params = {
-                email: $("#email").val(),
-                list: $("#list").val(),
-                boolean: "true"
-            };
+				email: $("#email").val(),
+				list: $("#list").val(),
+				boolean: "true"
+			};
 
 			$.ajax({
-				type: 'POST',
+				type: "POST",
 				url: $form.attr("action"),
 				data: params,
 				complete: function(data) {
@@ -229,84 +231,103 @@ SITE.newsletter = function() {
 };
 
 SITE.sendMail = function() {
-	var $form  = $('*[data-scope="contact-form"]:first')
-		$button = $('*[data-item="button"]:first', $form);
+	var $form = $('*[data-scope="contact-form"]:first');
+	$button = $('*[data-item="button"]:first', $form);
 
 	$form.validate({
 		rules: {
-			'nome': {
+			nome: {
 				required: true
 			},
-			'email': {
+			email: {
 				required: true
 			},
-			'assunto': {
+			assunto: {
 				required: true
 			},
-			'mensagem': {
+			mensagem: {
 				required: true
 			}
 		},
 		messages: {
-			'nome': {
-				required: "Nome é obrigatório",
+			nome: {
+				required: "Nome é obrigatório"
 			},
-			'email': {
+			email: {
 				required: "E-mail é obrigatório",
 				email: "Insira um email válido"
 			},
-			'assunto': {
+			assunto: {
 				required: "Assunto é obrigatório"
 			},
-			'mensagem': {
+			mensagem: {
 				required: "Mensagem é obrigatória"
-			},
+			}
 		}
 	});
 
-	$form.on('submit', function(e) {
+	$form.on("submit", function(e) {
 		e.preventDefault();
 
 		var $type = $('*[data-item="type"]:first', $form).val();
 
-		if ($type == 'vaga') {
+		if ($type == "vaga") {
 			var $params = {
-				subject: 'Publicação de vaga',
+				subject: "Publicação de vaga",
 				titulo: $('*[data-item="titulo"]:first', $form).val(),
 				empresa: $('*[data-item="empresa"]:first', $form).val(),
 				link: $('*[data-item="link"]:first', $form).val(),
 				tipo: $('*[data-item="tipo"]:first', $form).val(),
-				cidade: $('*[data-item="cidade"]:first', $form).val(),
+				cidade: $('*[data-item="cidade"]:first', $form).val()
 			};
 
-			var $message = '\
+			var $message =
+				'\
 				<div style="font: 15px/25px Arial;">\
-					<strong>Título: </strong> '+ $params.titulo +'<br>\
-					<strong>Empresa: </strong> '+ $params.empresa +'<br>\
-					<strong>Link: </strong> '+ $params.link +'<br>\
-					<strong>Tipo: </strong> '+ $params.tipo +'<br>\
-					<strong>Cidade: </strong> '+ $params.cidade +'<br>\
+					<strong>Título: </strong> ' +
+				$params.titulo +
+				"<br>\
+					<strong>Empresa: </strong> " +
+				$params.empresa +
+				"<br>\
+					<strong>Link: </strong> " +
+				$params.link +
+				"<br>\
+					<strong>Tipo: </strong> " +
+				$params.tipo +
+				"<br>\
+					<strong>Cidade: </strong> " +
+				$params.cidade +
+				"<br>\
 				</div>\
-			';
+			";
 		} else {
 			var $params = {
-				subject: 'Contato vindo do Site',
+				subject: "Contato vindo do Site",
 				nome: $('*[data-item="nome"]:first', $form).val(),
 				email: $('*[data-item="email"]:first', $form).val(),
 				assunto: $('*[data-item="assunto"]:first', $form).val(),
-				mensagem: $('*[data-item="mensagem"]:first', $form).val(),
+				mensagem: $('*[data-item="mensagem"]:first', $form).val()
 			};
 
-			var $message = '\
+			var $message =
+				'\
 				<div style="font: 15px/25px Arial;">\
-					<strong>Nome: </strong> '+ $params.nome +'<br>\
-					<strong>Email: </strong> '+ $params.email +'<br>\
-					<strong>Assunto: </strong> '+ $params.assunto +'<br>\
-					<strong>Mensagem: </strong> '+ $params.mensagem +'<br>\
+					<strong>Nome: </strong> ' +
+				$params.nome +
+				"<br>\
+					<strong>Email: </strong> " +
+				$params.email +
+				"<br>\
+					<strong>Assunto: </strong> " +
+				$params.assunto +
+				"<br>\
+					<strong>Mensagem: </strong> " +
+				$params.mensagem +
+				"<br>\
 				</div>\
-			';
+			";
 		}
-
 
 		if ($form.valid()) {
 			Email.send(
@@ -317,11 +338,11 @@ SITE.sendMail = function() {
 				{
 					token: "8b79454e-0360-4823-bd29-436a76100893",
 					callback: function done(message) {
-						if (message === 'OK') {
-							alert('Email enviado! Agradecemos seu contato ;)');
+						if (message === "OK") {
+							alert("Email enviado! Agradecemos seu contato ;)");
 							$form[0].reset();
 						} else {
-							alert('Ocorreu um problema ao enviar o email. Entre em contato por nossa página do Facebook!');
+							alert("Ocorreu um problema ao enviar o email. Entre em contato por nossa página do Facebook!");
 						}
 					}
 				}
@@ -329,6 +350,39 @@ SITE.sendMail = function() {
 		}
 	});
 };
+
+SITE.toggleCoc = function() {
+	$('[data-cdc="open"]').on("click", function(e) {
+		e.preventDefault();
+		$('#coc').addClass('show');
+	});
+
+	$('[data-cdc="close"]').on("click", function(e) {
+		e.preventDefault();
+		$('#coc').addClass('hide');
+
+		setTimeout(function(){
+			$('#coc').removeClass('show hide');
+		}, 1000);
+	});
+
+	if(window.location.hash == '#coc') {
+		$('#coc').addClass('show');
+	}
+
+	$(document).keyup(function(e) { 
+		if (e.which === 27) {
+			$('#coc').addClass('hide');
+
+			setTimeout(function(){
+				$('#coc').removeClass('show hide');
+			}, 1000);
+		}
+
+		e.preventDefault();
+		e.stopPropagation();
+	});
+}
 
 $(document).ready(function() {
 	SITE.init();

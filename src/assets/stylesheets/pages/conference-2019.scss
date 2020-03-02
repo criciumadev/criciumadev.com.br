@@ -1,76 +1,649 @@
-body.page-conference-2019 {
-	background: #1D1D2E url('./images/criciumadev-midiakit-2019.jpg') no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding: 60px;
-	text-align: center;
+body.page.page-conference-2019 {
+  background: #edf2f5;
 
-	img {
-		display: block;
-		max-width: 320px;
-	}
-	h1 {
-		font-size: 70px;
-		font-weight: 800;
-		color: #FFF;
-		text-transform: uppercase;
-		line-height: 71px;
-		display: inline-block;
-		height: 142px;
-		width: 975px;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		margin: -71px 0 0 -487px;
-	}
-	a {
-		font-size: 25px;
-		font-weight: 800;
-		color: #FFF;
-		text-transform: uppercase;
-		line-height: 30px;
-		display: inline-block;
-		position: absolute;
-		right: 30px;
-		bottom: 30px;
-		padding: 25px 50px;
+  .box-sponsors {
+    background-color: #edf2f5;
+    padding-bottom: 0;
 
-		&:after,
-		&:before {
-			display: block;
-			content: '';
-			background: url('./images/arrow-conf-right.svg') no-repeat top;
-			position: absolute;
-			top: 0;
-			width: 34px;
-			height: 80px;
-		}
+    .group-sponsors { margin-bottom: 50px; }
 
-		&:after { left: 0; }
-		&:before {
-			right: 0;
-			-moz-transform: scaleX(-1);
-			-o-transform: scaleX(-1);
-			-webkit-transform: scaleX(-1);
-			transform: scaleX(-1);
-		}
-	}
+    .box-title,
+    .box-title h2 { margin-bottom: 0 !important; }
 
-	@media only screen and (max-width: 767px) {
-		padding: 20px;
+    .row {
+      li {
+        margin: 0;
 
-		h1 {
-			font-size: 40px;
-			line-height: 50px;
-			height: initial;
-			width: initial;
-			position: relative;
-			left: initial;
-			top: initial;
-			margin: 100px 0 0;
-			text-align: center;
-		}
-	}
+        a {
+          display: block;
+          width: 100%;
+          height: 160px;
+          text-align: center;
+
+          img {
+            width: 80%;
+            height: 100%;
+            margin: 0 10%;
+            object-fit: contain;
+            object-position: center center;
+          }
+        }
+      }
+    }
+  }
+
+  .footer .footer-top {
+    background-color: #1d1d2e;
+  }
+
+  .box .box-title h2:after {
+    background-color: #243cfe !important;
+  }
+
+  .header {
+    background: url("./images/cdc-2019/bg-curva-topo.png") no-repeat top center;
+    padding: 40px 0 87px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .logo {
+      height: initial;
+
+      img { height: 80px; }
+
+      .light {
+        display: none;
+      }
+
+      .dark {
+        display: none;
+      }
+
+      .cd {
+        display: block;
+      }
+    }
+
+    .list-menu {
+      li {
+        margin-left: 27px;
+        padding: 20px 0;
+
+        a {
+          color: $color-light-a;
+
+          &.button {
+            border: 2px solid rgba(255, 255, 255, 0.7);
+
+            &:hover {
+              background: $color-blue-c;
+              border-color: $color-blue-c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding: 0;
+
+    .container {
+      max-width: inherit;
+    }
+  }
+
+  .box-feat-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .box-1 {
+    padding: 210px 0 110px;
+    background: #000 url("./images/cdc-2019/bg-conference.jpg") no-repeat top center;
+    @include background-cover;
+
+    .container {
+      text-align: center;
+    }
+
+    .countdown {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 68px;
+    }
+
+    .countdown-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 230px;
+      height: 120px;
+      margin: 0;
+      cursor: default;
+      border: 1px solid #243cfe;
+      border-collapse: collapse;
+
+      &--tag {
+        display: inline-block;
+        margin: 0 9px;
+        border-radius: 3px;
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      &--label {
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    .countdown-item + .countdown-item {
+      border-left: 0;
+    }
+
+    h1,
+    h2 {
+      color: $color-light-a;
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 86px;
+      position: relative;
+      margin-bottom: 14px;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: default;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 46px;
+      letter-spacing: -1px;
+      margin-bottom: 9px;
+    }
+
+    p {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: $color-light-a;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 600;
+      text-align: left;
+
+      > img {
+        margin-top: -1px;
+        margin-right: 10px;
+      }
+    }
+
+    .button {
+      height: 64px;
+      padding: 0 38px;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 64px;
+      transition: all 0.5s ease;
+      border-radius: 0;
+      background-color: #2342fe !important;
+      background-image: none;
+      font-weight: 500;
+
+      &:hover {
+        @include opacity(.9);
+      }
+    }
+
+    .sub-header {
+      margin: 0 auto;
+      max-width: 688px;
+    }
+  }
+
+  .box-2 {
+    background: #1d1d2e url("./images/cdc-2019/bg-curva-sobre.png") no-repeat top right !important;
+    padding: 165px 0 192px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+
+    .group-images {
+      position: relative;
+      margin-bottom: 30px;
+
+      figure {
+        margin: 15px 0;
+        display: block;
+
+        img {
+          max-width: 100%;
+          display: block;
+          @include rounder(6px);
+        }
+      }
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    p {
+      color: #bcbccb;
+      margin-bottom: 20px;
+
+      strong { color: #bcbccb; }
+
+      .link {
+        display: inline-block;
+        background-color: #243cfe;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 13px;
+        padding: 14px 30px;
+        color: #fff;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background-color: #1d1d2e !important;
+        }
+      }
+    }
+
+    .button {
+      height: 64px;
+      padding: 0 38px;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 64px;
+      transition: all 0.5s ease;
+      border-radius: 0;
+      background-color: #2342fe !important;
+      background-image: none;
+      font-weight: 500;
+
+      &:hover {
+        @include opacity(.9);
+      }
+    }
+  }
+
+  .box-3 {
+    position: relative;
+    overflow: hidden;
+    margin-top: -85px;
+    padding: 0;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .box-about-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .box-about-item + .box-about-item {
+      padding-left: 40px;
+      margin-left: 40px;
+    }
+
+    .box-about-icon {
+      display: inline-block;
+      width: 64px;
+      margin-right: 27px;
+    }
+
+    .box-about-entry {
+      font-size: 18px;
+      line-height: 36px;
+      color: #fff;
+      strong {
+        display: block;
+        font-weight: 900;
+        font-size: 35px;
+        color: #fff;
+      }
+    }
+
+  }
+
+  .box-4 {
+    background-color: #1d1d2e !important;
+    position: relative;
+    padding-top: 160px;
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .box-palestrantes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -17px auto 0;
+    }
+  }
+
+  .box-palestrantes-person {
+    position: relative;
+    text-align: center;
+    background-color: #243cfe;
+    @include box-shadow(0, 5px, 30px, rgba(0, 0, 0, 0.2));
+    @include background-cover;
+    border-radius: 6px;
+    width: 266px;
+    height: 290px;
+    margin: 0 50px 90px 50px;
+    cursor: default;
+
+    &--thumb {
+      z-index: 1;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &--about {
+      position: absolute;
+      z-index: 2;
+      bottom: -20px;
+      left: -30px;
+
+      h5 {
+        font-size: 56px;
+        line-height: 48px;
+        font-weight: 900;
+        margin-bottom: 4px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 900;
+        margin-bottom: 7px;
+        color: #bcbccb;
+        padding-right: 50px;
+      }
+
+      .company {
+        width: 180px;
+        float: right;
+        position: relative;
+        right: -20px;
+        top: 2px;
+      }
+
+      .social-links {
+        text-align: center;
+        padding: 14px 0 0;
+
+        a > img {
+          display: inline-block;
+          margin: 0 3px;
+        }
+
+        a:hover > img {
+          @include opacity(0.8);
+        }
+      }
+    }
+
+    .button {
+      margin: 0 auto;
+      @include no-shadow;
+
+      &:hover {
+        @include no-shadow;
+      }
+    }
+  }
+
+  .box-5 {
+    background-color: #1d1d2e !important;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .box-content {
+      margin: -20px auto 0;
+      max-width: 760px;
+    }
+  }
+
+  .box-prog-hour {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 54px;
+
+    &--time {
+      font-size: 29px;
+      font-weight: bold;
+      line-height: 36px;
+      text-align: right;
+      color: #243cfe;
+      text-transform: uppercase;
+      width: 94px;
+    }
+
+    &--sep {
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 36px;
+      text-align: center;
+      cursor: default;
+      color: #243cfe;
+      width: 74px;
+    }
+
+    &--items {
+      flex: 1;
+    }
+
+    .box-prog-item {
+      h4 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #fff;
+
+        &.box-prog-item-title-blue {
+          font-size: 21px;
+          line-height: 26px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 23px;
+        color: #bcbccb;
+      }
+    }
+
+    .box-prog-item + .box-prog-item {
+      margin-top: 46px;
+    }
+  }
+
+  .box-6 {
+    background: #1d1d2e url("./images/cdc-2019/bg-bar-ibis.png") no-repeat top center;
+    padding: 65px 0;
+
+    .box-content {
+      width: 100%;
+      max-width: 562px;
+      margin-top: 24px;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 60px;
+      letter-spacing: -1px;
+      line-height: 84px;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+    }
+
+    p strong {
+      display: inline-block;
+      font-weight: 900;
+      font-size: 32px;
+      letter-spacing: -0.25px;
+      color: #fff;
+      padding-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      color: $color-blue-c;
+      background: $color-light-a;
+      padding: 0;
+      width: 205px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 50px;
+      font-weight: normal;
+      margin: 13px 0;
+      border-radius: 0;
+      font-weight: 500;
+    }
+
+    .box-hotel-about {
+      margin-bottom: 32px;
+    }
+
+    .box-hotel-discount {
+      a {
+        color: #fff;
+        text-decoration: underline;
+        font-weight: 600;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      b {
+        color: #fff;
+        font-weight: 900;
+      }
+      em {
+        color: #fff;
+        font-style: italic;
+      }
+    }
+
+    .box-hotel-coupom {
+      vertical-align: middle;
+
+      .box-hotel-coupom-code {
+        display: inline-block;
+        border: 1px dashed #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #fff;
+        padding: 0 28px;
+        margin-right: 18px;
+      }
+
+      .button {
+        font-size: 13px;
+        line-height: 36px;
+        width: 202px;
+        height: 34px;
+        font-weight: 500;
+      }
+
+    }
+  }
+
+  .fixed-button {
+    position: fixed;
+    z-index: 100;
+    bottom: -72px;
+    right: 30px;
+    transition: .5s;
+    height: 64px;
+    padding: 0 38px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 64px;
+    transition: all 0.5s ease;
+    border-radius: 0;
+    background-color: #2342fe !important;
+    background-image: none;
+    font-weight: 500;
+
+    &:hover {
+      @include opacity(.9);
+    }
+
+    &.visible{ bottom: 0; }
+
+    .container{
+      max-width: 900px;
+      width: initial
+    }
+
+    p {
+      font-size: 15px;
+      color: #404041;
+      line-height: 23px
+    }
+  }
+
+  .footer .footer-bottom {
+    padding: 15px 0 95px;
+  }
+
 }

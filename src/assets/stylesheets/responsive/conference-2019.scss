@@ -1,0 +1,113 @@
+@media only screen and (max-width: 992px) {
+  body.page.page-conference-2019 {
+    .header .logo .cd { margin: 0 auto; }
+    .box-1 { padding: 250px 0 110px; }
+    .box-palestrantes-person { margin: 0 30px 90px 30px; }
+    .box-3 .box-about-item+.box-about-item {
+      padding-left: 0px;
+      margin-left: 10px;
+    }
+    .box-6 {
+      background: #223EFE;
+
+      .box-content { margin-top: 0; }
+    }
+    .box-sponsors .group-sponsors { margin-bottom: 30px; }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body.page.page-conference-2019 {
+
+    .content { padding: 0 0 0; }
+
+    .header {
+      position: relative;
+      background: #1d1d2e;
+      padding: 20px 0 0 !important;
+
+      .logo {
+        margin: 0!important;
+      }
+
+      .list-menu {
+        display: none;
+
+        li {
+          width: 100%;
+          padding: 0;
+          margin: 0 !important;
+
+          a {
+            padding: 10px;
+          }
+        }
+      }
+    }
+    .box-1 {
+      background: #1d1d2e;
+      padding: 60px 0;
+
+      h1 {
+        font-size: 45px !important;
+        line-height: 50px;
+      }
+
+      .countdown {
+        margin-top: 20px;
+        margin-bottom: 38px;
+
+        .countdown-item {
+          display: block;
+          height: initial;
+          padding: 11px 0 15px;
+
+          &--tag {
+            display: block;
+            text-align: center;
+          }
+          &--label {
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+
+      .button { margin: 0 auto; }
+    }
+
+    .box-2 {
+      padding: 60px 0;
+
+      .box-title h2:after { display: none; }
+      .button {
+        background: #FFF !important;
+        color: #2342fe;
+      }
+    }
+
+    .box-4 { padding: 60px 0; }
+    .box-palestrantes-person { margin: 0 39px 90px 39px; }
+
+    .box-sponsors {
+      padding: 60px 0 0;
+
+      .box-title h2 { line-height: 30px; }
+      .row li a {
+        height: 100px;
+
+        img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+        }
+      }
+      .group-sponsors { margin-bottom: 50px!important; }
+    }
+
+    .fixed-button {
+      right: 30px;
+      width: 100%;
+      left: 0;
+    }
+  }
+}

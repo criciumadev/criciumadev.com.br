@@ -15,7 +15,7 @@
 			outline: 0;
 
 			.card-image {
-				height: 220px;
+				height: 160px;
 				background-color: $color-blue-c;
 				@include background-cover;
 				@include round-top(6px);
@@ -27,10 +27,10 @@
 
 				.card-title {
 					font-weight: 600;
-					font-size: 19px;
+					font-size: 18px;
 					line-height: 19px;
 					color: $color-dark-a;
-					margin-bottom: 20px;
+					margin-bottom: 7px;
 				}
 
 				.card-detail {
@@ -38,7 +38,6 @@
 					font-size: 14px;
 					line-height: 20px;
 					margin-bottom: 15px;
-					height: 40px;
 				}
 
 				.card-link {

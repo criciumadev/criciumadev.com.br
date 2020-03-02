@@ -1,30 +1,31 @@
-var gulp = require("gulp"),
-  jshint = require("gulp-jshint"),
-  babel = require("gulp-babel"),
-  watch = require("gulp-watch"),
-  uglify = require("gulp-uglify"),
-  htmlmin = require("gulp-htmlmin"),
-  runSequence = require("run-sequence"),
-  concat = require("gulp-concat"),
-  fileinclude = require("gulp-file-include"),
-  sass = require("gulp-sass"),
-  del = require("del"),
-  cssmin = require("gulp-clean-css"),
-  bulkSass = require("gulp-sass-bulk-import"),
-  webserver = require("gulp-webserver");
+const gulp = require("gulp");
+const jshint = require("gulp-jshint");
+const surge = require("gulp-surge");
+const babel = require("gulp-babel");
+const watch = require("gulp-watch");
+const uglify = require("gulp-uglify");
+const htmlmin = require("gulp-htmlmin");
+const concat = require("gulp-concat");
+const fileinclude = require("gulp-file-include");
+const sass = require("gulp-sass");
+const del = require("del");
+const cssmin = require("gulp-clean-css");
+const bulkSass = require("gulp-sass-bulk-import");
+const browserSync = require("browser-sync");
+const reload = browserSync.reload;
 
-var PATH = {
+const PATH = {
   dest: "./www",
   src: "./src",
   data: "./src/assets/data",
   css: "./src/assets/stylesheets",
   js: "./src/assets/javascripts",
   templates: "./src/templates",
-  node_modules: "./node_modules",
+  node_modules: "./node_modules"
 };
 
-var ONE_HOUR = 1000 * 60 * 60;
-var ONE_DAY = ONE_HOUR * 24;
+const ONE_HOUR = 1000 * 60 * 60;
+const ONE_DAY = ONE_HOUR * 24;
 
 function requireUncached(module) {
   delete require.cache[require.resolve(module)];
@@ -87,29 +88,38 @@ gulp.task("sass-minify", function() {
 
 gulp.task("js-minify", function() {
   return gulp
-    .src([PATH.js + "/slick.js", PATH.js + "/jquery.validate.js", PATH.js + "/widgets.js", PATH.js + "/smtp.js", PATH.js + "/custom.js"])
+    .src([
+      PATH.js + "/slick.js",
+      PATH.js + "/jquery.validate.js",
+      PATH.js + "/widgets.js",
+      PATH.js + "/smtp.js",
+      PATH.js + "/custom.js"
+    ])
     .pipe(concat("all.min.js"))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest(PATH.dest + "/assets"));
 });
 
 gulp.task("clean-html", function() {
-  del(PATH.dest + "/*.html");
+  return del(PATH.dest + "/*.html");
 });
 
 gulp.task("copy-data", function() {
-  gulp.src(PATH.data + "/*").pipe(gulp.dest(PATH.dest + "/assets/data"));
+  return gulp.src(PATH.data + "/*").pipe(gulp.dest(PATH.dest + "/assets/data"));
 });
 
-gulp.task("copy-images", function() {
-  gulp.src(PATH.src + "/assets/icons/*").pipe(gulp.dest(PATH.dest + "/assets/icons"));
-  gulp.src(PATH.src + "/assets/images/*").pipe(gulp.dest(PATH.dest + "/assets/images"));
-  gulp.src(PATH.src + "/assets/images/**/").pipe(gulp.dest(PATH.dest + "/assets/images"));
-  gulp.src(PATH.src + "/assets/images/**/*").pipe(gulp.dest(PATH.dest + "/assets/images"));
-});
+gulp.task(
+  "copy-images",
+  gulp.series(
+    () => gulp.src(PATH.src + "/assets/icons/*").pipe(gulp.dest(PATH.dest + "/assets/icons")),
+    () => gulp.src(PATH.src + "/assets/images/*").pipe(gulp.dest(PATH.dest + "/assets/images")),
+    () => gulp.src(PATH.src + "/assets/images/**/").pipe(gulp.dest(PATH.dest + "/assets/images")),
+    () => gulp.src(PATH.src + "/assets/images/**/*").pipe(gulp.dest(PATH.dest + "/assets/images"))
+  )
+);
 
 gulp.task("includes-html", function() {
-  gulp
+  return gulp
     .src(PATH.templates + "/*.html")
     .pipe(
       (function() {
@@ -148,9 +158,9 @@ gulp.task("includes-html", function() {
                     return !!job.date && getDaysDiff(job.date) <= 20 && !job.featured;
                   })
                   .sort(sortDate)
-              ),
-            },
-          },
+              )
+            }
+          }
         });
       })()
     )
@@ -158,52 +168,45 @@ gulp.task("includes-html", function() {
 });
 
 gulp.task("minify-html", function() {
-  // Timeout
-  setTimeout(function() {
-    gulp
-      .src(PATH.dest + "/*.html")
-      .pipe(
-        htmlmin({
-          collapseWhitespace: true,
-        })
-      )
-      .pipe(gulp.dest(PATH.dest));
-  }, 2000);
+  return gulp
+    .src(PATH.dest + "/*.html")
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true
+      })
+    )
+    .pipe(gulp.dest(PATH.dest));
 });
 
-gulp.task("generate-html", function() {
-  runSequence(["clean-html"], ["includes-html"], ["minify-html"]);
-});
-
-gulp.task("watchs", function() {
-  gulp.watch(PATH.css + "/**/*.scss", ["sass-minify"]);
-  gulp.watch(PATH.js + "/**/*.js", ["js-minify"]);
-  gulp.watch([PATH.templates + "/*.html", PATH.templates + "/**/*.html", PATH.data + "/*.json"], ["generate-html"]);
-  gulp.watch([PATH.templates + "/assets/icons/*", PATH.templates + "/assets/images/*"], ["copy-images"]);
-  gulp.watch(PATH.data + "/*", ["copy-data"]);
-});
+gulp.task("generate-html", gulp.series("clean-html", "includes-html", "minify-html"));
 
 gulp.task("webserver", function() {
-  gulp.src(PATH.dest).pipe(
-    webserver({
-      livereload: true,
-      port: 8000,
-    })
-  );
+  browserSync({
+    port: 8000,
+    server: {
+      baseDir: PATH.dest
+    }
+  });
+
+  gulp.watch(PATH.css + "/**/*.scss", gulp.series("sass-minify")).on("change", reload);
+  gulp.watch(PATH.js + "/**/*.js", gulp.series("js-minify")).on("change", reload);
+  gulp
+    .watch(
+      [PATH.templates + "/*.html", PATH.templates + "/**/*.html", PATH.data + "/*.json"],
+      gulp.series("generate-html")
+    )
+    .on("change", reload);
+  gulp.watch([PATH.templates + "/assets/icons/*", PATH.templates + "/assets/images/*"], gulp.series("copy-images")),
+    gulp.watch(PATH.data + "/*", gulp.series("copy-data")).on("change", reload);
 });
 
-gulp.task("build", function() {
-  return runSequence(["sass-minify"], ["copy-images"], ["js-minify"], ["generate-html"], ["copy-data"]);
-});
+gulp.task("build", gulp.series("sass-minify", "copy-images", "js-minify", "generate-html", "copy-data"));
 
-gulp.task("default", function() {
-  return runSequence(
-    ["sass-minify"],
-    ["copy-images"],
-    ["js-minify"],
-    ["generate-html"],
-    ["copy-data"],
-    ["watchs"],
-    ["webserver"]
-  );
+gulp.task("default", gulp.series("sass-minify", "copy-images", "js-minify", "generate-html", "copy-data", "webserver"));
+
+gulp.task("deploy", function() {
+  return surge({
+    project: "www", // Path to your static build directory
+    domain: "criciumadev.com.br" // Your domain or Surge subdomain
+  });
 });
