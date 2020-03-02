@@ -12,6 +12,9 @@ body.page.page-conference-2020 {
     .group-sponsors { margin-bottom: 70px; }
 
     .row {
+      img {
+        max-width: 100%!important;
+      }
       li {
         margin: 0;
 
