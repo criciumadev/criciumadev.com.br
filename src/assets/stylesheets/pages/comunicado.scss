@@ -1,0 +1,21 @@
+body.page.page-comunicado {
+
+	.content {
+		padding: 55px 0 60px;
+
+		.container {
+			max-width: 1200px;
+
+			.box-title {
+				margin-bottom: 20px;
+
+				h1:after { margin-left: 0; }
+			}
+
+			.content-page {
+				h3 { font-size: 25px; }
+				h6 { font-size: 23px; }
+			}
+		}
+	}
+}
